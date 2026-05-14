@@ -1,0 +1,50 @@
+============================================================
+读取静态计算时间 ...
+
+[静态] 已从 result/static_full_comparison/raw_results.json 加载 100 个种子的计时数据
+  LB-BVF            : mean=12.28s  std=1.08s  [9.8, 17.5]
+  GA-3D-LB          : mean=46.04s  std=8.01s  [25.9, 62.8]
+  PSO-3D-LB         : mean=65.33s  std=16.63s  [29.4, 105.9]
+  SSA-3D-LB         : mean=43.24s  std=7.77s  [31.4, 71.3]
+
+============================================================
+动态每步计时基准  (15 seeds × 5 steps) ...
+  Seed 1/15 完成
+  Seed 2/15 完成
+  Seed 3/15 完成
+  Seed 4/15 完成
+  Seed 5/15 完成
+  Seed 6/15 完成
+  Seed 7/15 完成
+  Seed 8/15 完成
+  Seed 9/15 完成
+  Seed 10/15 完成
+  Seed 11/15 完成
+  Seed 12/15 完成
+  Seed 13/15 完成
+  Seed 14/15 完成
+  Seed 15/15 完成
+/Users/haydd/.matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /var/folders/r6/dcf4cdw91gq6nbp1qy0xyx4w0000gn/T/matplotlib-v4ehntbf because there was an issue with the default path (/Users/haydd/.matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib is building the font cache; this may take a moment.
+
+[动态] 15 个种子 × 5 步 = 75 个计时样本
+  Dynamic LB-BVF        : mean=0.26s  std=0.05s  [0.2, 0.4]
+  GA-3D-LB              : mean=4.32s  std=0.27s  [4.2, 5.4]
+  PSO-3D-LB             : mean=5.75s  std=0.31s  [5.5, 7.2]
+  SSA-3D-LB             : mean=5.75s  std=0.30s  [5.5, 6.7]
+
+✓ time_summary.json 已保存
+
+绘图中 ...
+  ✓ fig_time_static saved
+  ✓ fig_time_dynamic saved
+  ✓ fig_time_combined saved
+
+============================================================
+全部完成  总耗时: 1214s
+结果目录: result/computation_time/
+  fig_time_static.png/pdf
+  fig_time_dynamic.png/pdf
+  fig_time_combined.png/pdf
+  time_summary.json

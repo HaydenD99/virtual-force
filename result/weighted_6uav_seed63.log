@@ -1,0 +1,154 @@
+/Users/haydd/.matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /var/folders/r6/dcf4cdw91gq6nbp1qy0xyx4w0000gn/T/matplotlib-q5jh5zfq because there was an issue with the default path (/Users/haydd/.matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib is building the font cache; this may take a moment.
+
+==========================================================================================
+                            四算法对比 - 加权Fitness - 6 UAVs - 种子63                             
+==========================================================================================
+
+📊 实验配置:
+   • 随机种子: 63
+   • UAV数量: 6
+   • Fitness: 加权版本（min_rate + 0.01×sum_rate）
+   • 信道实现: 50
+   • 总评估次数: 1500
+
+[1/3] 生成中立场景...
+[Neutral Initialization]
+  ✓ UE positions: 60 users randomly distributed
+  ✓ Ground APs: 4 APs uniformly distributed (2x2 grid)
+  ✓ UAVs: 9 UAVs in 3x3 grid
+  ✓ Random seed: 63
+[2/3] 创建配置...
+  初始 Min Rate: 18.3768 Mbps
+
+[3/3] 运行优化器...
+
+  运行 BVF...
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2051.44Mbps, Min=20.4309Mbps, BestMin=20.4309Mbps (Iter0), Time=0.119s
+Iter 10: Sum=2147.46Mbps, Min=21.2490Mbps, BestMin=21.3475Mbps (Iter4), Time=0.119s
+Iter 20: Sum=2153.84Mbps, Min=22.9483Mbps, BestMin=23.2325Mbps (Iter16), Time=0.118s
+Iter 30: Sum=2154.35Mbps, Min=23.4531Mbps, BestMin=23.5557Mbps (Iter28), Time=0.119s
+Iter 40: Sum=2153.66Mbps, Min=20.3798Mbps, BestMin=23.6178Mbps (Iter39), Time=0.121s
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 45 次迭代
+📊 历代最优总速率: 2172.23 Mbps
+🎯 历代最优最小速率: 24.9488 Mbps
+📈 速率标准差: 6.4435 Mbps
+⏱️  优化时间: 6.25 秒
+⚡ 平均每次迭代: 0.125 秒
+🔄 重启次数: 0
+    Min Rate: 24.9488 Mbps (6.2s)
+
+  运行 GA (Weighted)...
+离散网格生成完成: 9x9 = 81个候选点
+开始离散遗传算法优化（网格: 9x9）...
+Gen 0: Fitness=37.4622, Sum=1913.19Mbps, Min=18.4721Mbps, Time=3.755s
+Gen 10: Fitness=43.9943, Sum=2110.02Mbps, Min=21.5515Mbps, Time=3.368s
+Gen 20: Fitness=43.9943, Sum=2118.97Mbps, Min=21.1194Mbps, Time=2.681s
+Gen 30: Fitness=43.9943, Sum=2124.75Mbps, Min=20.9943Mbps, Time=2.630s
+Gen 40: Fitness=44.1211, Sum=2197.45Mbps, Min=20.9918Mbps, Time=2.607s
+
+🎉 离散遗传算法优化完成!
+✨ 最佳性能出现在第 46 代
+📊 最终总速率: 2152.61 Mbps
+🎯 最终最小速率: 20.7650 Mbps
+📈 速率标准差: 7.6551 Mbps
+⏱️  优化时间: 145.04 秒
+⚡ 平均每代: 2.901 秒
+🎲 使用网格点: [22, 24, 30, 57, 72, 78]
+    Min Rate: 20.7650 Mbps (145.1s)
+
+  运行 PSO (Weighted)...
+✅ 分布式PSO优化器初始化完成
+   - 粒子数量: 30
+   - 最大迭代次数: 50
+   - PSO参数: w=0.729, c1=1.49445, c2=1.49445
+
+================================================================================
+                            分布式PSO优化算法 (Algorithm 2)                            
+================================================================================
+
+[Step 1] 初始化粒子群...
+   ✓ 粒子群初始化完成
+   ✓ 初始全局最佳适应度: 42.6438
+
+[开始迭代] 最大迭代次数: 50
+--------------------------------------------------------------------------------
+Iter   0 | Fitness:  42.6438 | Min Rate: 20.6526 Mbps | Sum Rate:  2066.63 Mbps | Mean Rate: 34.4438 Mbps
+Iter  10 | Fitness:  42.8454 | Min Rate: 20.7453 Mbps | Sum Rate:  2122.19 Mbps | Mean Rate: 35.3698 Mbps
+Iter  20 | Fitness:  43.7547 | Min Rate: 21.4111 Mbps | Sum Rate:  2124.38 Mbps | Mean Rate: 35.4063 Mbps
+Iter  30 | Fitness:  44.6382 | Min Rate: 21.8084 Mbps | Sum Rate:  2106.56 Mbps | Mean Rate: 35.1094 Mbps
+Iter  40 | Fitness:  45.3214 | Min Rate: 24.0644 Mbps | Sum Rate:  2157.56 Mbps | Mean Rate: 35.9593 Mbps
+Iter  49 | Fitness:  45.4503 | Min Rate: 20.9248 Mbps | Sum Rate:  2163.57 Mbps | Mean Rate: 36.0595 Mbps
+
+================================================================================
+                                      优化完成                                      
+================================================================================
+
+📊 最终性能指标:
+   - 总速率 (Sum Rate):      2180.12 Mbps
+   - 最小速率 (Min Rate):    22.3380 Mbps
+   - 平均速率 (Mean Rate):   36.3353 Mbps
+   - 速率标准差 (Std):        8.2619 Mbps
+   - 最佳适应度 (Fitness):   45.4503
+
+📈 性能提升:
+   - 总速率提升:   +5.49%
+   - 最小速率提升: +8.16%
+
+⏱️  计算时间:
+   - 总优化时间: 166.64 秒
+   - 平均每代:   3.333 秒
+    Min Rate: 22.3380 Mbps (166.8s)
+
+  运行 NewSSA (Weighted)...
+================================================================================
+开始NewSSA优化（论文算法）...
+  • 改进1: OBL策略 + 折射原理（公式18）
+  • 改进2: 正弦-余弦搜索（公式20）
+  • 改进3: 自适应参数r1和w（公式21-22）
+  • 麻雀数量: 30
+  • 最大迭代: 50
+  • 生产者: 20%, 警戒者: 15%
+================================================================================
+
+[1/5] OBL策略 + 折射原理初始化...
+[2/5] 计算初始适应度...
+  ✓ 初始最优适应度: 41.1440 (min_rate=20.5345 Mbps)
+
+[3/5] 开始迭代优化（50次）...
+--------------------------------------------------------------------------------
+Iter  10/50: Sum=2080.26Mbps, Min=21.4250Mbps, Fit=42.2275, Time=5.179s
+Iter  20/50: Sum=2080.26Mbps, Min=21.4250Mbps, Fit=42.2275, Time=5.108s
+Iter  30/50: Sum=2080.86Mbps, Min=21.6361Mbps, Fit=42.4446, Time=5.138s
+Iter  40/50: Sum=2080.86Mbps, Min=21.6361Mbps, Fit=42.4446, Time=5.202s
+Iter  50/50: Sum=2080.86Mbps, Min=21.6361Mbps, Fit=42.4446, Time=4.485s
+
+[4/5] 整理最终结果...
+
+[5/5] 优化完成!
+================================================================================
+🎉 Weighted NewSSA优化完成!
+📊 最终总速率: 2080.86 Mbps
+🎯 最终最小速率: 21.6361 Mbps
+💫 最终适应度: 42.4446 (weighted)
+📈 平均速率: 34.5481 Mbps
+⏱️  优化时间: 257.22 秒
+================================================================================
+    Min Rate: 21.6361 Mbps (259.9s)
+
+✓ 结果已保存到: result/weighted_6uav_seed63.json
+
+✅ 实验完成！总时间: 9.8 分钟
+
+==========================================================================================
+                                           结果总结                                           
+==========================================================================================
+  initial   :  18.38 Mbps ( +0.00%)
+  VF        :  24.95 Mbps (+35.76%)
+  GA        :  20.76 Mbps (+13.00%)
+  PSO       :  22.34 Mbps (+21.56%)
+  NewSSA    :  21.64 Mbps (+17.74%)

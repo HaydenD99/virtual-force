@@ -1,0 +1,80 @@
+
+=== Dynamic Config B: K=40, L=12, G=6  (G+L)*M/K=1.80 ===
+  [ 1/30] seed=8  DLB: mr=36.2 jfi=0.903
+  [ 2/30] seed=3  DLB: mr=37.2 jfi=0.912
+  [ 3/30] seed=4  DLB: mr=36.8 jfi=0.842
+  [ 4/30] seed=6  DLB: mr=37.0 jfi=0.887
+  [ 5/30] seed=2  DLB: mr=39.0 jfi=0.775
+  [ 6/30] seed=7  DLB: mr=35.1 jfi=0.919
+  [ 7/30] seed=5  DLB: mr=38.2 jfi=0.879
+  [ 8/30] seed=1  DLB: mr=35.8 jfi=0.917
+  [ 9/30] seed=9  DLB: mr=40.9 jfi=0.914
+  [10/30] seed=10  DLB: mr=40.6 jfi=0.921
+  [11/30] seed=12  DLB: mr=34.8 jfi=0.924
+  [12/30] seed=11  DLB: mr=39.9 jfi=0.905
+  [13/30] seed=13  DLB: mr=39.7 jfi=0.943
+  [14/30] seed=14  DLB: mr=39.2 jfi=0.883
+  [15/30] seed=15  DLB: mr=42.0 jfi=0.849
+  [16/30] seed=16  DLB: mr=41.1 jfi=0.874
+  [17/30] seed=17  DLB: mr=34.1 jfi=0.873
+  [18/30] seed=18  DLB: mr=38.5 jfi=0.861
+  [19/30] seed=20  DLB: mr=37.9 jfi=0.843
+  [20/30] seed=19  DLB: mr=34.7 jfi=0.918
+  [21/30] seed=21  DLB: mr=33.9 jfi=0.929
+  [22/30] seed=22  DLB: mr=39.8 jfi=0.889
+  [23/30] seed=23  DLB: mr=35.6 jfi=0.850
+  [24/30] seed=24  DLB: mr=32.2 jfi=0.836
+  [25/30] seed=25  DLB: mr=33.9 jfi=0.932
+  [26/30] seed=26  DLB: mr=40.3 jfi=0.907
+  [27/30] seed=27  DLB: mr=34.4 jfi=0.852
+  [28/30] seed=28  DLB: mr=33.8 jfi=0.904
+  [29/30] seed=30  DLB: mr=34.0 jfi=0.917
+  [30/30] seed=29  DLB: mr=36.0 jfi=0.829
+
+  Config B 完成 (4933s)
+  Dynamic LB-BVF        : mr=37.08  jfi=0.8862  js=0.4147
+  GA-3D-LB              : mr=45.14  jfi=0.8339  js=0.5650
+  PSO-3D-LB             : mr=41.48  jfi=0.8185  js=0.4760
+  SSA-3D-LB             : mr=41.62  jfi=0.8045  js=0.4760
+  → result/multiconfig/dynamic_cfgB.json
+
+=== Dynamic Config C: K=20, L=6, G=6  (G+L)*M/K=2.40 ===
+  [ 1/30] seed=7  DLB: mr=48.5 jfi=0.919
+  [ 2/30] seed=1  DLB: mr=42.2 jfi=0.795
+  [ 3/30] seed=4  DLB: mr=42.3 jfi=0.928
+  [ 4/30] seed=3  DLB: mr=54.6 jfi=0.928
+  [ 5/30] seed=8  DLB: mr=35.3 jfi=0.766
+  [ 6/30] seed=6  DLB: mr=41.9 jfi=0.927
+  [ 7/30] seed=2  DLB: mr=44.4 jfi=0.878
+  [ 8/30] seed=5  DLB: mr=46.1 jfi=0.895
+  [ 9/30] seed=9  DLB: mr=52.9 jfi=0.918
+  [10/30] seed=10  DLB: mr=52.7 jfi=0.856
+  [11/30] seed=11  DLB: mr=47.9 jfi=0.846
+  [12/30] seed=12  DLB: mr=41.4 jfi=0.943
+  [13/30] seed=14  DLB: mr=46.3 jfi=0.567
+  [14/30] seed=13  DLB: mr=41.0 jfi=0.835
+  [15/30] seed=15  DLB: mr=42.9 jfi=0.847
+  [16/30] seed=16  DLB: mr=44.7 jfi=0.890
+  [17/30] seed=17  DLB: mr=52.1 jfi=0.770
+  [18/30] seed=18  DLB: mr=38.1 jfi=0.856
+  [19/30] seed=19  DLB: mr=48.6 jfi=0.832
+  [20/30] seed=20  DLB: mr=45.6 jfi=0.925
+  [21/30] seed=21  DLB: mr=50.5 jfi=0.735
+  [22/30] seed=22  DLB: mr=35.9 jfi=0.857
+  [23/30] seed=23  DLB: mr=46.6 jfi=0.856
+  [24/30] seed=24  DLB: mr=42.5 jfi=0.838
+  [25/30] seed=25  DLB: mr=44.4 jfi=0.887
+  [26/30] seed=26  DLB: mr=41.5 jfi=0.851
+  [27/30] seed=27  DLB: mr=48.2 jfi=0.907
+  [28/30] seed=28  DLB: mr=35.4 jfi=0.919
+  [29/30] seed=29  DLB: mr=39.2 jfi=0.867
+  [30/30] seed=30  DLB: mr=47.2 jfi=0.896
+
+  Config C 完成 (1092s)
+  Dynamic LB-BVF        : mr=44.70  jfi=0.8577  js=0.5962
+  GA-3D-LB              : mr=59.67  jfi=0.9215  js=0.7750
+  PSO-3D-LB             : mr=55.22  jfi=0.9018  js=0.7228
+  SSA-3D-LB             : mr=56.18  jfi=0.8611  js=0.7229
+  → result/multiconfig/dynamic_cfgC.json
+
+全部动态配置完成

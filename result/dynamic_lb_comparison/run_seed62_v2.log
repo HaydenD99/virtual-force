@@ -1,0 +1,124 @@
+======================================================================
+  Dynamic LB-BVF vs EA-BVF vs BVF-V6  (Dynamic Comparison)
+  K=60 | G=4 | L=9 | steps=20 × 5.0s | seed=62
+======================================================================
+
+Step 0 (t=0): mr=31.31 Mbps | JFI=0.8686 | all_algs same
+
+--- Step 1/19  (t=5s) ---
+  DLB:  mr=35.13 JFI=0.8748 JS=0.3797 E=75746J d=0.0m cum=75.75kJ
+  EA:   mr=40.16 JFI=0.8823 JS=0.4975 E=89691J d=82.0m cum=89.69kJ
+  V6:   mr=38.91 JFI=0.9198 JS=0.4086 E=165891J d=529.9m cum=165.89kJ
+
+--- Step 2/19  (t=10s) ---
+  DLB:  mr=37.40 JFI=0.9058 JS=0.4016 E=119458J d=257.0m cum=195.20kJ
+  EA:   mr=41.93 JFI=0.8991 JS=0.5561 E=88163J d=73.0m cum=177.85kJ
+  V6:   mr=40.01 JFI=0.9251 JS=0.4388 E=150037J d=436.7m cum=315.93kJ
+
+--- Step 3/19  (t=15s) ---
+  DLB:  mr=38.05 JFI=0.9414 JS=0.4227 E=125111J d=290.2m cum=320.32kJ
+  EA:   mr=41.69 JFI=0.9112 JS=0.5559 E=86184J d=61.4m cum=264.04kJ
+  V6:   mr=42.27 JFI=0.9318 JS=0.5525 E=108746J d=194.0m cum=424.67kJ
+
+--- Step 4/19  (t=20s) ---
+  DLB:  mr=41.93 JFI=0.9394 JS=0.5870 E=75746J d=0.0m cum=396.06kJ
+  EA:   mr=43.15 JFI=0.9035 JS=0.6002 E=84103J d=49.1m cum=348.14kJ
+  V6:   mr=42.62 JFI=0.9673 JS=0.5214 E=153550J d=457.4m cum=578.22kJ
+
+--- Step 5/19  (t=25s) ---
+  DLB:  mr=39.03 JFI=0.9419 JS=0.4627 E=111245J d=208.7m cum=507.31kJ
+  EA:   mr=42.55 JFI=0.9225 JS=0.5833 E=88516J d=75.1m cum=436.66kJ
+  V6:   mr=41.85 JFI=0.9609 JS=0.5368 E=120383J d=262.4m cum=698.61kJ
+
+--- Step 6/19  (t=30s) ---
+  DLB:  mr=41.45 JFI=0.9435 JS=0.5257 E=114745J d=229.3m cum=622.05kJ
+  EA:   mr=45.03 JFI=0.9253 JS=0.6658 E=87205J d=67.4m cum=523.86kJ
+  V6:   mr=40.97 JFI=0.9635 JS=0.4868 E=141879J d=388.8m cum=840.49kJ
+
+--- Step 7/19  (t=35s) ---
+  DLB:  mr=43.65 JFI=0.9455 JS=0.6447 E=75746J d=0.0m cum=697.80kJ
+  EA:   mr=44.70 JFI=0.9311 JS=0.6636 E=82675J d=40.7m cum=606.54kJ
+  V6:   mr=40.80 JFI=0.9697 JS=0.4902 E=137273J d=361.7m cum=977.76kJ
+
+--- Step 8/19  (t=40s) ---
+  DLB:  mr=44.62 JFI=0.9439 JS=0.6345 E=105137J d=172.8m cum=802.93kJ
+  EA:   mr=43.62 JFI=0.9231 JS=0.6230 E=84116J d=49.2m cum=690.65kJ
+  V6:   mr=42.10 JFI=0.9702 JS=0.5438 E=123353J d=279.9m cum=1101.11kJ
+
+--- Step 9/19  (t=45s) ---
+  DLB:  mr=41.73 JFI=0.9503 JS=0.5632 E=93104J d=102.0m cum=896.04kJ
+  EA:   mr=43.68 JFI=0.9312 JS=0.6294 E=83325J d=44.6m cum=773.98kJ
+  V6:   mr=43.74 JFI=0.9534 JS=0.5472 E=156543J d=475.0m cum=1257.66kJ
+
+--- Step 10/19  (t=50s) ---
+  DLB:  mr=41.95 JFI=0.9611 JS=0.5605 E=103846J d=165.2m cum=999.88kJ
+  EA:   mr=43.04 JFI=0.9213 JS=0.6018 E=85652J d=58.2m cum=859.63kJ
+  V6:   mr=42.45 JFI=0.9570 JS=0.5514 E=121352J d=268.1m cum=1379.01kJ
+
+--- Step 11/19  (t=55s) ---
+  DLB:  mr=43.53 JFI=0.9588 JS=0.6087 E=103414J d=162.7m cum=1103.30kJ
+  EA:   mr=43.42 JFI=0.9300 JS=0.6264 E=79096J d=19.7m cum=938.73kJ
+  V6:   mr=42.91 JFI=0.9605 JS=0.5747 E=115133J d=231.5m cum=1494.14kJ
+
+--- Step 12/19  (t=60s) ---
+  DLB:  mr=43.39 JFI=0.9608 JS=0.6160 E=95283J d=114.9m cum=1198.58kJ
+  EA:   mr=42.67 JFI=0.9341 JS=0.5988 E=83198J d=43.8m cum=1021.93kJ
+  V6:   mr=40.78 JFI=0.9623 JS=0.5035 E=123320J d=279.7m cum=1617.46kJ
+
+--- Step 13/19  (t=65s) ---
+  DLB:  mr=39.09 JFI=0.9585 JS=0.5087 E=75746J d=0.0m cum=1274.33kJ
+  EA:   mr=42.02 JFI=0.9330 JS=0.5738 E=86605J d=63.8m cum=1108.53kJ
+  V6:   mr=41.97 JFI=0.9020 JS=0.4918 E=140945J d=383.3m cum=1758.41kJ
+
+--- Step 14/19  (t=70s) ---
+  DLB:  mr=40.97 JFI=0.9589 JS=0.5339 E=101398J d=150.8m cum=1375.72kJ
+  EA:   mr=44.93 JFI=0.9300 JS=0.6736 E=80936J d=30.5m cum=1189.47kJ
+  V6:   mr=40.58 JFI=0.9438 JS=0.4670 E=143890J d=400.6m cum=1902.30kJ
+
+--- Step 15/19  (t=75s) ---
+  DLB:  mr=42.35 JFI=0.9614 JS=0.5794 E=98760J d=135.3m cum=1474.48kJ
+  EA:   mr=44.35 JFI=0.9311 JS=0.6442 E=88414J d=74.5m cum=1277.88kJ
+  V6:   mr=41.00 JFI=0.9594 JS=0.4999 E=130475J d=321.7m cum=2032.77kJ
+
+--- Step 16/19  (t=80s) ---
+  DLB:  mr=40.21 JFI=0.9610 JS=0.5425 E=75746J d=0.0m cum=1550.23kJ
+  EA:   mr=45.46 JFI=0.9175 JS=0.6870 E=80137J d=25.8m cum=1358.02kJ
+  V6:   mr=41.86 JFI=0.9504 JS=0.5187 E=131805J d=329.6m cum=2164.58kJ
+
+--- Step 17/19  (t=85s) ---
+  DLB:  mr=41.45 JFI=0.9616 JS=0.5806 E=75746J d=0.0m cum=1625.98kJ
+  EA:   mr=44.86 JFI=0.9349 JS=0.6706 E=82828J d=41.6m cum=1440.85kJ
+  V6:   mr=41.32 JFI=0.9514 JS=0.5727 E=75746J d=0.0m cum=2240.32kJ
+
+--- Step 18/19  (t=90s) ---
+  DLB:  mr=41.14 JFI=0.9639 JS=0.5493 E=94390J d=109.6m cum=1720.37kJ
+  EA:   mr=44.86 JFI=0.9277 JS=0.6712 E=80187J d=26.1m cum=1521.03kJ
+  V6:   mr=42.30 JFI=0.9587 JS=0.5514 E=118553J d=251.6m cum=2358.87kJ
+
+--- Step 19/19  (t=95s) ---
+  DLB:  mr=43.18 JFI=0.9791 JS=0.6428 E=75746J d=0.0m cum=1796.11kJ
+  EA:   mr=45.09 JFI=0.9318 JS=0.6754 E=83883J d=47.8m cum=1604.92kJ
+  V6:   mr=41.05 JFI=0.9622 JS=0.5386 E=100457J d=145.3m cum=2459.33kJ
+
+================================================================================
+  动态对比总结 (Step 1~end 均值)
+================================================================================
+算法                  Avg MinRate    Avg JFI     Avg JS      总能耗kJ    能效Mbps/kJ
+--------------------------------------------------------------------------------
+Dynamic LB-BVF           41.065     0.9480     0.5444    1796.11       0.0229
+EA-BVF V6                43.538     0.9221     0.6209    1604.92       0.0271
+BVF V6                   41.551     0.9510     0.5156    2459.33       0.0169
+================================================================================
+
+JSON saved: result/dynamic_lb_comparison/dynamic_lb_seed62.json
+/Users/haydd/.matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /var/folders/r6/dcf4cdw91gq6nbp1qy0xyx4w0000gn/T/matplotlib-01g1e6m0 because there was an issue with the default path (/Users/haydd/.matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib is building the font cache; this may take a moment.
+
+图表已保存: result/dynamic_lb_comparison/dynamic_lb_comparison_seed62.png
+能效图已保存: result/dynamic_lb_comparison/dynamic_lb_efficiency_seed62.png
+
+Total time: 103.9s
+======================================================================
+  实验完成!
+======================================================================

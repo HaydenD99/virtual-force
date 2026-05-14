@@ -1,0 +1,27 @@
+================================================================================
+                           ISSA算法单独运行（使用四算法对比的完全相同配置）                           
+================================================================================
+
+[1/4] Generating neutral scenario...
+[Neutral Initialization - Same as full comparison]
+  ✓ UE positions: 60 users randomly distributed
+  ✓ Ground APs: 4 APs at corners
+  ✓ UAVs: 9 UAVs in 3x3 grid
+  ✓ Random seed: 42
+
+[2/4] Creating ISSA configuration...
+  ✓ Sparrows: 30
+  ✓ Max iterations: 50
+  ✓ Channel realizations: 50
+  ✓ Pilot length: 60
+
+[3/4] Creating ISSA optimizer...
+  ✓ Optimizer created
+
+[4/4] Running ISSA optimization...
+--------------------------------------------------------------------------------
+开始ISSA优化（基于BVF信道模型）...
+Iter 10/50: Sum=2345.25Mbps, Min=25.9955Mbps, Time=5.657s
+Iter 20/50: Sum=2417.40Mbps, Min=24.7702Mbps, Time=5.786s
+Iter 30/50: Sum=2418.44Mbps, Min=23.1882Mbps, Time=5.701s
+Iter 40/50: Sum=2372.38Mbps, Min=23.1848Mbps, Time=5.636s

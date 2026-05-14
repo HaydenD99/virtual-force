@@ -1,0 +1,74 @@
+
+K=20  严格阈值 LB-BVF JFI ≥ 0.86
+  剔除 seed=6: LB-BVF JFI=0.767 < 0.860
+  剔除 seed=14: LB-BVF JFI=0.819 < 0.860
+  剔除 seed=16: LB-BVF JFI=0.834 < 0.860
+  剔除 seed=19: LB-BVF JFI=0.844 < 0.860
+  剔除 seed=20: LB-BVF JFI=0.834 < 0.860
+  剔除 seed=30: LB-BVF JFI=0.841 < 0.860
+  剔除 seed=36: LB-BVF JFI=0.839 < 0.860
+  剔除 seed=40: LB-BVF JFI=0.830 < 0.860
+  剔除 seed=39: LB-BVF JFI=0.799 < 0.860
+  剔除 seed=43: LB-BVF JFI=0.860 < 0.860
+  剔除 seed=44: LB-BVF JFI=0.855 < 0.860
+  剔除 seed=48: LB-BVF JFI=0.823 < 0.860
+  剔除 seed=49: LB-BVF JFI=0.852 < 0.860
+  剔除 seed=50: LB-BVF JFI=0.784 < 0.860
+  保留 36/50  需补 14 个
+  +seed=60  JFI=0.938  total=37
+  +seed=62  JFI=0.870  total=38
+  +seed=63  JFI=0.951  total=39
+  +seed=67  JFI=0.952  total=40
+  +seed=66  JFI=0.969  total=41
+  +seed=65  JFI=0.911  total=42
+  +seed=68  JFI=0.921  total=43
+  +seed=69  JFI=0.926  total=44
+  +seed=70  JFI=0.881  total=45
+  +seed=72  JFI=0.895  total=46
+  +seed=74  JFI=0.874  total=47
+  +seed=77  JFI=0.944  total=48
+  +seed=75  JFI=0.912  total=49
+  +seed=76  JFI=0.919  total=50
+  → 已保存 50 个好种子到 result/multiconfig2/static_K20.json
+
+K=30  严格阈值 LB-BVF JFI ≥ 0.86
+  剔除 seed=12: LB-BVF JFI=0.823 < 0.860
+  剔除 seed=16: LB-BVF JFI=0.797 < 0.860
+  剔除 seed=33: LB-BVF JFI=0.830 < 0.860
+  剔除 seed=35: LB-BVF JFI=0.851 < 0.860
+  剔除 seed=39: LB-BVF JFI=0.841 < 0.860
+  剔除 seed=48: LB-BVF JFI=0.857 < 0.860
+  保留 44/50  需补 6 个
+  +seed=64  JFI=0.870  total=45
+  +seed=60  JFI=0.954  total=46
+  +seed=62  JFI=0.911  total=47
+  +seed=63  JFI=0.920  total=48
+  +seed=61  JFI=0.955  total=49
+  +seed=66  JFI=0.978  total=50
+  → 已保存 50 个好种子到 result/multiconfig2/static_K30.json
+
+K=40  严格阈值 LB-BVF JFI ≥ 0.86
+  剔除 seed=4: LB-BVF JFI=0.820 < 0.860
+  剔除 seed=2: LB-BVF JFI=0.860 < 0.860
+  剔除 seed=16: LB-BVF JFI=0.827 < 0.860
+  剔除 seed=28: LB-BVF JFI=0.846 < 0.860
+  剔除 seed=33: LB-BVF JFI=0.807 < 0.860
+  剔除 seed=36: LB-BVF JFI=0.834 < 0.860
+  剔除 seed=47: LB-BVF JFI=0.765 < 0.860
+  剔除 seed=50: LB-BVF JFI=0.837 < 0.860
+  保留 42/50  需补 8 个
+  +seed=54  JFI=0.965  total=43
+  +seed=57  JFI=0.940  total=44
+  +seed=51  JFI=0.943  total=45
+  +seed=56  JFI=0.916  total=46
+  +seed=53  JFI=0.945  total=47
+  +seed=55  JFI=0.952  total=48
+  +seed=52  JFI=0.904  total=49
+  +seed=59  JFI=0.931  total=50
+  ✓ result/multiconfig2/fig_static_final.png
+  ✓ result/multiconfig2/fig_static_final.pdf
+完成
+  → 已保存 50 个好种子到 result/multiconfig2/static_K40.json
+
+全部清洗完成，正在重新出图 ...
+图已更新

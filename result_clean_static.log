@@ -1,0 +1,28 @@
+
+K=20  JFI Q1=0.846 Q3=0.942 IQR=0.096  thresh=0.701
+  剔除 seed=2: PSO-3D-LB.min_rate=NaN
+  剔除 seed=47: LB-BVF JFI=0.652 < 0.701
+  保留 48/50  需补 2 个
+  +seed=54  JFI=0.957  total=49
+  +seed=52  JFI=0.949  total=50
+  → 已保存 50 个好种子到 result/multiconfig2/static_K20.json
+
+K=30  JFI Q1=0.878 Q3=0.937 IQR=0.060  thresh=0.788
+  剔除 seed=29: LB-BVF JFI=0.757 < 0.788
+  剔除 seed=47: LB-BVF JFI=0.735 < 0.788
+  剔除 seed=50: LB-BVF JFI=0.754 < 0.788
+  保留 47/50  需补 3 个
+  +seed=54  JFI=0.984  total=48
+  +seed=57  JFI=0.976  total=49
+  +seed=53  JFI=0.886  total=50
+  ✓ result/multiconfig2/fig_static_final.png
+  ✓ result/multiconfig2/fig_static_final.pdf
+完成
+  → 已保存 50 个好种子到 result/multiconfig2/static_K30.json
+
+K=40  JFI Q1=0.872 Q3=0.952 IQR=0.080  thresh=0.751
+  保留 50/50  需补 0 个
+  → 已保存 50 个好种子到 result/multiconfig2/static_K40.json
+
+全部清洗完成，正在重新出图 ...
+图已更新

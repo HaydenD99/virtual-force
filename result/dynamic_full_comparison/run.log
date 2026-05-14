@@ -1,0 +1,79 @@
+
+────────────────────────────────────────────────────────────
+  Dynamic Seed 42
+────────────────────────────────────────────────────────────
+  Step0: mr=37.27 jfi=0.9473
+  Step1: DLB mr=42.4 jfi=0.958 js=0.544 | GA mr=35.1 | PSO mr=35.3 | SSA mr=35.1
+  Step2: DLB mr=41.4 jfi=0.961 js=0.551 | GA mr=33.4 | PSO mr=33.1 | SSA mr=33.8
+  Step3: DLB mr=44.1 jfi=0.957 js=0.665 | GA mr=32.7 | PSO mr=32.8 | SSA mr=33.2
+  Step4: DLB mr=40.5 jfi=0.973 js=0.523 | GA mr=30.1 | PSO mr=31.3 | SSA mr=33.3
+  Step5: DLB mr=38.6 jfi=0.955 js=0.453 | GA mr=28.6 | PSO mr=32.9 | SSA mr=33.6
+  Step6: DLB mr=35.1 jfi=0.951 js=0.379 | GA mr=31.8 | PSO mr=30.5 | SSA mr=27.0
+  Step7: DLB mr=40.6 jfi=0.972 js=0.524 | GA mr=32.4 | PSO mr=32.7 | SSA mr=32.7
+  Step8: DLB mr=39.2 jfi=0.971 js=0.515 | GA mr=28.1 | PSO mr=29.5 | SSA mr=27.5
+  Step9: DLB mr=37.4 jfi=0.975 js=0.445 | GA mr=32.1 | PSO mr=30.2 | SSA mr=26.5
+  Step10: DLB mr=40.7 jfi=0.970 js=0.511 | GA mr=27.3 | PSO mr=24.7 | SSA mr=23.0
+  Step11: DLB mr=40.8 jfi=0.976 js=0.550 | GA mr=27.1 | PSO mr=29.1 | SSA mr=27.4
+  Step12: DLB mr=40.7 jfi=0.959 js=0.518 | GA mr=27.4 | PSO mr=29.4 | SSA mr=29.0
+  Step13: DLB mr=40.1 jfi=0.976 js=0.526 | GA mr=31.0 | PSO mr=28.0 | SSA mr=29.2
+  Step14: DLB mr=39.9 jfi=0.977 js=0.538 | GA mr=27.0 | PSO mr=25.5 | SSA mr=26.9
+  Step15: DLB mr=39.0 jfi=0.981 js=0.479 | GA mr=30.8 | PSO mr=28.7 | SSA mr=27.0
+
+────────────────────────────────────────────────────────────
+  Dynamic Seed 62
+────────────────────────────────────────────────────────────
+  Step0: mr=35.38 jfi=0.8686
+  Step1: DLB mr=32.7 jfi=0.871 js=0.323 | GA mr=28.3 | PSO mr=26.7 | SSA mr=26.6
+  Step2: DLB mr=34.4 jfi=0.869 js=0.333 | GA mr=26.3 | PSO mr=28.3 | SSA mr=28.2
+  Step3: DLB mr=35.9 jfi=0.900 js=0.375 | GA mr=26.0 | PSO mr=28.1 | SSA mr=23.4
+  Step4: DLB mr=33.6 jfi=0.925 js=0.317 | GA mr=25.8 | PSO mr=30.1 | SSA mr=27.0
+  Step5: DLB mr=34.0 jfi=0.921 js=0.365 | GA mr=31.1 | PSO mr=29.4 | SSA mr=28.8
+  Step6: DLB mr=35.2 jfi=0.918 js=0.369 | GA mr=29.3 | PSO mr=31.2 | SSA mr=26.2
+  Step7: DLB mr=38.7 jfi=0.926 js=0.487 | GA mr=29.8 | PSO mr=31.3 | SSA mr=22.4
+  Step8: DLB mr=37.5 jfi=0.919 js=0.424 | GA mr=30.3 | PSO mr=32.2 | SSA mr=29.1
+  Step9: DLB mr=34.8 jfi=0.923 js=0.383 | GA mr=28.2 | PSO mr=31.6 | SSA mr=31.1
+  Step10: DLB mr=39.7 jfi=0.912 js=0.476 | GA mr=27.3 | PSO mr=32.8 | SSA mr=29.2
+  Step11: DLB mr=35.5 jfi=0.913 js=0.400 | GA mr=28.1 | PSO mr=30.1 | SSA mr=25.9
+  Step12: DLB mr=35.8 jfi=0.914 js=0.378 | GA mr=32.1 | PSO mr=28.7 | SSA mr=26.4
+  Step13: DLB mr=35.8 jfi=0.950 js=0.396 | GA mr=24.7 | PSO mr=27.1 | SSA mr=26.2
+  Step14: DLB mr=33.6 jfi=0.951 js=0.345 | GA mr=25.7 | PSO mr=26.6 | SSA mr=25.0
+  Step15: DLB mr=36.9 jfi=0.948 js=0.444 | GA mr=27.8 | PSO mr=27.0 | SSA mr=28.4
+
+────────────────────────────────────────────────────────────
+  Dynamic Seed 88
+────────────────────────────────────────────────────────────
+  Step0: mr=36.55 jfi=0.9583
+  Step1: DLB mr=38.0 jfi=0.961 js=0.477 | GA mr=30.9 | PSO mr=30.0 | SSA mr=31.8
+  Step2: DLB mr=39.6 jfi=0.968 js=0.484 | GA mr=35.2 | PSO mr=29.6 | SSA mr=31.8
+  Step3: DLB mr=39.8 jfi=0.962 js=0.500 | GA mr=33.0 | PSO mr=28.0 | SSA mr=27.2
+  Step4: DLB mr=35.2 jfi=0.961 js=0.374 | GA mr=25.0 | PSO mr=30.4 | SSA mr=24.6
+  Step5: DLB mr=37.2 jfi=0.972 js=0.459 | GA mr=32.7 | PSO mr=30.1 | SSA mr=30.6
+  Step6: DLB mr=39.8 jfi=0.971 js=0.532 | GA mr=29.5 | PSO mr=29.3 | SSA mr=29.9
+  Step7: DLB mr=38.1 jfi=0.969 js=0.460 | GA mr=27.2 | PSO mr=31.3 | SSA mr=26.6
+  Step8: DLB mr=40.3 jfi=0.968 js=0.505 | GA mr=28.9 | PSO mr=25.7 | SSA mr=27.8
+  Step9: DLB mr=39.7 jfi=0.960 js=0.511 | GA mr=30.4 | PSO mr=26.6 | SSA mr=22.6
+  Step10: DLB mr=37.2 jfi=0.966 js=0.431 | GA mr=31.4 | PSO mr=27.3 | SSA mr=25.2
+  Step11: DLB mr=40.0 jfi=0.968 js=0.514 | GA mr=28.4 | PSO mr=33.0 | SSA mr=27.9
+  Step12: DLB mr=39.0 jfi=0.963 js=0.507 | GA mr=33.1 | PSO mr=31.1 | SSA mr=27.0
+  Step13: DLB mr=33.5 jfi=0.963 js=0.347 | GA mr=34.0 | PSO mr=30.3 | SSA mr=25.0
+  Step14: DLB mr=34.6 jfi=0.965 js=0.392 | GA mr=29.1 | PSO mr=30.4 | SSA mr=27.4
+  Step15: DLB mr=32.7 jfi=0.964 js=0.323 | GA mr=28.1 | PSO mr=32.8 | SSA mr=28.4
+
+===========================================================================
+  动态场景对比总结 (3 种子均值, Step 1 ~ 15)
+===========================================================================
+算法                    MinRate       JFI   JointScore   E_cum kJ
+---------------------------------------------------------------------------
+Dynamic LB-BVF         37.763    0.9500       0.4523     1436.3
+GA-3D-LB               29.613    0.9157       0.2287     9154.5
+PSO-3D-LB              29.799    0.9431       0.2388     5331.9
+SSA-3D-LB              28.061    0.9088       0.2118    10230.4
+===========================================================================
+/Users/haydd/.matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /var/folders/r6/dcf4cdw91gq6nbp1qy0xyx4w0000gn/T/matplotlib-e8v0lff0 because there was an issue with the default path (/Users/haydd/.matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib is building the font cache; this may take a moment.
+
+All dynamic plots saved to result/dynamic_full_comparison/
+
+Total time: 2335.1s
+Results saved to: result/dynamic_full_comparison/

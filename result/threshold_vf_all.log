@@ -1,0 +1,130 @@
+/Users/haydd/.matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /var/folders/r6/dcf4cdw91gq6nbp1qy0xyx4w0000gn/T/matplotlib-u7vg9fpt because there was an issue with the default path (/Users/haydd/.matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib is building the font cache; this may take a moment.
+
+==========================================================================================
+                                    阈值选择方案 - VF优化器性能测试                                    
+==========================================================================================
+
+配置:
+  种子: 71
+  UAV配置: [6, 9, 12]
+  阈值选择: 70th percentile, range=[3,8]
+  信道实现: 50
+
+==========================================================================================
+                                   6 UAVs - VF优化器（阈值选择）                                   
+==========================================================================================
+初始性能:
+  Min Rate: 25.6347 Mbps
+  Sum Rate: 2264.06 Mbps
+  AP连接数: 3.18±0.39 [3, 4]
+
+运行VF优化...
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2281.04Mbps, Min=23.8514Mbps, BestMin=23.8514Mbps (Iter0), Time=0.123s
+Iter 10: Sum=2235.30Mbps, Min=23.2484Mbps, BestMin=23.8514Mbps (Iter0), Time=0.124s
+Iter 20: Sum=2249.97Mbps, Min=24.9310Mbps, BestMin=24.9310Mbps (Iter20), Time=0.124s
+Iter 30: Sum=2184.38Mbps, Min=23.0101Mbps, BestMin=25.2058Mbps (Iter23), Time=0.126s
+Iter 40: Sum=2180.09Mbps, Min=25.4362Mbps, BestMin=26.3674Mbps (Iter36), Time=0.129s
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 43 次迭代
+📊 历代最优总速率: 2170.58 Mbps
+🎯 历代最优最小速率: 26.6285 Mbps
+📈 速率标准差: 5.8578 Mbps
+⏱️  优化时间: 6.37 秒
+⚡ 平均每次迭代: 0.127 秒
+🔄 重启次数: 0
+
+最终性能:
+  Min Rate: 26.6285 Mbps (+3.88%)
+  Sum Rate: 2170.58 Mbps (+-4.13%)
+  AP连接数: 3.00±0.00 [3, 3]
+  优化时间: 6.4 秒
+
+✓ 结果已保存到: result/threshold_vf_6uav_seed71.json
+
+==========================================================================================
+                                   9 UAVs - VF优化器（阈值选择）                                   
+==========================================================================================
+初始性能:
+  Min Rate: 34.0128 Mbps
+  Sum Rate: 2656.92 Mbps
+  AP连接数: 4.00±0.00 [4, 4]
+
+运行VF优化...
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2658.26Mbps, Min=31.7248Mbps, BestMin=31.7248Mbps (Iter0), Time=0.160s
+Iter 10: Sum=2598.49Mbps, Min=34.5938Mbps, BestMin=36.8284Mbps (Iter6), Time=0.164s
+Iter 20: Sum=2593.78Mbps, Min=30.3066Mbps, BestMin=36.8284Mbps (Iter6), Time=0.163s
+Iter 30: Sum=2532.79Mbps, Min=34.9907Mbps, BestMin=36.8284Mbps (Iter6), Time=0.282s
+
+🔄 智能重启 #1 (Iter 31)
+Iter 40: Sum=2500.27Mbps, Min=33.7096Mbps, BestMin=36.8284Mbps (Iter6), Time=0.181s
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 6 次迭代
+📊 历代最优总速率: 2607.79 Mbps
+🎯 历代最优最小速率: 36.8284 Mbps
+📈 速率标准差: 4.5194 Mbps
+⏱️  优化时间: 8.61 秒
+⚡ 平均每次迭代: 0.172 秒
+🔄 重启次数: 1
+
+最终性能:
+  Min Rate: 36.8284 Mbps (+8.28%)
+  Sum Rate: 2607.79 Mbps (+-1.85%)
+  AP连接数: 4.00±0.00 [4, 4]
+  优化时间: 8.6 秒
+
+✓ 结果已保存到: result/threshold_vf_9uav_seed71.json
+
+==========================================================================================
+                                  12 UAVs - VF优化器（阈值选择）                                   
+==========================================================================================
+初始性能:
+  Min Rate: 37.1249 Mbps
+  Sum Rate: 3020.48 Mbps
+  AP连接数: 5.00±0.00 [5, 5]
+
+运行VF优化...
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=3000.83Mbps, Min=34.9061Mbps, BestMin=34.9061Mbps (Iter0), Time=0.198s
+Iter 10: Sum=2946.64Mbps, Min=39.5996Mbps, BestMin=40.5695Mbps (Iter9), Time=0.201s
+Iter 20: Sum=2873.18Mbps, Min=36.7518Mbps, BestMin=41.2365Mbps (Iter17), Time=0.200s
+Iter 30: Sum=2838.72Mbps, Min=36.7736Mbps, BestMin=41.2365Mbps (Iter17), Time=0.193s
+Iter 40: Sum=2837.43Mbps, Min=32.6678Mbps, BestMin=41.2365Mbps (Iter17), Time=0.203s
+
+🔄 智能重启 #1 (Iter 42)
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 17 次迭代
+📊 历代最优总速率: 2958.98 Mbps
+🎯 历代最优最小速率: 41.2365 Mbps
+📈 速率标准差: 4.5859 Mbps
+⏱️  优化时间: 10.43 秒
+⚡ 平均每次迭代: 0.209 秒
+🔄 重启次数: 1
+
+最终性能:
+  Min Rate: 41.2365 Mbps (+11.08%)
+  Sum Rate: 2958.98 Mbps (+-2.04%)
+  AP连接数: 5.00±0.00 [5, 5]
+  优化时间: 10.4 秒
+
+✓ 结果已保存到: result/threshold_vf_12uav_seed71.json
+
+
+==========================================================================================
+                                            总结                                            
+==========================================================================================
+
+UAV数       总AP        初始Min        VF Min       提升           AP连接数
+------------------------------------------------------------------------------------------
+6          10         25.63        26.63              +3.9%  3.00±0.00
+9          13         34.01        36.83              +8.3%  4.00±0.00
+12         16         37.12        41.24             +11.1%  5.00±0.00
+
+总时间: 0.4 分钟
+==========================================================================================

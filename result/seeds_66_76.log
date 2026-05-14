@@ -1,0 +1,2107 @@
+/Users/haydd/.matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /var/folders/r6/dcf4cdw91gq6nbp1qy0xyx4w0000gn/T/matplotlib-h8j_vg87 because there was an issue with the default path (/Users/haydd/.matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib is building the font cache; this may take a moment.
+
+==========================================================================================
+                                  多随机种子四算法对比实验 - 种子66-76                                  
+==========================================================================================
+
+📊 实验配置:
+   • 随机种子: [66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76]
+   • 运行次数: 11 轮
+   • 算法: VF, GA, PSO, NewSSA (原始fitness)
+   • 信道实现: 50
+   • 总评估次数: 1500
+   • 输出目录: result/
+
+⏱️  预计总时间: ~165 分钟 (每轮约15分钟)
+
+
+==========================================================================================
+                                    运行 1/11: 随机种子 = 66                                    
+==========================================================================================
+================================================================================
+                      FAIR OPTIMIZER COMPARISON EXPERIMENT                      
+================================================================================
+
+公平性保证：
+  ✓ 总评估次数: 1500 (种群30 × 迭代50)
+  ✓ 信道实现次数: 50
+  ✓ 随机种子: 66
+  ✓ 相同的初始位置和场景
+  ✓ 固定的导频分配
+
+
+[1/5] Generating neutral scenario...
+[Neutral Initialization]
+  ✓ UE positions: 60 users randomly distributed
+  ✓ Ground APs: 4 APs uniformly distributed (2x2 grid)
+  ✓ UAVs: 9 UAVs in 3x3 grid
+  ✓ Random seed: 66
+
+[2/5] Creating fair configurations...
+  ✓ All configurations created with unified parameters
+
+[3/5] Computing initial performance...
+  Initial Min Rate: 31.3627 Mbps
+  Initial Sum Rate: 2638.97 Mbps
+  Initial Mean Rate: 43.9828 Mbps
+  Initial Std Rate: 6.6424 Mbps
+
+[4/5] Running optimizers...
+
+================================================================================
+[4/4] Running Balanced Virtual Force Optimizer V3...
+================================================================================
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2621.83Mbps, Min=31.2699Mbps, BestMin=31.2699Mbps (Iter0), Time=0.093s
+Iter 10: Sum=2624.52Mbps, Min=32.1915Mbps, BestMin=34.8944Mbps (Iter8), Time=0.093s
+Iter 20: Sum=2698.63Mbps, Min=34.5201Mbps, BestMin=37.5264Mbps (Iter15), Time=0.095s
+Iter 30: Sum=2721.00Mbps, Min=34.9291Mbps, BestMin=37.5264Mbps (Iter15), Time=0.095s
+
+🔄 智能重启 #1 (Iter 40)
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 15 次迭代
+📊 历代最优总速率: 2672.96 Mbps
+🎯 历代最优最小速率: 37.5264 Mbps
+📈 速率标准差: 3.9159 Mbps
+⏱️  优化时间: 4.85 秒
+⚡ 平均每次迭代: 0.097 秒
+🔄 重启次数: 1
+
+✓ Balanced Virtual Force Optimizer V3 Complete
+   Final Min Rate: 37.5264 Mbps
+   Final Sum Rate: 2672.96 Mbps
+   Time: 4.85 s
+
+================================================================================
+[4/4] Running Discrete Genetic Algorithm...
+================================================================================
+离散网格生成完成: 9x9 = 81个候选点
+开始离散遗传算法优化（网格: 9x9）...
+Gen 0: Fitness=3.4151, Sum=2559.68Mbps, Min=28.3784Mbps, Time=2.962s
+Gen 10: Fitness=3.4687, Sum=2598.23Mbps, Min=31.6823Mbps, Time=2.862s
+Gen 20: Fitness=3.5054, Sum=2646.67Mbps, Min=32.7396Mbps, Time=2.866s
+Gen 30: Fitness=3.5054, Sum=2622.55Mbps, Min=32.7548Mbps, Time=2.918s
+Gen 40: Fitness=3.5054, Sum=2618.48Mbps, Min=31.9870Mbps, Time=2.843s
+
+🎉 离散遗传算法优化完成!
+✨ 最佳性能出现在第 19 代
+📊 最终总速率: 2616.14 Mbps
+🎯 最终最小速率: 31.5641 Mbps
+📈 速率标准差: 6.1489 Mbps
+⏱️  优化时间: 144.31 秒
+⚡ 平均每代: 2.886 秒
+🎲 使用网格点: [12, 15, 21, 28, 33, 49, 52, 64, 75]
+
+✓ Discrete Genetic Algorithm Complete
+   Final Min Rate: 31.5641 Mbps
+   Final Sum Rate: 2616.14 Mbps
+   Time: 144.40 s
+
+================================================================================
+[4/4] Running Distributed PSO...
+================================================================================
+✅ 分布式PSO优化器初始化完成
+   - 粒子数量: 30
+   - 最大迭代次数: 50
+   - PSO参数: w=0.729, c1=1.49445, c2=1.49445
+
+================================================================================
+                            分布式PSO优化算法 (Algorithm 2)                            
+================================================================================
+
+[Step 1] 初始化粒子群...
+   ✓ 粒子群初始化完成
+   ✓ 初始全局最佳适应度: 58.2497
+
+[开始迭代] 最大迭代次数: 50
+--------------------------------------------------------------------------------
+Iter   0 | Fitness:  60.0281 | Min Rate: 34.2486 Mbps | Sum Rate:  2636.24 Mbps | Mean Rate: 43.9374 Mbps
+Iter  10 | Fitness:  61.6054 | Min Rate: 32.9062 Mbps | Sum Rate:  2668.04 Mbps | Mean Rate: 44.4674 Mbps
+Iter  20 | Fitness:  64.7686 | Min Rate: 35.0810 Mbps | Sum Rate:  2708.66 Mbps | Mean Rate: 45.1443 Mbps
+Iter  30 | Fitness:  64.7686 | Min Rate: 35.8593 Mbps | Sum Rate:  2680.70 Mbps | Mean Rate: 44.6783 Mbps
+Iter  40 | Fitness:  64.7686 | Min Rate: 36.3176 Mbps | Sum Rate:  2682.29 Mbps | Mean Rate: 44.7048 Mbps
+Iter  49 | Fitness:  65.3024 | Min Rate: 34.7917 Mbps | Sum Rate:  2669.21 Mbps | Mean Rate: 44.4869 Mbps
+
+================================================================================
+                                      优化完成                                      
+================================================================================
+
+📊 最终性能指标:
+   - 总速率 (Sum Rate):      2687.08 Mbps
+   - 最小速率 (Min Rate):    35.3173 Mbps
+   - 平均速率 (Mean Rate):   44.7846 Mbps
+   - 速率标准差 (Std):        5.9483 Mbps
+   - 最佳适应度 (Fitness):   65.3024
+
+📈 性能提升:
+   - 总速率提升:   +1.93%
+   - 最小速率提升: +3.12%
+
+⏱️  计算时间:
+   - 总优化时间: 180.94 秒
+   - 平均每代:   3.619 秒
+
+✓ Distributed PSO Complete
+   Final Min Rate: 35.3173 Mbps
+   Final Sum Rate: 2687.08 Mbps
+   Time: 181.05 s
+
+================================================================================
+[4/4] Running NewSSA (OBL + Sine-Cosine)...
+================================================================================
+================================================================================
+开始NewSSA优化（论文算法）...
+  • 改进1: OBL策略 + 折射原理（公式18）
+  • 改进2: 正弦-余弦搜索（公式20）
+  • 改进3: 自适应参数r1和w（公式21-22）
+  • 麻雀数量: 30
+  • 最大迭代: 50
+  • 生产者: 20%, 警戒者: 15%
+================================================================================
+
+[1/5] OBL策略 + 折射原理初始化...
+[2/5] 计算初始适应度...
+  ✓ 初始最优适应度: 28.8125 Mbps
+
+[3/5] 开始迭代优化（50次）...
+--------------------------------------------------------------------------------
+Iter  10/50: Sum=2633.28Mbps, Min=30.6305Mbps, Time=5.479s
+Iter  20/50: Sum=2701.30Mbps, Min=33.0512Mbps, Time=5.447s
+Iter  30/50: Sum=2612.04Mbps, Min=34.0555Mbps, Time=5.436s
+Iter  40/50: Sum=2612.04Mbps, Min=34.0555Mbps, Time=5.528s
+Iter  50/50: Sum=2612.04Mbps, Min=34.0555Mbps, Time=5.463s
+
+[4/5] 整理最终结果...
+
+[5/5] 优化完成!
+================================================================================
+🎉 NewSSA优化完成!
+📊 最终总速率: 2612.04 Mbps
+🎯 最终最小速率: 34.0555 Mbps
+📈 平均速率: 43.4909 Mbps
+⏱️  优化时间: 272.67 秒
+================================================================================
+
+✓ NewSSA (OBL + Sine-Cosine) Complete
+   Final Min Rate: 34.0555 Mbps
+   Final Sum Rate: 2612.04 Mbps
+   Time: 275.50 s
+
+✓ 随机种子 66 完成（用时 10.1 分钟）
+  初始:   31.36 Mbps
+  VF:     37.53 Mbps (+19.7%)
+  GA:     31.56 Mbps (+0.6%)
+  PSO:    35.32 Mbps (+12.6%)
+  NewSSA: 34.06 Mbps (+8.6%)
+✓ 结果已保存到: result/seeds_66_76_partial_1.json
+
+==========================================================================================
+                                    运行 2/11: 随机种子 = 67                                    
+==========================================================================================
+================================================================================
+                      FAIR OPTIMIZER COMPARISON EXPERIMENT                      
+================================================================================
+
+公平性保证：
+  ✓ 总评估次数: 1500 (种群30 × 迭代50)
+  ✓ 信道实现次数: 50
+  ✓ 随机种子: 67
+  ✓ 相同的初始位置和场景
+  ✓ 固定的导频分配
+
+
+[1/5] Generating neutral scenario...
+[Neutral Initialization]
+  ✓ UE positions: 60 users randomly distributed
+  ✓ Ground APs: 4 APs uniformly distributed (2x2 grid)
+  ✓ UAVs: 9 UAVs in 3x3 grid
+  ✓ Random seed: 67
+
+[2/5] Creating fair configurations...
+  ✓ All configurations created with unified parameters
+
+[3/5] Computing initial performance...
+  Initial Min Rate: 30.0967 Mbps
+  Initial Sum Rate: 2589.64 Mbps
+  Initial Mean Rate: 43.1606 Mbps
+  Initial Std Rate: 5.6502 Mbps
+
+[4/5] Running optimizers...
+
+================================================================================
+[4/4] Running Balanced Virtual Force Optimizer V3...
+================================================================================
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2598.06Mbps, Min=28.8568Mbps, BestMin=28.8568Mbps (Iter0), Time=0.091s
+Iter 10: Sum=2567.08Mbps, Min=30.8945Mbps, BestMin=36.6256Mbps (Iter4), Time=0.092s
+Iter 20: Sum=2578.26Mbps, Min=33.9693Mbps, BestMin=36.6256Mbps (Iter4), Time=0.091s
+Iter 30: Sum=2543.86Mbps, Min=33.3194Mbps, BestMin=36.6256Mbps (Iter4), Time=0.090s
+
+🔄 智能重启 #1 (Iter 31)
+Iter 40: Sum=2586.47Mbps, Min=34.1722Mbps, BestMin=36.6256Mbps (Iter4), Time=0.092s
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 4 次迭代
+📊 历代最优总速率: 2652.70 Mbps
+🎯 历代最优最小速率: 36.6256 Mbps
+📈 速率标准差: 4.5849 Mbps
+⏱️  优化时间: 4.64 秒
+⚡ 平均每次迭代: 0.093 秒
+🔄 重启次数: 1
+
+✓ Balanced Virtual Force Optimizer V3 Complete
+   Final Min Rate: 36.6256 Mbps
+   Final Sum Rate: 2652.70 Mbps
+   Time: 4.64 s
+
+================================================================================
+[4/4] Running Discrete Genetic Algorithm...
+================================================================================
+离散网格生成完成: 9x9 = 81个候选点
+开始离散遗传算法优化（网格: 9x9）...
+Gen 0: Fitness=3.2059, Sum=2419.69Mbps, Min=21.6506Mbps, Time=2.813s
+Gen 10: Fitness=3.4442, Sum=2532.11Mbps, Min=28.4756Mbps, Time=2.802s
+Gen 20: Fitness=3.4442, Sum=2603.46Mbps, Min=29.1284Mbps, Time=2.808s
+Gen 30: Fitness=3.4517, Sum=2523.72Mbps, Min=30.9748Mbps, Time=2.819s
+Gen 40: Fitness=3.4517, Sum=2513.58Mbps, Min=30.4163Mbps, Time=2.828s
+
+🎉 离散遗传算法优化完成!
+✨ 最佳性能出现在第 49 代
+📊 最终总速率: 2514.59 Mbps
+🎯 最终最小速率: 28.0176 Mbps
+📈 速率标准差: 5.5623 Mbps
+⏱️  优化时间: 140.77 秒
+⚡ 平均每代: 2.815 秒
+🎲 使用网格点: [0, 7, 14, 22, 26, 36, 43, 67, 74]
+
+✓ Discrete Genetic Algorithm Complete
+   Final Min Rate: 28.0176 Mbps
+   Final Sum Rate: 2514.59 Mbps
+   Time: 140.86 s
+
+================================================================================
+[4/4] Running Distributed PSO...
+================================================================================
+✅ 分布式PSO优化器初始化完成
+   - 粒子数量: 30
+   - 最大迭代次数: 50
+   - PSO参数: w=0.729, c1=1.49445, c2=1.49445
+
+================================================================================
+                            分布式PSO优化算法 (Algorithm 2)                            
+================================================================================
+
+[Step 1] 初始化粒子群...
+   ✓ 粒子群初始化完成
+   ✓ 初始全局最佳适应度: 56.1855
+
+[开始迭代] 最大迭代次数: 50
+--------------------------------------------------------------------------------
+Iter   0 | Fitness:  56.1855 | Min Rate: 29.6058 Mbps | Sum Rate:  2591.53 Mbps | Mean Rate: 43.1922 Mbps
+Iter  10 | Fitness:  60.2620 | Min Rate: 32.1316 Mbps | Sum Rate:  2595.93 Mbps | Mean Rate: 43.2656 Mbps
+Iter  20 | Fitness:  62.1083 | Min Rate: 32.3158 Mbps | Sum Rate:  2622.47 Mbps | Mean Rate: 43.7079 Mbps
+Iter  30 | Fitness:  62.8731 | Min Rate: 32.4801 Mbps | Sum Rate:  2615.69 Mbps | Mean Rate: 43.5949 Mbps
+Iter  40 | Fitness:  62.8731 | Min Rate: 32.6915 Mbps | Sum Rate:  2603.43 Mbps | Mean Rate: 43.3905 Mbps
+Iter  49 | Fitness:  64.1079 | Min Rate: 34.8041 Mbps | Sum Rate:  2673.26 Mbps | Mean Rate: 44.5544 Mbps
+
+================================================================================
+                                      优化完成                                      
+================================================================================
+
+📊 最终性能指标:
+   - 总速率 (Sum Rate):      2660.12 Mbps
+   - 最小速率 (Min Rate):    34.2105 Mbps
+   - 平均速率 (Mean Rate):   44.3354 Mbps
+   - 速率标准差 (Std):        4.7758 Mbps
+   - 最佳适应度 (Fitness):   64.1079
+
+📈 性能提升:
+   - 总速率提升:   +2.65%
+   - 最小速率提升: +15.55%
+
+⏱️  计算时间:
+   - 总优化时间: 181.03 秒
+   - 平均每代:   3.621 秒
+
+✓ Distributed PSO Complete
+   Final Min Rate: 34.2105 Mbps
+   Final Sum Rate: 2660.12 Mbps
+   Time: 181.14 s
+
+================================================================================
+[4/4] Running NewSSA (OBL + Sine-Cosine)...
+================================================================================
+================================================================================
+开始NewSSA优化（论文算法）...
+  • 改进1: OBL策略 + 折射原理（公式18）
+  • 改进2: 正弦-余弦搜索（公式20）
+  • 改进3: 自适应参数r1和w（公式21-22）
+  • 麻雀数量: 30
+  • 最大迭代: 50
+  • 生产者: 20%, 警戒者: 15%
+================================================================================
+
+[1/5] OBL策略 + 折射原理初始化...
+[2/5] 计算初始适应度...
+  ✓ 初始最优适应度: 27.2583 Mbps
+
+[3/5] 开始迭代优化（50次）...
+--------------------------------------------------------------------------------
+Iter  10/50: Sum=2440.64Mbps, Min=27.9028Mbps, Time=5.553s
+Iter  20/50: Sum=2440.64Mbps, Min=27.9028Mbps, Time=5.490s
+Iter  30/50: Sum=2409.61Mbps, Min=28.1103Mbps, Time=5.466s
+Iter  40/50: Sum=2449.15Mbps, Min=28.1351Mbps, Time=5.453s
+Iter  50/50: Sum=2409.70Mbps, Min=28.6389Mbps, Time=5.551s
+
+[4/5] 整理最终结果...
+
+[5/5] 优化完成!
+================================================================================
+🎉 NewSSA优化完成!
+📊 最终总速率: 2409.70 Mbps
+🎯 最终最小速率: 28.6389 Mbps
+📈 平均速率: 40.6059 Mbps
+⏱️  优化时间: 272.95 秒
+================================================================================
+
+✓ NewSSA (OBL + Sine-Cosine) Complete
+   Final Min Rate: 28.6389 Mbps
+   Final Sum Rate: 2409.70 Mbps
+   Time: 275.77 s
+
+✓ 随机种子 67 完成（用时 10.0 分钟）
+  初始:   30.10 Mbps
+  VF:     36.63 Mbps (+21.7%)
+  GA:     28.02 Mbps (+-6.9%)
+  PSO:    34.21 Mbps (+13.7%)
+  NewSSA: 28.64 Mbps (+-4.8%)
+✓ 结果已保存到: result/seeds_66_76_partial_2.json
+
+==========================================================================================
+                                    运行 3/11: 随机种子 = 68                                    
+==========================================================================================
+================================================================================
+                      FAIR OPTIMIZER COMPARISON EXPERIMENT                      
+================================================================================
+
+公平性保证：
+  ✓ 总评估次数: 1500 (种群30 × 迭代50)
+  ✓ 信道实现次数: 50
+  ✓ 随机种子: 68
+  ✓ 相同的初始位置和场景
+  ✓ 固定的导频分配
+
+
+[1/5] Generating neutral scenario...
+[Neutral Initialization]
+  ✓ UE positions: 60 users randomly distributed
+  ✓ Ground APs: 4 APs uniformly distributed (2x2 grid)
+  ✓ UAVs: 9 UAVs in 3x3 grid
+  ✓ Random seed: 68
+
+[2/5] Creating fair configurations...
+  ✓ All configurations created with unified parameters
+
+[3/5] Computing initial performance...
+  Initial Min Rate: 29.7245 Mbps
+  Initial Sum Rate: 2608.97 Mbps
+  Initial Mean Rate: 43.4828 Mbps
+  Initial Std Rate: 6.6972 Mbps
+
+[4/5] Running optimizers...
+
+================================================================================
+[4/4] Running Balanced Virtual Force Optimizer V3...
+================================================================================
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2543.86Mbps, Min=29.4719Mbps, BestMin=29.4719Mbps (Iter0), Time=0.091s
+Iter 10: Sum=2627.74Mbps, Min=31.8113Mbps, BestMin=33.9884Mbps (Iter9), Time=0.091s
+Iter 20: Sum=2587.94Mbps, Min=33.0103Mbps, BestMin=34.3129Mbps (Iter12), Time=0.091s
+Iter 30: Sum=2600.04Mbps, Min=32.4574Mbps, BestMin=34.3129Mbps (Iter12), Time=0.091s
+
+🔄 智能重启 #1 (Iter 37)
+Iter 40: Sum=2514.93Mbps, Min=24.9794Mbps, BestMin=34.3129Mbps (Iter12), Time=0.091s
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 12 次迭代
+📊 历代最优总速率: 2636.16 Mbps
+🎯 历代最优最小速率: 34.3129 Mbps
+📈 速率标准差: 5.3959 Mbps
+⏱️  优化时间: 4.63 秒
+⚡ 平均每次迭代: 0.093 秒
+🔄 重启次数: 1
+
+✓ Balanced Virtual Force Optimizer V3 Complete
+   Final Min Rate: 34.3129 Mbps
+   Final Sum Rate: 2636.16 Mbps
+   Time: 4.64 s
+
+================================================================================
+[4/4] Running Discrete Genetic Algorithm...
+================================================================================
+离散网格生成完成: 9x9 = 81个候选点
+开始离散遗传算法优化（网格: 9x9）...
+Gen 0: Fitness=3.1692, Sum=2477.19Mbps, Min=22.6523Mbps, Time=2.820s
+Gen 10: Fitness=3.3366, Sum=2478.45Mbps, Min=26.5948Mbps, Time=2.806s
+Gen 20: Fitness=3.3545, Sum=2536.88Mbps, Min=27.1311Mbps, Time=2.808s
+Gen 30: Fitness=3.3545, Sum=2550.05Mbps, Min=26.7674Mbps, Time=2.814s
+Gen 40: Fitness=3.3840, Sum=2595.46Mbps, Min=28.8903Mbps, Time=2.814s
+
+🎉 离散遗传算法优化完成!
+✨ 最佳性能出现在第 34 代
+📊 最终总速率: 2605.90 Mbps
+🎯 最终最小速率: 26.5837 Mbps
+📈 速率标准差: 9.2689 Mbps
+⏱️  优化时间: 140.69 秒
+⚡ 平均每代: 2.814 秒
+🎲 使用网格点: [1, 2, 16, 30, 37, 50, 58, 62, 75]
+
+✓ Discrete Genetic Algorithm Complete
+   Final Min Rate: 26.5837 Mbps
+   Final Sum Rate: 2605.90 Mbps
+   Time: 140.78 s
+
+================================================================================
+[4/4] Running Distributed PSO...
+================================================================================
+✅ 分布式PSO优化器初始化完成
+   - 粒子数量: 30
+   - 最大迭代次数: 50
+   - PSO参数: w=0.729, c1=1.49445, c2=1.49445
+
+================================================================================
+                            分布式PSO优化算法 (Algorithm 2)                            
+================================================================================
+
+[Step 1] 初始化粒子群...
+   ✓ 粒子群初始化完成
+   ✓ 初始全局最佳适应度: 55.8786
+
+[开始迭代] 最大迭代次数: 50
+--------------------------------------------------------------------------------
+Iter   0 | Fitness:  55.8786 | Min Rate: 28.1511 Mbps | Sum Rate:  2580.98 Mbps | Mean Rate: 43.0163 Mbps
+Iter  10 | Fitness:  55.8786 | Min Rate: 31.0429 Mbps | Sum Rate:  2565.80 Mbps | Mean Rate: 42.7634 Mbps
+Iter  20 | Fitness:  61.7462 | Min Rate: 34.7336 Mbps | Sum Rate:  2580.84 Mbps | Mean Rate: 43.0141 Mbps
+Iter  30 | Fitness:  61.7462 | Min Rate: 31.9733 Mbps | Sum Rate:  2567.41 Mbps | Mean Rate: 42.7901 Mbps
+Iter  40 | Fitness:  61.7462 | Min Rate: 30.5918 Mbps | Sum Rate:  2591.26 Mbps | Mean Rate: 43.1877 Mbps
+Iter  49 | Fitness:  61.7462 | Min Rate: 34.1365 Mbps | Sum Rate:  2606.48 Mbps | Mean Rate: 43.4413 Mbps
+
+================================================================================
+                                      优化完成                                      
+================================================================================
+
+📊 最终性能指标:
+   - 总速率 (Sum Rate):      2575.24 Mbps
+   - 最小速率 (Min Rate):    28.7209 Mbps
+   - 平均速率 (Mean Rate):   42.9207 Mbps
+   - 速率标准差 (Std):        6.4326 Mbps
+   - 最佳适应度 (Fitness):   61.7462
+
+📈 性能提升:
+   - 总速率提升:   -0.22%
+   - 最小速率提升: +2.02%
+
+⏱️  计算时间:
+   - 总优化时间: 181.11 秒
+   - 平均每代:   3.622 秒
+
+✓ Distributed PSO Complete
+   Final Min Rate: 28.7209 Mbps
+   Final Sum Rate: 2575.24 Mbps
+   Time: 181.23 s
+
+================================================================================
+[4/4] Running NewSSA (OBL + Sine-Cosine)...
+================================================================================
+================================================================================
+开始NewSSA优化（论文算法）...
+  • 改进1: OBL策略 + 折射原理（公式18）
+  • 改进2: 正弦-余弦搜索（公式20）
+  • 改进3: 自适应参数r1和w（公式21-22）
+  • 麻雀数量: 30
+  • 最大迭代: 50
+  • 生产者: 20%, 警戒者: 15%
+================================================================================
+
+[1/5] OBL策略 + 折射原理初始化...
+[2/5] 计算初始适应度...
+  ✓ 初始最优适应度: 20.6509 Mbps
+
+[3/5] 开始迭代优化（50次）...
+--------------------------------------------------------------------------------
+Iter  10/50: Sum=2531.75Mbps, Min=23.9223Mbps, Time=5.436s
+Iter  20/50: Sum=2473.54Mbps, Min=24.1642Mbps, Time=5.487s
+Iter  30/50: Sum=2398.87Mbps, Min=26.1730Mbps, Time=5.477s
+Iter  40/50: Sum=2392.47Mbps, Min=26.3934Mbps, Time=5.447s
+Iter  50/50: Sum=2392.47Mbps, Min=26.3934Mbps, Time=5.447s
+
+[4/5] 整理最终结果...
+
+[5/5] 优化完成!
+================================================================================
+🎉 NewSSA优化完成!
+📊 最终总速率: 2392.47 Mbps
+🎯 最终最小速率: 26.3934 Mbps
+📈 平均速率: 40.0497 Mbps
+⏱️  优化时间: 273.22 秒
+================================================================================
+
+✓ NewSSA (OBL + Sine-Cosine) Complete
+   Final Min Rate: 26.3934 Mbps
+   Final Sum Rate: 2392.47 Mbps
+   Time: 276.05 s
+
+✓ 随机种子 68 完成（用时 10.0 分钟）
+  初始:   29.72 Mbps
+  VF:     34.31 Mbps (+15.4%)
+  GA:     26.58 Mbps (+-10.6%)
+  PSO:    28.72 Mbps (+-3.4%)
+  NewSSA: 26.39 Mbps (+-11.2%)
+✓ 结果已保存到: result/seeds_66_76_partial_3.json
+
+==========================================================================================
+                                    运行 4/11: 随机种子 = 69                                    
+==========================================================================================
+================================================================================
+                      FAIR OPTIMIZER COMPARISON EXPERIMENT                      
+================================================================================
+
+公平性保证：
+  ✓ 总评估次数: 1500 (种群30 × 迭代50)
+  ✓ 信道实现次数: 50
+  ✓ 随机种子: 69
+  ✓ 相同的初始位置和场景
+  ✓ 固定的导频分配
+
+
+[1/5] Generating neutral scenario...
+[Neutral Initialization]
+  ✓ UE positions: 60 users randomly distributed
+  ✓ Ground APs: 4 APs uniformly distributed (2x2 grid)
+  ✓ UAVs: 9 UAVs in 3x3 grid
+  ✓ Random seed: 69
+
+[2/5] Creating fair configurations...
+  ✓ All configurations created with unified parameters
+
+[3/5] Computing initial performance...
+  Initial Min Rate: 29.9176 Mbps
+  Initial Sum Rate: 2569.64 Mbps
+  Initial Mean Rate: 42.8273 Mbps
+  Initial Std Rate: 5.3534 Mbps
+
+[4/5] Running optimizers...
+
+================================================================================
+[4/4] Running Balanced Virtual Force Optimizer V3...
+================================================================================
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2590.70Mbps, Min=35.5411Mbps, BestMin=35.5411Mbps (Iter0), Time=0.092s
+Iter 10: Sum=2592.14Mbps, Min=33.6200Mbps, BestMin=37.1522Mbps (Iter9), Time=0.091s
+Iter 20: Sum=2607.41Mbps, Min=31.2193Mbps, BestMin=37.1522Mbps (Iter9), Time=0.092s
+Iter 30: Sum=2637.12Mbps, Min=32.7278Mbps, BestMin=37.1522Mbps (Iter9), Time=0.091s
+
+🔄 智能重启 #1 (Iter 34)
+Iter 40: Sum=2542.66Mbps, Min=28.5015Mbps, BestMin=37.1522Mbps (Iter9), Time=0.090s
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 9 次迭代
+📊 历代最优总速率: 2649.54 Mbps
+🎯 历代最优最小速率: 37.1522 Mbps
+📈 速率标准差: 4.8948 Mbps
+⏱️  优化时间: 4.65 秒
+⚡ 平均每次迭代: 0.093 秒
+🔄 重启次数: 1
+
+✓ Balanced Virtual Force Optimizer V3 Complete
+   Final Min Rate: 37.1522 Mbps
+   Final Sum Rate: 2649.54 Mbps
+   Time: 4.65 s
+
+================================================================================
+[4/4] Running Discrete Genetic Algorithm...
+================================================================================
+离散网格生成完成: 9x9 = 81个候选点
+开始离散遗传算法优化（网格: 9x9）...
+Gen 0: Fitness=3.2866, Sum=2471.97Mbps, Min=21.7446Mbps, Time=2.805s
+Gen 10: Fitness=3.4168, Sum=2609.21Mbps, Min=30.6286Mbps, Time=2.809s
+Gen 20: Fitness=3.5001, Sum=2588.95Mbps, Min=31.8664Mbps, Time=2.819s
+Gen 30: Fitness=3.5018, Sum=2650.43Mbps, Min=30.3257Mbps, Time=2.820s
+Gen 40: Fitness=3.5386, Sum=2615.63Mbps, Min=34.3716Mbps, Time=2.812s
+
+🎉 离散遗传算法优化完成!
+✨ 最佳性能出现在第 42 代
+📊 最终总速率: 2616.67 Mbps
+🎯 最终最小速率: 34.1051 Mbps
+📈 速率标准差: 5.1293 Mbps
+⏱️  优化时间: 141.01 秒
+⚡ 平均每代: 2.820 秒
+🎲 使用网格点: [0, 6, 31, 34, 37, 48, 49, 60, 76]
+
+✓ Discrete Genetic Algorithm Complete
+   Final Min Rate: 34.1051 Mbps
+   Final Sum Rate: 2616.67 Mbps
+   Time: 141.10 s
+
+================================================================================
+[4/4] Running Distributed PSO...
+================================================================================
+✅ 分布式PSO优化器初始化完成
+   - 粒子数量: 30
+   - 最大迭代次数: 50
+   - PSO参数: w=0.729, c1=1.49445, c2=1.49445
+
+================================================================================
+                            分布式PSO优化算法 (Algorithm 2)                            
+================================================================================
+
+[Step 1] 初始化粒子群...
+   ✓ 粒子群初始化完成
+   ✓ 初始全局最佳适应度: 59.9030
+
+[开始迭代] 最大迭代次数: 50
+--------------------------------------------------------------------------------
+Iter   0 | Fitness:  59.9030 | Min Rate: 33.3182 Mbps | Sum Rate:  2562.70 Mbps | Mean Rate: 42.7117 Mbps
+Iter  10 | Fitness:  60.4309 | Min Rate: 34.4447 Mbps | Sum Rate:  2556.12 Mbps | Mean Rate: 42.6021 Mbps
+Iter  20 | Fitness:  61.4700 | Min Rate: 34.3959 Mbps | Sum Rate:  2567.42 Mbps | Mean Rate: 42.7903 Mbps
+Iter  30 | Fitness:  62.9687 | Min Rate: 35.7414 Mbps | Sum Rate:  2599.75 Mbps | Mean Rate: 43.3292 Mbps
+Iter  40 | Fitness:  63.8864 | Min Rate: 36.2398 Mbps | Sum Rate:  2648.25 Mbps | Mean Rate: 44.1376 Mbps
+Iter  49 | Fitness:  64.3287 | Min Rate: 36.0299 Mbps | Sum Rate:  2640.03 Mbps | Mean Rate: 44.0006 Mbps
+
+================================================================================
+                                      优化完成                                      
+================================================================================
+
+📊 最终性能指标:
+   - 总速率 (Sum Rate):      2651.93 Mbps
+   - 最小速率 (Min Rate):    36.9006 Mbps
+   - 平均速率 (Mean Rate):   44.1989 Mbps
+   - 速率标准差 (Std):        4.9415 Mbps
+   - 最佳适应度 (Fitness):   64.3287
+
+📈 性能提升:
+   - 总速率提升:   +3.48%
+   - 最小速率提升: +10.75%
+
+⏱️  计算时间:
+   - 总优化时间: 180.95 秒
+   - 平均每代:   3.619 秒
+
+✓ Distributed PSO Complete
+   Final Min Rate: 36.9006 Mbps
+   Final Sum Rate: 2651.93 Mbps
+   Time: 181.06 s
+
+================================================================================
+[4/4] Running NewSSA (OBL + Sine-Cosine)...
+================================================================================
+================================================================================
+开始NewSSA优化（论文算法）...
+  • 改进1: OBL策略 + 折射原理（公式18）
+  • 改进2: 正弦-余弦搜索（公式20）
+  • 改进3: 自适应参数r1和w（公式21-22）
+  • 麻雀数量: 30
+  • 最大迭代: 50
+  • 生产者: 20%, 警戒者: 15%
+================================================================================
+
+[1/5] OBL策略 + 折射原理初始化...
+[2/5] 计算初始适应度...
+  ✓ 初始最优适应度: 26.4631 Mbps
+
+[3/5] 开始迭代优化（50次）...
+--------------------------------------------------------------------------------
+Iter  10/50: Sum=2524.99Mbps, Min=29.3544Mbps, Time=5.428s
+Iter  20/50: Sum=2494.61Mbps, Min=31.2926Mbps, Time=5.461s
+Iter  30/50: Sum=2511.18Mbps, Min=31.8537Mbps, Time=5.434s
+Iter  40/50: Sum=2511.18Mbps, Min=31.8537Mbps, Time=5.440s
+Iter  50/50: Sum=2511.18Mbps, Min=31.8537Mbps, Time=5.423s
+
+[4/5] 整理最终结果...
+
+[5/5] 优化完成!
+================================================================================
+🎉 NewSSA优化完成!
+📊 最终总速率: 2511.18 Mbps
+🎯 最终最小速率: 31.8537 Mbps
+📈 平均速率: 41.4202 Mbps
+⏱️  优化时间: 272.21 秒
+================================================================================
+
+✓ NewSSA (OBL + Sine-Cosine) Complete
+   Final Min Rate: 31.8537 Mbps
+   Final Sum Rate: 2511.18 Mbps
+   Time: 275.02 s
+
+✓ 随机种子 69 完成（用时 10.0 分钟）
+  初始:   29.92 Mbps
+  VF:     37.15 Mbps (+24.2%)
+  GA:     34.11 Mbps (+14.0%)
+  PSO:    36.90 Mbps (+23.3%)
+  NewSSA: 31.85 Mbps (+6.5%)
+✓ 结果已保存到: result/seeds_66_76_partial_4.json
+
+==========================================================================================
+                                    运行 5/11: 随机种子 = 70                                    
+==========================================================================================
+================================================================================
+                      FAIR OPTIMIZER COMPARISON EXPERIMENT                      
+================================================================================
+
+公平性保证：
+  ✓ 总评估次数: 1500 (种群30 × 迭代50)
+  ✓ 信道实现次数: 50
+  ✓ 随机种子: 70
+  ✓ 相同的初始位置和场景
+  ✓ 固定的导频分配
+
+
+[1/5] Generating neutral scenario...
+[Neutral Initialization]
+  ✓ UE positions: 60 users randomly distributed
+  ✓ Ground APs: 4 APs uniformly distributed (2x2 grid)
+  ✓ UAVs: 9 UAVs in 3x3 grid
+  ✓ Random seed: 70
+
+[2/5] Creating fair configurations...
+  ✓ All configurations created with unified parameters
+
+[3/5] Computing initial performance...
+  Initial Min Rate: 27.6829 Mbps
+  Initial Sum Rate: 2593.08 Mbps
+  Initial Mean Rate: 43.2180 Mbps
+  Initial Std Rate: 6.8933 Mbps
+
+[4/5] Running optimizers...
+
+================================================================================
+[4/4] Running Balanced Virtual Force Optimizer V3...
+================================================================================
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2594.32Mbps, Min=28.5626Mbps, BestMin=28.5626Mbps (Iter0), Time=0.092s
+Iter 10: Sum=2617.20Mbps, Min=33.0503Mbps, BestMin=36.5144Mbps (Iter6), Time=0.091s
+Iter 20: Sum=2630.87Mbps, Min=33.7790Mbps, BestMin=36.5144Mbps (Iter6), Time=0.091s
+Iter 30: Sum=2628.98Mbps, Min=33.6968Mbps, BestMin=36.5144Mbps (Iter6), Time=0.091s
+
+🔄 智能重启 #1 (Iter 31)
+Iter 40: Sum=2627.33Mbps, Min=31.4795Mbps, BestMin=36.5144Mbps (Iter6), Time=0.091s
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 6 次迭代
+📊 历代最优总速率: 2625.92 Mbps
+🎯 历代最优最小速率: 36.5144 Mbps
+📈 速率标准差: 4.8756 Mbps
+⏱️  优化时间: 4.64 秒
+⚡ 平均每次迭代: 0.093 秒
+🔄 重启次数: 1
+
+✓ Balanced Virtual Force Optimizer V3 Complete
+   Final Min Rate: 36.5144 Mbps
+   Final Sum Rate: 2625.92 Mbps
+   Time: 4.64 s
+
+================================================================================
+[4/4] Running Discrete Genetic Algorithm...
+================================================================================
+离散网格生成完成: 9x9 = 81个候选点
+开始离散遗传算法优化（网格: 9x9）...
+Gen 0: Fitness=3.3522, Sum=2556.36Mbps, Min=28.9255Mbps, Time=2.810s
+Gen 10: Fitness=3.4504, Sum=2609.18Mbps, Min=30.3550Mbps, Time=2.810s
+Gen 20: Fitness=3.4803, Sum=2632.81Mbps, Min=29.2440Mbps, Time=2.810s
+Gen 30: Fitness=3.4803, Sum=2628.36Mbps, Min=30.6804Mbps, Time=2.801s
+Gen 40: Fitness=3.4897, Sum=2557.06Mbps, Min=33.1499Mbps, Time=2.906s
+
+🎉 离散遗传算法优化完成!
+✨ 最佳性能出现在第 46 代
+📊 最终总速率: 2528.16 Mbps
+🎯 最终最小速率: 31.6342 Mbps
+📈 速率标准差: 7.6279 Mbps
+⏱️  优化时间: 142.24 秒
+⚡ 平均每代: 2.845 秒
+🎲 使用网格点: [4, 10, 17, 28, 40, 54, 62, 64, 79]
+
+✓ Discrete Genetic Algorithm Complete
+   Final Min Rate: 31.6342 Mbps
+   Final Sum Rate: 2528.16 Mbps
+   Time: 142.33 s
+
+================================================================================
+[4/4] Running Distributed PSO...
+================================================================================
+✅ 分布式PSO优化器初始化完成
+   - 粒子数量: 30
+   - 最大迭代次数: 50
+   - PSO参数: w=0.729, c1=1.49445, c2=1.49445
+
+================================================================================
+                            分布式PSO优化算法 (Algorithm 2)                            
+================================================================================
+
+[Step 1] 初始化粒子群...
+   ✓ 粒子群初始化完成
+   ✓ 初始全局最佳适应度: 55.6040
+
+[开始迭代] 最大迭代次数: 50
+--------------------------------------------------------------------------------
+Iter   0 | Fitness:  55.6040 | Min Rate: 28.4662 Mbps | Sum Rate:  2665.98 Mbps | Mean Rate: 44.4330 Mbps
+Iter  10 | Fitness:  57.6508 | Min Rate: 28.6246 Mbps | Sum Rate:  2608.87 Mbps | Mean Rate: 43.4811 Mbps
+Iter  20 | Fitness:  62.1885 | Min Rate: 35.9580 Mbps | Sum Rate:  2647.46 Mbps | Mean Rate: 44.1243 Mbps
+Iter  30 | Fitness:  63.0736 | Min Rate: 35.5521 Mbps | Sum Rate:  2622.71 Mbps | Mean Rate: 43.7118 Mbps
+Iter  40 | Fitness:  63.0736 | Min Rate: 34.3125 Mbps | Sum Rate:  2612.71 Mbps | Mean Rate: 43.5452 Mbps
+Iter  49 | Fitness:  63.1701 | Min Rate: 34.7690 Mbps | Sum Rate:  2639.58 Mbps | Mean Rate: 43.9930 Mbps
+
+================================================================================
+                                      优化完成                                      
+================================================================================
+
+📊 最终性能指标:
+   - 总速率 (Sum Rate):      2634.06 Mbps
+   - 最小速率 (Min Rate):    34.1970 Mbps
+   - 平均速率 (Mean Rate):   43.9010 Mbps
+   - 速率标准差 (Std):        4.9295 Mbps
+   - 最佳适应度 (Fitness):   63.1701
+
+📈 性能提升:
+   - 总速率提升:   -1.20%
+   - 最小速率提升: +20.13%
+
+⏱️  计算时间:
+   - 总优化时间: 181.11 秒
+   - 平均每代:   3.622 秒
+
+✓ Distributed PSO Complete
+   Final Min Rate: 34.1970 Mbps
+   Final Sum Rate: 2634.06 Mbps
+   Time: 181.23 s
+
+================================================================================
+[4/4] Running NewSSA (OBL + Sine-Cosine)...
+================================================================================
+================================================================================
+开始NewSSA优化（论文算法）...
+  • 改进1: OBL策略 + 折射原理（公式18）
+  • 改进2: 正弦-余弦搜索（公式20）
+  • 改进3: 自适应参数r1和w（公式21-22）
+  • 麻雀数量: 30
+  • 最大迭代: 50
+  • 生产者: 20%, 警戒者: 15%
+================================================================================
+
+[1/5] OBL策略 + 折射原理初始化...
+[2/5] 计算初始适应度...
+  ✓ 初始最优适应度: 26.7915 Mbps
+
+[3/5] 开始迭代优化（50次）...
+--------------------------------------------------------------------------------
+Iter  10/50: Sum=2559.88Mbps, Min=26.7915Mbps, Time=5.436s
+Iter  20/50: Sum=2512.89Mbps, Min=28.0325Mbps, Time=5.449s
+Iter  30/50: Sum=2514.20Mbps, Min=28.0438Mbps, Time=5.461s
+Iter  40/50: Sum=2514.20Mbps, Min=28.0438Mbps, Time=5.432s
+Iter  50/50: Sum=2514.20Mbps, Min=28.0438Mbps, Time=5.453s
+
+[4/5] 整理最终结果...
+
+[5/5] 优化完成!
+================================================================================
+🎉 NewSSA优化完成!
+📊 最终总速率: 2514.20 Mbps
+🎯 最终最小速率: 28.0438 Mbps
+📈 平均速率: 41.2411 Mbps
+⏱️  优化时间: 272.19 秒
+================================================================================
+
+✓ NewSSA (OBL + Sine-Cosine) Complete
+   Final Min Rate: 28.0438 Mbps
+   Final Sum Rate: 2514.20 Mbps
+   Time: 275.00 s
+
+✓ 随机种子 70 完成（用时 10.1 分钟）
+  初始:   27.68 Mbps
+  VF:     36.51 Mbps (+31.9%)
+  GA:     31.63 Mbps (+14.3%)
+  PSO:    34.20 Mbps (+23.5%)
+  NewSSA: 28.04 Mbps (+1.3%)
+✓ 结果已保存到: result/seeds_66_76_partial_5.json
+
+==========================================================================================
+                                    运行 6/11: 随机种子 = 71                                    
+==========================================================================================
+================================================================================
+                      FAIR OPTIMIZER COMPARISON EXPERIMENT                      
+================================================================================
+
+公平性保证：
+  ✓ 总评估次数: 1500 (种群30 × 迭代50)
+  ✓ 信道实现次数: 50
+  ✓ 随机种子: 71
+  ✓ 相同的初始位置和场景
+  ✓ 固定的导频分配
+
+
+[1/5] Generating neutral scenario...
+[Neutral Initialization]
+  ✓ UE positions: 60 users randomly distributed
+  ✓ Ground APs: 4 APs uniformly distributed (2x2 grid)
+  ✓ UAVs: 9 UAVs in 3x3 grid
+  ✓ Random seed: 71
+
+[2/5] Creating fair configurations...
+  ✓ All configurations created with unified parameters
+
+[3/5] Computing initial performance...
+  Initial Min Rate: 31.3181 Mbps
+  Initial Sum Rate: 2667.81 Mbps
+  Initial Mean Rate: 44.4634 Mbps
+  Initial Std Rate: 6.5231 Mbps
+
+[4/5] Running optimizers...
+
+================================================================================
+[4/4] Running Balanced Virtual Force Optimizer V3...
+================================================================================
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2665.24Mbps, Min=31.2604Mbps, BestMin=31.2604Mbps (Iter0), Time=0.091s
+Iter 10: Sum=2767.81Mbps, Min=35.0024Mbps, BestMin=35.0024Mbps (Iter10), Time=0.091s
+Iter 20: Sum=2662.56Mbps, Min=32.2351Mbps, BestMin=35.0024Mbps (Iter10), Time=0.092s
+Iter 30: Sum=2646.84Mbps, Min=35.8469Mbps, BestMin=35.8469Mbps (Iter30), Time=0.090s
+Iter 40: Sum=2700.65Mbps, Min=35.0393Mbps, BestMin=37.0688Mbps (Iter39), Time=0.091s
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 39 次迭代
+📊 历代最优总速率: 2709.79 Mbps
+🎯 历代最优最小速率: 37.0688 Mbps
+📈 速率标准差: 5.9540 Mbps
+⏱️  优化时间: 4.64 秒
+⚡ 平均每次迭代: 0.093 秒
+🔄 重启次数: 0
+
+✓ Balanced Virtual Force Optimizer V3 Complete
+   Final Min Rate: 37.0688 Mbps
+   Final Sum Rate: 2709.79 Mbps
+   Time: 4.64 s
+
+================================================================================
+[4/4] Running Discrete Genetic Algorithm...
+================================================================================
+离散网格生成完成: 9x9 = 81个候选点
+开始离散遗传算法优化（网格: 9x9）...
+Gen 0: Fitness=3.1662, Sum=2520.18Mbps, Min=23.1564Mbps, Time=2.809s
+Gen 10: Fitness=3.4493, Sum=2639.84Mbps, Min=30.5398Mbps, Time=2.808s
+Gen 20: Fitness=3.4974, Sum=2732.00Mbps, Min=32.3885Mbps, Time=2.808s
+Gen 30: Fitness=3.5059, Sum=2649.41Mbps, Min=33.6662Mbps, Time=2.884s
+Gen 40: Fitness=3.5059, Sum=2676.60Mbps, Min=31.6114Mbps, Time=2.821s
+
+🎉 离散遗传算法优化完成!
+✨ 最佳性能出现在第 23 代
+📊 最终总速率: 2706.07 Mbps
+🎯 最终最小速率: 33.0032 Mbps
+📈 速率标准差: 7.6323 Mbps
+⏱️  优化时间: 140.79 秒
+⚡ 平均每代: 2.816 秒
+🎲 使用网格点: [10, 14, 18, 30, 35, 52, 64, 68, 76]
+
+✓ Discrete Genetic Algorithm Complete
+   Final Min Rate: 33.0032 Mbps
+   Final Sum Rate: 2706.07 Mbps
+   Time: 140.88 s
+
+================================================================================
+[4/4] Running Distributed PSO...
+================================================================================
+✅ 分布式PSO优化器初始化完成
+   - 粒子数量: 30
+   - 最大迭代次数: 50
+   - PSO参数: w=0.729, c1=1.49445, c2=1.49445
+
+================================================================================
+                            分布式PSO优化算法 (Algorithm 2)                            
+================================================================================
+
+[Step 1] 初始化粒子群...
+   ✓ 粒子群初始化完成
+   ✓ 初始全局最佳适应度: 59.3030
+
+[开始迭代] 最大迭代次数: 50
+--------------------------------------------------------------------------------
+Iter   0 | Fitness:  59.3030 | Min Rate: 31.9053 Mbps | Sum Rate:  2641.95 Mbps | Mean Rate: 44.0326 Mbps
+Iter  10 | Fitness:  60.4092 | Min Rate: 33.6839 Mbps | Sum Rate:  2648.34 Mbps | Mean Rate: 44.1390 Mbps
+Iter  20 | Fitness:  61.8804 | Min Rate: 31.1275 Mbps | Sum Rate:  2675.68 Mbps | Mean Rate: 44.5946 Mbps
+Iter  30 | Fitness:  63.3842 | Min Rate: 35.2489 Mbps | Sum Rate:  2641.17 Mbps | Mean Rate: 44.0196 Mbps
+Iter  40 | Fitness:  64.1358 | Min Rate: 35.4451 Mbps | Sum Rate:  2648.79 Mbps | Mean Rate: 44.1465 Mbps
+Iter  49 | Fitness:  64.2869 | Min Rate: 35.3424 Mbps | Sum Rate:  2669.52 Mbps | Mean Rate: 44.4921 Mbps
+
+================================================================================
+                                      优化完成                                      
+================================================================================
+
+📊 最终性能指标:
+   - 总速率 (Sum Rate):      2655.55 Mbps
+   - 最小速率 (Min Rate):    35.3269 Mbps
+   - 平均速率 (Mean Rate):   44.2591 Mbps
+   - 速率标准差 (Std):        4.9207 Mbps
+   - 最佳适应度 (Fitness):   64.2869
+
+📈 性能提升:
+   - 总速率提升:   +0.51%
+   - 最小速率提升: +10.72%
+
+⏱️  计算时间:
+   - 总优化时间: 180.74 秒
+   - 平均每代:   3.615 秒
+
+✓ Distributed PSO Complete
+   Final Min Rate: 35.3269 Mbps
+   Final Sum Rate: 2655.55 Mbps
+   Time: 180.85 s
+
+================================================================================
+[4/4] Running NewSSA (OBL + Sine-Cosine)...
+================================================================================
+================================================================================
+开始NewSSA优化（论文算法）...
+  • 改进1: OBL策略 + 折射原理（公式18）
+  • 改进2: 正弦-余弦搜索（公式20）
+  • 改进3: 自适应参数r1和w（公式21-22）
+  • 麻雀数量: 30
+  • 最大迭代: 50
+  • 生产者: 20%, 警戒者: 15%
+================================================================================
+
+[1/5] OBL策略 + 折射原理初始化...
+[2/5] 计算初始适应度...
+  ✓ 初始最优适应度: 26.6842 Mbps
+
+[3/5] 开始迭代优化（50次）...
+--------------------------------------------------------------------------------
+Iter  10/50: Sum=2649.11Mbps, Min=27.9289Mbps, Time=5.440s
+Iter  20/50: Sum=2649.11Mbps, Min=27.9289Mbps, Time=5.444s
+Iter  30/50: Sum=2657.63Mbps, Min=30.1469Mbps, Time=5.482s
+Iter  40/50: Sum=2657.63Mbps, Min=30.1469Mbps, Time=5.438s
+Iter  50/50: Sum=2657.63Mbps, Min=30.1469Mbps, Time=5.440s
+
+[4/5] 整理最终结果...
+
+[5/5] 优化完成!
+================================================================================
+🎉 NewSSA优化完成!
+📊 最终总速率: 2657.63 Mbps
+🎯 最终最小速率: 30.1469 Mbps
+📈 平均速率: 44.8028 Mbps
+⏱️  优化时间: 272.25 秒
+================================================================================
+
+✓ NewSSA (OBL + Sine-Cosine) Complete
+   Final Min Rate: 30.1469 Mbps
+   Final Sum Rate: 2657.63 Mbps
+   Time: 275.06 s
+
+✓ 随机种子 71 完成（用时 10.0 分钟）
+  初始:   31.32 Mbps
+  VF:     37.07 Mbps (+18.4%)
+  GA:     33.00 Mbps (+5.4%)
+  PSO:    35.33 Mbps (+12.8%)
+  NewSSA: 30.15 Mbps (+-3.7%)
+✓ 结果已保存到: result/seeds_66_76_partial_6.json
+
+==========================================================================================
+                                    运行 7/11: 随机种子 = 72                                    
+==========================================================================================
+================================================================================
+                      FAIR OPTIMIZER COMPARISON EXPERIMENT                      
+================================================================================
+
+公平性保证：
+  ✓ 总评估次数: 1500 (种群30 × 迭代50)
+  ✓ 信道实现次数: 50
+  ✓ 随机种子: 72
+  ✓ 相同的初始位置和场景
+  ✓ 固定的导频分配
+
+
+[1/5] Generating neutral scenario...
+[Neutral Initialization]
+  ✓ UE positions: 60 users randomly distributed
+  ✓ Ground APs: 4 APs uniformly distributed (2x2 grid)
+  ✓ UAVs: 9 UAVs in 3x3 grid
+  ✓ Random seed: 72
+
+[2/5] Creating fair configurations...
+  ✓ All configurations created with unified parameters
+
+[3/5] Computing initial performance...
+  Initial Min Rate: 33.9101 Mbps
+  Initial Sum Rate: 2631.56 Mbps
+  Initial Mean Rate: 43.8593 Mbps
+  Initial Std Rate: 5.8094 Mbps
+
+[4/5] Running optimizers...
+
+================================================================================
+[4/4] Running Balanced Virtual Force Optimizer V3...
+================================================================================
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2640.17Mbps, Min=30.9732Mbps, BestMin=30.9732Mbps (Iter0), Time=0.091s
+Iter 10: Sum=2710.56Mbps, Min=31.8959Mbps, BestMin=36.3703Mbps (Iter5), Time=0.092s
+Iter 20: Sum=2717.02Mbps, Min=33.3254Mbps, BestMin=36.3703Mbps (Iter5), Time=0.090s
+Iter 30: Sum=2688.15Mbps, Min=30.8998Mbps, BestMin=36.3703Mbps (Iter5), Time=0.091s
+
+🔄 智能重启 #1 (Iter 31)
+Iter 40: Sum=2661.71Mbps, Min=30.9140Mbps, BestMin=36.3703Mbps (Iter5), Time=0.092s
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 5 次迭代
+📊 历代最优总速率: 2726.77 Mbps
+🎯 历代最优最小速率: 36.3703 Mbps
+📈 速率标准差: 5.6712 Mbps
+⏱️  优化时间: 4.64 秒
+⚡ 平均每次迭代: 0.093 秒
+🔄 重启次数: 1
+
+✓ Balanced Virtual Force Optimizer V3 Complete
+   Final Min Rate: 36.3703 Mbps
+   Final Sum Rate: 2726.77 Mbps
+   Time: 4.64 s
+
+================================================================================
+[4/4] Running Discrete Genetic Algorithm...
+================================================================================
+离散网格生成完成: 9x9 = 81个候选点
+开始离散遗传算法优化（网格: 9x9）...
+Gen 0: Fitness=3.3184, Sum=2584.16Mbps, Min=28.2729Mbps, Time=2.838s
+Gen 10: Fitness=3.4714, Sum=2619.56Mbps, Min=31.2337Mbps, Time=2.805s
+Gen 20: Fitness=3.4714, Sum=2576.55Mbps, Min=29.6655Mbps, Time=2.811s
+Gen 30: Fitness=3.4714, Sum=2605.07Mbps, Min=30.0539Mbps, Time=2.807s
+Gen 40: Fitness=3.4714, Sum=2597.96Mbps, Min=30.6066Mbps, Time=2.811s
+
+🎉 离散遗传算法优化完成!
+✨ 最佳性能出现在第 10 代
+📊 最终总速率: 2582.83 Mbps
+🎯 最终最小速率: 31.0355 Mbps
+📈 速率标准差: 6.5705 Mbps
+⏱️  优化时间: 140.76 秒
+⚡ 平均每代: 2.815 秒
+🎲 使用网格点: [4, 9, 25, 29, 47, 50, 59, 63, 80]
+
+✓ Discrete Genetic Algorithm Complete
+   Final Min Rate: 31.0355 Mbps
+   Final Sum Rate: 2582.83 Mbps
+   Time: 140.85 s
+
+================================================================================
+[4/4] Running Distributed PSO...
+================================================================================
+✅ 分布式PSO优化器初始化完成
+   - 粒子数量: 30
+   - 最大迭代次数: 50
+   - PSO参数: w=0.729, c1=1.49445, c2=1.49445
+
+================================================================================
+                            分布式PSO优化算法 (Algorithm 2)                            
+================================================================================
+
+[Step 1] 初始化粒子群...
+   ✓ 粒子群初始化完成
+   ✓ 初始全局最佳适应度: 60.4984
+
+[开始迭代] 最大迭代次数: 50
+--------------------------------------------------------------------------------
+Iter   0 | Fitness:  60.4984 | Min Rate: 34.2238 Mbps | Sum Rate:  2609.63 Mbps | Mean Rate: 43.4939 Mbps
+Iter  10 | Fitness:  61.8952 | Min Rate: 35.4487 Mbps | Sum Rate:  2635.69 Mbps | Mean Rate: 43.9282 Mbps
+Iter  20 | Fitness:  63.4033 | Min Rate: 32.7553 Mbps | Sum Rate:  2670.26 Mbps | Mean Rate: 44.5044 Mbps
+Iter  30 | Fitness:  63.4033 | Min Rate: 33.7426 Mbps | Sum Rate:  2636.41 Mbps | Mean Rate: 43.9401 Mbps
+Iter  40 | Fitness:  63.4033 | Min Rate: 36.5279 Mbps | Sum Rate:  2662.94 Mbps | Mean Rate: 44.3823 Mbps
+Iter  49 | Fitness:  63.4033 | Min Rate: 34.3758 Mbps | Sum Rate:  2648.29 Mbps | Mean Rate: 44.1381 Mbps
+
+================================================================================
+                                      优化完成                                      
+================================================================================
+
+📊 最终性能指标:
+   - 总速率 (Sum Rate):      2647.64 Mbps
+   - 最小速率 (Min Rate):    34.7571 Mbps
+   - 平均速率 (Mean Rate):   44.1273 Mbps
+   - 速率标准差 (Std):        6.2065 Mbps
+   - 最佳适应度 (Fitness):   63.4033
+
+📈 性能提升:
+   - 总速率提升:   +1.46%
+   - 最小速率提升: +1.56%
+
+⏱️  计算时间:
+   - 总优化时间: 180.82 秒
+   - 平均每代:   3.616 秒
+
+✓ Distributed PSO Complete
+   Final Min Rate: 34.7571 Mbps
+   Final Sum Rate: 2647.64 Mbps
+   Time: 180.93 s
+
+================================================================================
+[4/4] Running NewSSA (OBL + Sine-Cosine)...
+================================================================================
+================================================================================
+开始NewSSA优化（论文算法）...
+  • 改进1: OBL策略 + 折射原理（公式18）
+  • 改进2: 正弦-余弦搜索（公式20）
+  • 改进3: 自适应参数r1和w（公式21-22）
+  • 麻雀数量: 30
+  • 最大迭代: 50
+  • 生产者: 20%, 警戒者: 15%
+================================================================================
+
+[1/5] OBL策略 + 折射原理初始化...
+[2/5] 计算初始适应度...
+  ✓ 初始最优适应度: 26.5457 Mbps
+
+[3/5] 开始迭代优化（50次）...
+--------------------------------------------------------------------------------
+Iter  10/50: Sum=2694.01Mbps, Min=29.7801Mbps, Time=5.452s
+Iter  20/50: Sum=2694.01Mbps, Min=29.7801Mbps, Time=5.447s
+Iter  30/50: Sum=2694.01Mbps, Min=29.7801Mbps, Time=5.466s
+Iter  40/50: Sum=2694.01Mbps, Min=29.7801Mbps, Time=5.494s
+Iter  50/50: Sum=2694.01Mbps, Min=29.7801Mbps, Time=5.456s
+
+[4/5] 整理最终结果...
+
+[5/5] 优化完成!
+================================================================================
+🎉 NewSSA优化完成!
+📊 最终总速率: 2694.01 Mbps
+🎯 最终最小速率: 29.7801 Mbps
+📈 平均速率: 44.7975 Mbps
+⏱️  优化时间: 273.04 秒
+================================================================================
+
+✓ NewSSA (OBL + Sine-Cosine) Complete
+   Final Min Rate: 29.7801 Mbps
+   Final Sum Rate: 2694.01 Mbps
+   Time: 275.86 s
+
+✓ 随机种子 72 完成（用时 10.0 分钟）
+  初始:   33.91 Mbps
+  VF:     36.37 Mbps (+7.3%)
+  GA:     31.04 Mbps (+-8.5%)
+  PSO:    34.76 Mbps (+2.5%)
+  NewSSA: 29.78 Mbps (+-12.2%)
+✓ 结果已保存到: result/seeds_66_76_partial_7.json
+
+==========================================================================================
+                                    运行 8/11: 随机种子 = 73                                    
+==========================================================================================
+================================================================================
+                      FAIR OPTIMIZER COMPARISON EXPERIMENT                      
+================================================================================
+
+公平性保证：
+  ✓ 总评估次数: 1500 (种群30 × 迭代50)
+  ✓ 信道实现次数: 50
+  ✓ 随机种子: 73
+  ✓ 相同的初始位置和场景
+  ✓ 固定的导频分配
+
+
+[1/5] Generating neutral scenario...
+[Neutral Initialization]
+  ✓ UE positions: 60 users randomly distributed
+  ✓ Ground APs: 4 APs uniformly distributed (2x2 grid)
+  ✓ UAVs: 9 UAVs in 3x3 grid
+  ✓ Random seed: 73
+
+[2/5] Creating fair configurations...
+  ✓ All configurations created with unified parameters
+
+[3/5] Computing initial performance...
+  Initial Min Rate: 27.8406 Mbps
+  Initial Sum Rate: 2584.28 Mbps
+  Initial Mean Rate: 43.0714 Mbps
+  Initial Std Rate: 6.3408 Mbps
+
+[4/5] Running optimizers...
+
+================================================================================
+[4/4] Running Balanced Virtual Force Optimizer V3...
+================================================================================
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2571.23Mbps, Min=29.2692Mbps, BestMin=29.2692Mbps (Iter0), Time=0.091s
+Iter 10: Sum=2501.61Mbps, Min=33.9909Mbps, BestMin=33.9909Mbps (Iter10), Time=0.090s
+Iter 20: Sum=2514.29Mbps, Min=32.7290Mbps, BestMin=33.9909Mbps (Iter10), Time=0.091s
+Iter 30: Sum=2575.44Mbps, Min=33.3782Mbps, BestMin=33.9909Mbps (Iter10), Time=0.092s
+Iter 40: Sum=2544.28Mbps, Min=33.9167Mbps, BestMin=35.4463Mbps (Iter34), Time=0.093s
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 34 次迭代
+📊 历代最优总速率: 2555.30 Mbps
+🎯 历代最优最小速率: 35.4463 Mbps
+📈 速率标准差: 5.7635 Mbps
+⏱️  优化时间: 4.67 秒
+⚡ 平均每次迭代: 0.093 秒
+🔄 重启次数: 0
+
+✓ Balanced Virtual Force Optimizer V3 Complete
+   Final Min Rate: 35.4463 Mbps
+   Final Sum Rate: 2555.30 Mbps
+   Time: 4.67 s
+
+================================================================================
+[4/4] Running Discrete Genetic Algorithm...
+================================================================================
+离散网格生成完成: 9x9 = 81个候选点
+开始离散遗传算法优化（网格: 9x9）...
+Gen 0: Fitness=3.0826, Sum=2477.70Mbps, Min=19.7465Mbps, Time=2.815s
+Gen 10: Fitness=3.3021, Sum=2451.94Mbps, Min=26.4158Mbps, Time=2.803s
+Gen 20: Fitness=3.3659, Sum=2512.96Mbps, Min=27.5885Mbps, Time=2.806s
+Gen 30: Fitness=3.3659, Sum=2557.92Mbps, Min=26.9659Mbps, Time=2.807s
+Gen 40: Fitness=3.3742, Sum=2534.33Mbps, Min=27.9296Mbps, Time=2.810s
+
+🎉 离散遗传算法优化完成!
+✨ 最佳性能出现在第 39 代
+📊 最终总速率: 2507.69 Mbps
+🎯 最终最小速率: 25.5535 Mbps
+📈 速率标准差: 8.2242 Mbps
+⏱️  优化时间: 140.55 秒
+⚡ 平均每代: 2.811 秒
+🎲 使用网格点: [2, 14, 21, 34, 46, 54, 59, 66, 77]
+
+✓ Discrete Genetic Algorithm Complete
+   Final Min Rate: 25.5535 Mbps
+   Final Sum Rate: 2507.69 Mbps
+   Time: 140.64 s
+
+================================================================================
+[4/4] Running Distributed PSO...
+================================================================================
+✅ 分布式PSO优化器初始化完成
+   - 粒子数量: 30
+   - 最大迭代次数: 50
+   - PSO参数: w=0.729, c1=1.49445, c2=1.49445
+
+================================================================================
+                            分布式PSO优化算法 (Algorithm 2)                            
+================================================================================
+
+[Step 1] 初始化粒子群...
+   ✓ 粒子群初始化完成
+   ✓ 初始全局最佳适应度: 53.4616
+
+[开始迭代] 最大迭代次数: 50
+--------------------------------------------------------------------------------
+Iter   0 | Fitness:  56.3115 | Min Rate: 30.8903 Mbps | Sum Rate:  2600.86 Mbps | Mean Rate: 43.3477 Mbps
+Iter  10 | Fitness:  58.1358 | Min Rate: 30.2274 Mbps | Sum Rate:  2586.03 Mbps | Mean Rate: 43.1004 Mbps
+Iter  20 | Fitness:  60.3180 | Min Rate: 35.1322 Mbps | Sum Rate:  2587.27 Mbps | Mean Rate: 43.1211 Mbps
+Iter  30 | Fitness:  60.8780 | Min Rate: 31.4052 Mbps | Sum Rate:  2555.04 Mbps | Mean Rate: 42.5840 Mbps
+Iter  40 | Fitness:  61.8135 | Min Rate: 31.0217 Mbps | Sum Rate:  2566.37 Mbps | Mean Rate: 42.7728 Mbps
+Iter  49 | Fitness:  61.8135 | Min Rate: 33.4583 Mbps | Sum Rate:  2603.09 Mbps | Mean Rate: 43.3848 Mbps
+
+================================================================================
+                                      优化完成                                      
+================================================================================
+
+📊 最终性能指标:
+   - 总速率 (Sum Rate):      2570.54 Mbps
+   - 最小速率 (Min Rate):    33.0691 Mbps
+   - 平均速率 (Mean Rate):   42.8423 Mbps
+   - 速率标准差 (Std):        5.7735 Mbps
+   - 最佳适应度 (Fitness):   61.8135
+
+📈 性能提升:
+   - 总速率提升:   -1.17%
+   - 最小速率提升: +7.05%
+
+⏱️  计算时间:
+   - 总优化时间: 180.93 秒
+   - 平均每代:   3.619 秒
+
+✓ Distributed PSO Complete
+   Final Min Rate: 33.0691 Mbps
+   Final Sum Rate: 2570.54 Mbps
+   Time: 181.04 s
+
+================================================================================
+[4/4] Running NewSSA (OBL + Sine-Cosine)...
+================================================================================
+================================================================================
+开始NewSSA优化（论文算法）...
+  • 改进1: OBL策略 + 折射原理（公式18）
+  • 改进2: 正弦-余弦搜索（公式20）
+  • 改进3: 自适应参数r1和w（公式21-22）
+  • 麻雀数量: 30
+  • 最大迭代: 50
+  • 生产者: 20%, 警戒者: 15%
+================================================================================
+
+[1/5] OBL策略 + 折射原理初始化...
+[2/5] 计算初始适应度...
+  ✓ 初始最优适应度: 22.7493 Mbps
+
+[3/5] 开始迭代优化（50次）...
+--------------------------------------------------------------------------------
+Iter  10/50: Sum=2329.60Mbps, Min=25.4471Mbps, Time=5.447s
+Iter  20/50: Sum=2329.60Mbps, Min=25.4471Mbps, Time=5.451s
+Iter  30/50: Sum=2329.60Mbps, Min=25.4471Mbps, Time=5.461s
+Iter  40/50: Sum=2314.51Mbps, Min=25.5724Mbps, Time=5.497s
+Iter  50/50: Sum=2314.51Mbps, Min=25.5724Mbps, Time=5.439s
+
+[4/5] 整理最终结果...
+
+[5/5] 优化完成!
+================================================================================
+🎉 NewSSA优化完成!
+📊 最终总速率: 2314.51 Mbps
+🎯 最终最小速率: 25.5724 Mbps
+📈 平均速率: 38.9569 Mbps
+⏱️  优化时间: 272.80 秒
+================================================================================
+
+✓ NewSSA (OBL + Sine-Cosine) Complete
+   Final Min Rate: 25.5724 Mbps
+   Final Sum Rate: 2314.51 Mbps
+   Time: 275.62 s
+
+✓ 随机种子 73 完成（用时 10.0 分钟）
+  初始:   27.84 Mbps
+  VF:     35.45 Mbps (+27.3%)
+  GA:     25.55 Mbps (+-8.2%)
+  PSO:    33.07 Mbps (+18.8%)
+  NewSSA: 25.57 Mbps (+-8.1%)
+✓ 结果已保存到: result/seeds_66_76_partial_8.json
+
+==========================================================================================
+                                    运行 9/11: 随机种子 = 74                                    
+==========================================================================================
+================================================================================
+                      FAIR OPTIMIZER COMPARISON EXPERIMENT                      
+================================================================================
+
+公平性保证：
+  ✓ 总评估次数: 1500 (种群30 × 迭代50)
+  ✓ 信道实现次数: 50
+  ✓ 随机种子: 74
+  ✓ 相同的初始位置和场景
+  ✓ 固定的导频分配
+
+
+[1/5] Generating neutral scenario...
+[Neutral Initialization]
+  ✓ UE positions: 60 users randomly distributed
+  ✓ Ground APs: 4 APs uniformly distributed (2x2 grid)
+  ✓ UAVs: 9 UAVs in 3x3 grid
+  ✓ Random seed: 74
+
+[2/5] Creating fair configurations...
+  ✓ All configurations created with unified parameters
+
+[3/5] Computing initial performance...
+  Initial Min Rate: 32.3375 Mbps
+  Initial Sum Rate: 2631.99 Mbps
+  Initial Mean Rate: 43.8665 Mbps
+  Initial Std Rate: 4.9732 Mbps
+
+[4/5] Running optimizers...
+
+================================================================================
+[4/4] Running Balanced Virtual Force Optimizer V3...
+================================================================================
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2647.77Mbps, Min=32.2892Mbps, BestMin=32.2892Mbps (Iter0), Time=0.092s
+Iter 10: Sum=2715.32Mbps, Min=36.2721Mbps, BestMin=36.2721Mbps (Iter10), Time=0.090s
+Iter 20: Sum=2680.99Mbps, Min=35.0248Mbps, BestMin=38.2681Mbps (Iter15), Time=0.092s
+Iter 30: Sum=2728.85Mbps, Min=35.5303Mbps, BestMin=38.3208Mbps (Iter28), Time=0.095s
+Iter 40: Sum=2719.82Mbps, Min=35.6072Mbps, BestMin=38.3208Mbps (Iter28), Time=0.090s
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 28 次迭代
+📊 历代最优总速率: 2733.83 Mbps
+🎯 历代最优最小速率: 38.3208 Mbps
+📈 速率标准差: 4.7036 Mbps
+⏱️  优化时间: 4.67 秒
+⚡ 平均每次迭代: 0.093 秒
+🔄 重启次数: 0
+
+✓ Balanced Virtual Force Optimizer V3 Complete
+   Final Min Rate: 38.3208 Mbps
+   Final Sum Rate: 2733.83 Mbps
+   Time: 4.67 s
+
+================================================================================
+[4/4] Running Discrete Genetic Algorithm...
+================================================================================
+离散网格生成完成: 9x9 = 81个候选点
+开始离散遗传算法优化（网格: 9x9）...
+Gen 0: Fitness=3.3334, Sum=2606.76Mbps, Min=26.0343Mbps, Time=2.825s
+Gen 10: Fitness=3.4492, Sum=2517.31Mbps, Min=30.3083Mbps, Time=2.817s
+Gen 20: Fitness=3.4492, Sum=2579.68Mbps, Min=30.1705Mbps, Time=2.849s
+Gen 30: Fitness=3.4495, Sum=2523.13Mbps, Min=29.4943Mbps, Time=2.811s
+Gen 40: Fitness=3.4542, Sum=2600.40Mbps, Min=31.1042Mbps, Time=2.827s
+
+🎉 离散遗传算法优化完成!
+✨ 最佳性能出现在第 45 代
+📊 最终总速率: 2603.18 Mbps
+🎯 最终最小速率: 31.9726 Mbps
+📈 速率标准差: 6.7208 Mbps
+⏱️  优化时间: 140.89 秒
+⚡ 平均每代: 2.818 秒
+🎲 使用网格点: [7, 9, 13, 20, 32, 34, 53, 54, 67]
+
+✓ Discrete Genetic Algorithm Complete
+   Final Min Rate: 31.9726 Mbps
+   Final Sum Rate: 2603.18 Mbps
+   Time: 140.99 s
+
+================================================================================
+[4/4] Running Distributed PSO...
+================================================================================
+✅ 分布式PSO优化器初始化完成
+   - 粒子数量: 30
+   - 最大迭代次数: 50
+   - PSO参数: w=0.729, c1=1.49445, c2=1.49445
+
+================================================================================
+                            分布式PSO优化算法 (Algorithm 2)                            
+================================================================================
+
+[Step 1] 初始化粒子群...
+   ✓ 粒子群初始化完成
+   ✓ 初始全局最佳适应度: 58.0823
+
+[开始迭代] 最大迭代次数: 50
+--------------------------------------------------------------------------------
+Iter   0 | Fitness:  58.0823 | Min Rate: 33.1490 Mbps | Sum Rate:  2626.10 Mbps | Mean Rate: 43.7683 Mbps
+Iter  10 | Fitness:  62.1727 | Min Rate: 35.0919 Mbps | Sum Rate:  2625.03 Mbps | Mean Rate: 43.7505 Mbps
+Iter  20 | Fitness:  63.6332 | Min Rate: 37.1991 Mbps | Sum Rate:  2623.83 Mbps | Mean Rate: 43.7304 Mbps
+Iter  30 | Fitness:  64.3841 | Min Rate: 33.9843 Mbps | Sum Rate:  2656.42 Mbps | Mean Rate: 44.2737 Mbps
+Iter  40 | Fitness:  65.4350 | Min Rate: 37.8243 Mbps | Sum Rate:  2652.00 Mbps | Mean Rate: 44.2000 Mbps
+Iter  49 | Fitness:  65.4350 | Min Rate: 35.5417 Mbps | Sum Rate:  2658.01 Mbps | Mean Rate: 44.3001 Mbps
+
+================================================================================
+                                      优化完成                                      
+================================================================================
+
+📊 最终性能指标:
+   - 总速率 (Sum Rate):      2664.09 Mbps
+   - 最小速率 (Min Rate):    36.0482 Mbps
+   - 平均速率 (Mean Rate):   44.4015 Mbps
+   - 速率标准差 (Std):        4.6650 Mbps
+   - 最佳适应度 (Fitness):   65.4350
+
+📈 性能提升:
+   - 总速率提升:   +1.45%
+   - 最小速率提升: +8.75%
+
+⏱️  计算时间:
+   - 总优化时间: 181.44 秒
+   - 平均每代:   3.629 秒
+
+✓ Distributed PSO Complete
+   Final Min Rate: 36.0482 Mbps
+   Final Sum Rate: 2664.09 Mbps
+   Time: 181.56 s
+
+================================================================================
+[4/4] Running NewSSA (OBL + Sine-Cosine)...
+================================================================================
+================================================================================
+开始NewSSA优化（论文算法）...
+  • 改进1: OBL策略 + 折射原理（公式18）
+  • 改进2: 正弦-余弦搜索（公式20）
+  • 改进3: 自适应参数r1和w（公式21-22）
+  • 麻雀数量: 30
+  • 最大迭代: 50
+  • 生产者: 20%, 警戒者: 15%
+================================================================================
+
+[1/5] OBL策略 + 折射原理初始化...
+[2/5] 计算初始适应度...
+  ✓ 初始最优适应度: 27.2051 Mbps
+
+[3/5] 开始迭代优化（50次）...
+--------------------------------------------------------------------------------
+Iter  10/50: Sum=2442.78Mbps, Min=28.1441Mbps, Time=5.449s
+Iter  20/50: Sum=2442.78Mbps, Min=28.1441Mbps, Time=5.447s
+Iter  30/50: Sum=2442.78Mbps, Min=28.1441Mbps, Time=5.459s
+Iter  40/50: Sum=2442.78Mbps, Min=28.1441Mbps, Time=5.474s
+Iter  50/50: Sum=2442.78Mbps, Min=28.1441Mbps, Time=5.471s
+
+[4/5] 整理最终结果...
+
+[5/5] 优化完成!
+================================================================================
+🎉 NewSSA优化完成!
+📊 最终总速率: 2442.78 Mbps
+🎯 最终最小速率: 28.1441 Mbps
+📈 平均速率: 40.9426 Mbps
+⏱️  优化时间: 272.95 秒
+================================================================================
+
+✓ NewSSA (OBL + Sine-Cosine) Complete
+   Final Min Rate: 28.1441 Mbps
+   Final Sum Rate: 2442.78 Mbps
+   Time: 275.76 s
+
+✓ 随机种子 74 完成（用时 10.1 分钟）
+  初始:   32.34 Mbps
+  VF:     38.32 Mbps (+18.5%)
+  GA:     31.97 Mbps (+-1.1%)
+  PSO:    36.05 Mbps (+11.5%)
+  NewSSA: 28.14 Mbps (+-13.0%)
+✓ 结果已保存到: result/seeds_66_76_partial_9.json
+
+==========================================================================================
+                                   运行 10/11: 随机种子 = 75                                    
+==========================================================================================
+================================================================================
+                      FAIR OPTIMIZER COMPARISON EXPERIMENT                      
+================================================================================
+
+公平性保证：
+  ✓ 总评估次数: 1500 (种群30 × 迭代50)
+  ✓ 信道实现次数: 50
+  ✓ 随机种子: 75
+  ✓ 相同的初始位置和场景
+  ✓ 固定的导频分配
+
+
+[1/5] Generating neutral scenario...
+[Neutral Initialization]
+  ✓ UE positions: 60 users randomly distributed
+  ✓ Ground APs: 4 APs uniformly distributed (2x2 grid)
+  ✓ UAVs: 9 UAVs in 3x3 grid
+  ✓ Random seed: 75
+
+[2/5] Creating fair configurations...
+  ✓ All configurations created with unified parameters
+
+[3/5] Computing initial performance...
+  Initial Min Rate: 29.1157 Mbps
+  Initial Sum Rate: 2550.12 Mbps
+  Initial Mean Rate: 42.5019 Mbps
+  Initial Std Rate: 6.4756 Mbps
+
+[4/5] Running optimizers...
+
+================================================================================
+[4/4] Running Balanced Virtual Force Optimizer V3...
+================================================================================
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2558.06Mbps, Min=32.2480Mbps, BestMin=32.2480Mbps (Iter0), Time=0.094s
+Iter 10: Sum=2611.18Mbps, Min=35.2328Mbps, BestMin=36.5859Mbps (Iter6), Time=0.091s
+Iter 20: Sum=2511.91Mbps, Min=34.2929Mbps, BestMin=36.5859Mbps (Iter6), Time=0.092s
+Iter 30: Sum=2523.00Mbps, Min=35.0498Mbps, BestMin=36.5859Mbps (Iter6), Time=0.091s
+
+🔄 智能重启 #1 (Iter 31)
+Iter 40: Sum=2501.76Mbps, Min=32.3899Mbps, BestMin=36.5859Mbps (Iter6), Time=0.090s
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 6 次迭代
+📊 历代最优总速率: 2583.53 Mbps
+🎯 历代最优最小速率: 36.5859 Mbps
+📈 速率标准差: 4.3169 Mbps
+⏱️  优化时间: 4.66 秒
+⚡ 平均每次迭代: 0.093 秒
+🔄 重启次数: 1
+
+✓ Balanced Virtual Force Optimizer V3 Complete
+   Final Min Rate: 36.5859 Mbps
+   Final Sum Rate: 2583.53 Mbps
+   Time: 4.66 s
+
+================================================================================
+[4/4] Running Discrete Genetic Algorithm...
+================================================================================
+离散网格生成完成: 9x9 = 81个候选点
+开始离散遗传算法优化（网格: 9x9）...
+Gen 0: Fitness=3.0750, Sum=2445.54Mbps, Min=22.5001Mbps, Time=2.811s
+Gen 10: Fitness=3.4098, Sum=2513.54Mbps, Min=29.8599Mbps, Time=2.800s
+Gen 20: Fitness=3.4141, Sum=2581.27Mbps, Min=30.1339Mbps, Time=2.833s
+Gen 30: Fitness=3.4434, Sum=2508.15Mbps, Min=28.0399Mbps, Time=2.804s
+Gen 40: Fitness=3.4724, Sum=2494.08Mbps, Min=31.9340Mbps, Time=2.832s
+
+🎉 离散遗传算法优化完成!
+✨ 最佳性能出现在第 45 代
+📊 最终总速率: 2452.37 Mbps
+🎯 最终最小速率: 32.0902 Mbps
+📈 速率标准差: 5.3015 Mbps
+⏱️  优化时间: 140.61 秒
+⚡ 平均每代: 2.812 秒
+🎲 使用网格点: [0, 25, 31, 32, 36, 53, 66, 68, 72]
+
+✓ Discrete Genetic Algorithm Complete
+   Final Min Rate: 32.0902 Mbps
+   Final Sum Rate: 2452.37 Mbps
+   Time: 140.70 s
+
+================================================================================
+[4/4] Running Distributed PSO...
+================================================================================
+✅ 分布式PSO优化器初始化完成
+   - 粒子数量: 30
+   - 最大迭代次数: 50
+   - PSO参数: w=0.729, c1=1.49445, c2=1.49445
+
+================================================================================
+                            分布式PSO优化算法 (Algorithm 2)                            
+================================================================================
+
+[Step 1] 初始化粒子群...
+   ✓ 粒子群初始化完成
+   ✓ 初始全局最佳适应度: 55.1623
+
+[开始迭代] 最大迭代次数: 50
+--------------------------------------------------------------------------------
+Iter   0 | Fitness:  55.1623 | Min Rate: 31.3184 Mbps | Sum Rate:  2554.13 Mbps | Mean Rate: 42.5688 Mbps
+Iter  10 | Fitness:  58.9951 | Min Rate: 33.8874 Mbps | Sum Rate:  2556.15 Mbps | Mean Rate: 42.6024 Mbps
+Iter  20 | Fitness:  61.9574 | Min Rate: 34.7843 Mbps | Sum Rate:  2558.39 Mbps | Mean Rate: 42.6399 Mbps
+Iter  30 | Fitness:  61.9574 | Min Rate: 32.1518 Mbps | Sum Rate:  2548.35 Mbps | Mean Rate: 42.4725 Mbps
+Iter  40 | Fitness:  61.9574 | Min Rate: 32.9595 Mbps | Sum Rate:  2553.45 Mbps | Mean Rate: 42.5576 Mbps
+Iter  49 | Fitness:  61.9574 | Min Rate: 34.1723 Mbps | Sum Rate:  2548.41 Mbps | Mean Rate: 42.4734 Mbps
+
+================================================================================
+                                      优化完成                                      
+================================================================================
+
+📊 最终性能指标:
+   - 总速率 (Sum Rate):      2519.85 Mbps
+   - 最小速率 (Min Rate):    32.3380 Mbps
+   - 平均速率 (Mean Rate):   41.9975 Mbps
+   - 速率标准差 (Std):        5.3394 Mbps
+   - 最佳适应度 (Fitness):   61.9574
+
+📈 性能提升:
+   - 总速率提升:   -1.34%
+   - 最小速率提升: +3.26%
+
+⏱️  计算时间:
+   - 总优化时间: 181.00 秒
+   - 平均每代:   3.620 秒
+
+✓ Distributed PSO Complete
+   Final Min Rate: 32.3380 Mbps
+   Final Sum Rate: 2519.85 Mbps
+   Time: 181.12 s
+
+================================================================================
+[4/4] Running NewSSA (OBL + Sine-Cosine)...
+================================================================================
+================================================================================
+开始NewSSA优化（论文算法）...
+  • 改进1: OBL策略 + 折射原理（公式18）
+  • 改进2: 正弦-余弦搜索（公式20）
+  • 改进3: 自适应参数r1和w（公式21-22）
+  • 麻雀数量: 30
+  • 最大迭代: 50
+  • 生产者: 20%, 警戒者: 15%
+================================================================================
+
+[1/5] OBL策略 + 折射原理初始化...
+[2/5] 计算初始适应度...
+  ✓ 初始最优适应度: 26.0631 Mbps
+
+[3/5] 开始迭代优化（50次）...
+--------------------------------------------------------------------------------
+Iter  10/50: Sum=2490.18Mbps, Min=29.9828Mbps, Time=5.446s
+Iter  20/50: Sum=2490.18Mbps, Min=29.9828Mbps, Time=5.443s
+Iter  30/50: Sum=2462.65Mbps, Min=30.2392Mbps, Time=5.450s
+Iter  40/50: Sum=2462.65Mbps, Min=30.2392Mbps, Time=5.454s
+Iter  50/50: Sum=2462.65Mbps, Min=30.2392Mbps, Time=5.471s
+
+[4/5] 整理最终结果...
+
+[5/5] 优化完成!
+================================================================================
+🎉 NewSSA优化完成!
+📊 最终总速率: 2462.65 Mbps
+🎯 最终最小速率: 30.2392 Mbps
+📈 平均速率: 40.9773 Mbps
+⏱️  优化时间: 272.84 秒
+================================================================================
+
+✓ NewSSA (OBL + Sine-Cosine) Complete
+   Final Min Rate: 30.2392 Mbps
+   Final Sum Rate: 2462.65 Mbps
+   Time: 275.65 s
+
+✓ 随机种子 75 完成（用时 10.0 分钟）
+  初始:   29.12 Mbps
+  VF:     36.59 Mbps (+25.7%)
+  GA:     32.09 Mbps (+10.2%)
+  PSO:    32.34 Mbps (+11.1%)
+  NewSSA: 30.24 Mbps (+3.9%)
+✓ 结果已保存到: result/seeds_66_76_partial_10.json
+
+==========================================================================================
+                                   运行 11/11: 随机种子 = 76                                    
+==========================================================================================
+================================================================================
+                      FAIR OPTIMIZER COMPARISON EXPERIMENT                      
+================================================================================
+
+公平性保证：
+  ✓ 总评估次数: 1500 (种群30 × 迭代50)
+  ✓ 信道实现次数: 50
+  ✓ 随机种子: 76
+  ✓ 相同的初始位置和场景
+  ✓ 固定的导频分配
+
+
+[1/5] Generating neutral scenario...
+[Neutral Initialization]
+  ✓ UE positions: 60 users randomly distributed
+  ✓ Ground APs: 4 APs uniformly distributed (2x2 grid)
+  ✓ UAVs: 9 UAVs in 3x3 grid
+  ✓ Random seed: 76
+
+[2/5] Creating fair configurations...
+  ✓ All configurations created with unified parameters
+
+[3/5] Computing initial performance...
+  Initial Min Rate: 28.1810 Mbps
+  Initial Sum Rate: 2637.68 Mbps
+  Initial Mean Rate: 43.9614 Mbps
+  Initial Std Rate: 7.6911 Mbps
+
+[4/5] Running optimizers...
+
+================================================================================
+[4/4] Running Balanced Virtual Force Optimizer V3...
+================================================================================
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2638.80Mbps, Min=27.6520Mbps, BestMin=27.6520Mbps (Iter0), Time=0.092s
+Iter 10: Sum=2652.25Mbps, Min=34.3675Mbps, BestMin=34.5401Mbps (Iter8), Time=0.090s
+Iter 20: Sum=2715.43Mbps, Min=34.3380Mbps, BestMin=34.7482Mbps (Iter17), Time=0.092s
+Iter 30: Sum=2720.41Mbps, Min=35.5936Mbps, BestMin=37.0262Mbps (Iter29), Time=0.091s
+Iter 40: Sum=2650.87Mbps, Min=35.5121Mbps, BestMin=37.0262Mbps (Iter29), Time=0.091s
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 29 次迭代
+📊 历代最优总速率: 2698.36 Mbps
+🎯 历代最优最小速率: 37.0262 Mbps
+📈 速率标准差: 5.4223 Mbps
+⏱️  优化时间: 4.65 秒
+⚡ 平均每次迭代: 0.093 秒
+🔄 重启次数: 0
+
+✓ Balanced Virtual Force Optimizer V3 Complete
+   Final Min Rate: 37.0262 Mbps
+   Final Sum Rate: 2698.36 Mbps
+   Time: 4.65 s
+
+================================================================================
+[4/4] Running Discrete Genetic Algorithm...
+================================================================================
+离散网格生成完成: 9x9 = 81个候选点
+开始离散遗传算法优化（网格: 9x9）...
+Gen 0: Fitness=2.8781, Sum=2468.75Mbps, Min=18.2699Mbps, Time=2.811s
+Gen 10: Fitness=3.4734, Sum=2587.03Mbps, Min=30.7088Mbps, Time=2.806s
+Gen 20: Fitness=3.4734, Sum=2598.49Mbps, Min=30.8791Mbps, Time=2.808s
+Gen 30: Fitness=3.4795, Sum=2599.16Mbps, Min=32.7615Mbps, Time=2.806s
+Gen 40: Fitness=3.4795, Sum=2569.35Mbps, Min=29.6860Mbps, Time=2.827s
+
+🎉 离散遗传算法优化完成!
+✨ 最佳性能出现在第 25 代
+📊 最终总速率: 2574.54 Mbps
+🎯 最终最小速率: 29.7296 Mbps
+📈 速率标准差: 6.4628 Mbps
+⏱️  优化时间: 140.58 秒
+⚡ 平均每代: 2.812 秒
+🎲 使用网格点: [1, 3, 25, 27, 38, 43, 48, 71, 76]
+
+✓ Discrete Genetic Algorithm Complete
+   Final Min Rate: 29.7296 Mbps
+   Final Sum Rate: 2574.54 Mbps
+   Time: 140.67 s
+
+================================================================================
+[4/4] Running Distributed PSO...
+================================================================================
+✅ 分布式PSO优化器初始化完成
+   - 粒子数量: 30
+   - 最大迭代次数: 50
+   - PSO参数: w=0.729, c1=1.49445, c2=1.49445
+
+================================================================================
+                            分布式PSO优化算法 (Algorithm 2)                            
+================================================================================
+
+[Step 1] 初始化粒子群...
+   ✓ 粒子群初始化完成
+   ✓ 初始全局最佳适应度: 52.8735
+
+[开始迭代] 最大迭代次数: 50
+--------------------------------------------------------------------------------
+Iter   0 | Fitness:  54.4597 | Min Rate: 27.4452 Mbps | Sum Rate:  2665.87 Mbps | Mean Rate: 44.4312 Mbps
+Iter  10 | Fitness:  55.9380 | Min Rate: 27.9549 Mbps | Sum Rate:  2678.31 Mbps | Mean Rate: 44.6384 Mbps
+Iter  20 | Fitness:  57.0800 | Min Rate: 29.2841 Mbps | Sum Rate:  2680.08 Mbps | Mean Rate: 44.6681 Mbps
+Iter  30 | Fitness:  59.1418 | Min Rate: 30.1034 Mbps | Sum Rate:  2744.06 Mbps | Mean Rate: 45.7343 Mbps
+Iter  40 | Fitness:  59.3226 | Min Rate: 30.0667 Mbps | Sum Rate:  2715.74 Mbps | Mean Rate: 45.2623 Mbps
+Iter  49 | Fitness:  59.4457 | Min Rate: 28.9907 Mbps | Sum Rate:  2683.05 Mbps | Mean Rate: 44.7175 Mbps
+
+================================================================================
+                                      优化完成                                      
+================================================================================
+
+📊 最终性能指标:
+   - 总速率 (Sum Rate):      2696.95 Mbps
+   - 最小速率 (Min Rate):    30.4575 Mbps
+   - 平均速率 (Mean Rate):   44.9491 Mbps
+   - 速率标准差 (Std):        8.3677 Mbps
+   - 最佳适应度 (Fitness):   59.4457
+
+📈 性能提升:
+   - 总速率提升:   +1.17%
+   - 最小速率提升: +10.98%
+
+⏱️  计算时间:
+   - 总优化时间: 180.74 秒
+   - 平均每代:   3.615 秒
+
+✓ Distributed PSO Complete
+   Final Min Rate: 30.4575 Mbps
+   Final Sum Rate: 2696.95 Mbps
+   Time: 180.86 s
+
+================================================================================
+[4/4] Running NewSSA (OBL + Sine-Cosine)...
+================================================================================
+================================================================================
+开始NewSSA优化（论文算法）...
+  • 改进1: OBL策略 + 折射原理（公式18）
+  • 改进2: 正弦-余弦搜索（公式20）
+  • 改进3: 自适应参数r1和w（公式21-22）
+  • 麻雀数量: 30
+  • 最大迭代: 50
+  • 生产者: 20%, 警戒者: 15%
+================================================================================
+
+[1/5] OBL策略 + 折射原理初始化...
+[2/5] 计算初始适应度...
+  ✓ 初始最优适应度: 25.3645 Mbps
+
+[3/5] 开始迭代优化（50次）...
+--------------------------------------------------------------------------------
+Iter  10/50: Sum=2295.67Mbps, Min=28.1914Mbps, Time=5.425s
+Iter  20/50: Sum=2295.67Mbps, Min=28.1914Mbps, Time=5.439s
+Iter  30/50: Sum=2295.67Mbps, Min=28.1914Mbps, Time=5.452s
+Iter  40/50: Sum=2424.05Mbps, Min=31.8912Mbps, Time=5.451s
+Iter  50/50: Sum=2424.05Mbps, Min=31.8912Mbps, Time=5.480s
+
+[4/5] 整理最终结果...
+
+[5/5] 优化完成!
+================================================================================
+🎉 NewSSA优化完成!
+📊 最终总速率: 2424.05 Mbps
+🎯 最终最小速率: 31.8912 Mbps
+📈 平均速率: 40.3844 Mbps
+⏱️  优化时间: 272.59 秒
+================================================================================
+
+✓ NewSSA (OBL + Sine-Cosine) Complete
+   Final Min Rate: 31.8912 Mbps
+   Final Sum Rate: 2424.05 Mbps
+   Time: 275.41 s
+
+✓ 随机种子 76 完成（用时 10.0 分钟）
+  初始:   28.18 Mbps
+  VF:     37.03 Mbps (+31.4%)
+  GA:     29.73 Mbps (+5.5%)
+  PSO:    30.46 Mbps (+8.1%)
+  NewSSA: 31.89 Mbps (+13.2%)
+✓ 结果已保存到: result/seeds_66_76_partial_11.json
+
+==========================================================================================
+                                   多随机种子聚合结果 (种子66-76)                                    
+==========================================================================================
+
+算法              最小速率 (Mbps)                         总速率 (Mbps)                时间 (秒)              
+                平均±标准差 [最小, 最大]                     平均±标准差                    平均±标准差              
+-----------------------------------------------------------------------------------------------
+VF               36.63±1.01 [34.31, 38.32]   2658.6± 54.5        4.7± 0.1
+GA               30.48±2.58 [25.55, 34.11]   2573.5± 65.9      141.3± 1.1
+PSO              33.76±2.34 [28.72, 36.90]   2633.0± 52.1      181.1± 0.2
+NewSSA           29.52±2.39 [25.57, 34.06]   2494.1±112.6      275.5± 0.3
+-----------------------------------------------------------------------------------------------
+
+初始状态: 30.14 ± 1.87 Mbps
+
+==========================================================================================
+                                      最小速率排名（基于平均值）                                       
+==========================================================================================
+🥇 1. VF          :  36.63 ± 1.01 Mbps (+21.56%)
+🥈 2. PSO         :  33.76 ± 2.34 Mbps (+12.02%)
+🥉 3. GA          :  30.48 ± 2.58 Mbps ( +1.15%)
+   4. NewSSA      :  29.52 ± 2.39 Mbps ( -2.03%)
+
+==========================================================================================
+                                         各算法最佳种子                                          
+==========================================================================================
+
+  VF:
+    最佳种子: 74
+    最小速率: 38.3208 Mbps
+    总速率:   2733.83 Mbps
+
+  GA:
+    最佳种子: 69
+    最小速率: 34.1051 Mbps
+    总速率:   2616.67 Mbps
+
+  PSO:
+    最佳种子: 69
+    最小速率: 36.9006 Mbps
+    总速率:   2651.93 Mbps
+
+  NewSSA:
+    最佳种子: 66
+    最小速率: 34.0555 Mbps
+    总速率:   2612.04 Mbps
+
+==========================================================================================
+                                        整体表现最合理的种子                                        
+==========================================================================================
+
+排名（基于综合得分 = 平均提升 - 0.5×标准差）:
+
+  1. 种子 69:
+     综合得分: 13.36
+     平均提升: 17.00%
+     提升标准差: 7.27%
+     初始min_rate: 29.92 Mbps
+     各算法: VF=37.15, GA=34.11, PSO=36.90, NewSSA=31.85
+
+  2. 种子 70:
+     综合得分: 12.07
+     平均提升: 17.75%
+     提升标准差: 11.36%
+     初始min_rate: 27.68 Mbps
+     各算法: VF=36.51, GA=31.63, PSO=34.20, NewSSA=28.04
+
+  3. 种子 76:
+     综合得分: 9.47
+     平均提升: 14.53%
+     提升标准差: 10.12%
+     初始min_rate: 28.18 Mbps
+     各算法: VF=37.03, GA=29.73, PSO=30.46, NewSSA=31.89
+
+  4. 种子 75:
+     综合得分: 8.71
+     平均提升: 12.70%
+     提升标准差: 7.98%
+     初始min_rate: 29.12 Mbps
+     各算法: VF=36.59, GA=32.09, PSO=32.34, NewSSA=30.24
+
+  5. 种子 66:
+     综合得分: 6.94
+     平均提升: 10.37%
+     提升标准差: 6.87%
+     初始min_rate: 31.36 Mbps
+     各算法: VF=37.53, GA=31.56, PSO=35.32, NewSSA=34.06
+
+==========================================================================================
+✓ 结果已保存到: result/seeds_66_76_final.json
+
+✅ 所有实验完成！
+   总运行时间: 110.5 分钟
+   成功运行: 11/11 轮
+   结果保存在: result/ 文件夹

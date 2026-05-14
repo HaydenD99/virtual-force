@@ -1,0 +1,59 @@
+================================================================================
+                           ISSA算法单独运行（使用四算法对比的完全相同配置）                           
+================================================================================
+
+[1/4] Generating neutral scenario...
+[Neutral Initialization - Same as full comparison]
+  ✓ UE positions: 60 users randomly distributed
+  ✓ Ground APs: 4 APs at corners
+  ✓ UAVs: 9 UAVs in 3x3 grid
+  ✓ Random seed: 42
+
+[2/4] Creating ISSA configuration...
+  ✓ Sparrows: 30
+  ✓ Max iterations: 50
+  ✓ Channel realizations: 50
+  ✓ Pilot length: 60
+
+[3/4] Creating ISSA optimizer...
+  ✓ Optimizer created
+
+[4/4] Running ISSA optimization...
+--------------------------------------------------------------------------------
+开始ISSA优化（基于BVF信道模型）...
+Iter 10/50: Sum=2562.90Mbps, Min=24.1415Mbps, Time=5.466s
+Iter 20/50: Sum=2520.32Mbps, Min=27.6410Mbps, Time=5.457s
+Iter 30/50: Sum=2451.83Mbps, Min=27.7401Mbps, Time=5.458s
+Iter 40/50: Sum=2519.15Mbps, Min=24.9983Mbps, Time=5.517s
+Iter 50/50: Sum=2473.09Mbps, Min=24.8049Mbps, Time=5.451s
+
+🎉 ISSA优化完成!
+📊 最终总速率: 2442.38 Mbps
+🎯 最终最小速率: 24.6466 Mbps
+⏱️  优化时间: 273.74 秒
+
+================================================================================
+                           ISSA OPTIMIZATION COMPLETE                           
+================================================================================
+
+📊 Final Results:
+  • Minimum Rate:  24.6466 Mbps
+  • Sum Rate:      2442.38 Mbps
+  • Mean Rate:     40.7063 Mbps
+  • Std Rate:      8.5472 Mbps
+  • Time:          276.52 seconds
+  • Iterations:    50
+
+📈 Comparison with other algorithms (from previous full run):
+  Initial:         28.70 Mbps
+  Virtual Force:   34.40 Mbps (+19.85%)
+  GA:              32.32 Mbps (+12.61%)
+  PSO:             33.53 Mbps (+16.82%)
+  ISSA (old):      19.76 Mbps (-31.16%) ❌
+  ISSA (new):      24.65 Mbps (-14.12%)
+
+❌ ISSA性能仍然较差（-14.12%），需要检查算法
+
+================================================================================
+                                     Done!                                      
+================================================================================

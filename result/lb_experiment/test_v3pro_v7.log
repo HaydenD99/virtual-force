@@ -1,0 +1,863 @@
+==============================================================================================================
+  3-Way Comparison | K=40, L=6, G=9 | Hotspot 75%
+  JointScore = 0.5*(min/60.0) + 0.5*JFI_eff
+  V6 vs V3-Style (force field) vs LB-BVF (MC search)
+==============================================================================================================
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Seed = 42
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+         Initial: Min= 39.28 | JFI_eff=0.4071 | JFI_uc=0.5957 | Joint=0.5309 | Users=[17, 8, 2, 3, 1, 15]
+
+  --- BVF V6 ---
+Start Optimizing...
+Iter  0 | Min: 44.9544 | Sum: 2752.7 | BestMin: 44.9544
+Iter 10 | Min: 45.1673 | Sum: 2727.3 | BestMin: 45.5086
+Iter 20 | Min: 54.1494 | Sum: 2998.7 | BestMin: 54.1494
+Iter 30 | Min: 52.1321 | Sum: 3101.0 | BestMin: 60.7040
+Iter 40 | Min: 51.1881 | Sum: 3085.6 | BestMin: 60.7040
+Iter 50 | Min: 45.1826 | Sum: 3025.3 | BestMin: 60.7040
+ Renewing...
+Iter 60 | Min: 53.4658 | Sum: 3024.7 | BestMin: 60.7040
+Iter 70 | Min: 52.2835 | Sum: 3044.3 | BestMin: 63.1927
+              V6: Min= 56.70 | JFI_eff=0.9002 | JFI_uc=0.8889 | Joint=0.9226 | Users=[15, 5, 18, 11, 9, 14]
+                  Time=5.0s
+
+  --- LB-BVF V3-Style ---
+================================================================================
+                LB-BVF V3-Pro (Deep Force-Integrated Load Balance)              
+================================================================================
+  damping=0.55 | boost=1.6 | threshold=1.3 | dep_bias=0.35
+  JointScore = 0.5*(min/60.0) + 0.5*JFI_eff
+================================================================================
+  Iter   0 | Min=44.95 | JFI=0.4071 | JS=0.5782 | LF=[0.55,1.00,1.60,1.60,1.60,0.55] | EL=[5.5,0.8,0.7,0.4,0.4,1.2]
+  Iter  10 | Min=46.40 | JFI=0.5723 | JS=0.6728 | LF=[0.55,1.60,1.60,1.60,1.00,0.55] | EL=[7.8,1.4,0.4,2.4,3.1,1.6]
+  Iter  20 | Min=49.63 | JFI=0.7726 | JS=0.7999 | LF=[1.00,1.00,1.60,1.00,1.00,0.55] | EL=[4.5,8.6,0.0,6.0,7.5,4.0]
+  Iter  30 | Min=50.23 | JFI=0.8319 | JS=0.8346 | LF=[1.60,1.60,1.00,0.55,1.00,0.55] | EL=[2.5,6.1,2.2,9.3,7.5,6.1]
+  Iter  40 | Min=58.72 | JFI=0.8848 | JS=0.9317 | LF=[1.60,1.00,0.55,1.00,1.00,1.00] | EL=[1.7,6.5,5.8,7.2,4.3,4.5]
+  Iter  50 | Min=57.98 | JFI=0.8915 | JS=0.9289 | LF=[1.60,1.00,0.55,1.00,1.60,1.00] | EL=[4.7,7.6,7.7,7.0,2.1,5.1]
+  Iter  60 | Min=44.82 | JFI=0.9092 | JS=0.8281 | LF=[1.00,1.60,0.55,1.00,1.60,1.00] | EL=[7.9,6.9,5.4,7.1,2.1,6.1]
+  Restart #1 (load-aware)
+  Iter  70 | Min=48.08 | JFI=0.8713 | JS=0.8363 | LF=[1.60,1.00,0.55,1.00,0.55,1.00] | EL=[1.9,6.7,5.9,7.5,9.0,4.5]
+
+  Final (det): Min=54.59 | JFI_eff=0.9619 | JointScore=0.9359
+        V3-Style: Min= 54.59 | JFI_eff=0.9619 | JFI_uc=0.9387 | Joint=0.9359 | Users=[11, 8, 17, 10, 10, 14]
+                  Time=4.9s
+
+  --- LB-BVF (MC) ---
+================================================================================
+                  Load-Balanced BVF V6 (Ground-Aware MC Search)                 
+================================================================================
+  P1: Pure V6 | P2: 8x50 ground-aware MC search
+  JointScore = 0.5*(min_rate/60.0) + 0.5*JFI_eff  [equal weights, normalized]
+  JFI on dependency-weighted effective UAV load
+================================================================================
+Start Optimizing...
+Iter  0 | Min: 44.9544 | Sum: 2752.7 | BestMin: 44.9544
+Iter 10 | Min: 45.1673 | Sum: 2727.3 | BestMin: 45.5086
+Iter 20 | Min: 54.1494 | Sum: 2998.7 | BestMin: 54.1494
+Iter 30 | Min: 52.1321 | Sum: 3101.0 | BestMin: 60.7040
+Iter 40 | Min: 51.1881 | Sum: 3085.6 | BestMin: 60.7040
+Iter 50 | Min: 45.1826 | Sum: 3025.3 | BestMin: 60.7040
+ Renewing...
+Iter 60 | Min: 53.4658 | Sum: 3024.7 | BestMin: 60.7040
+Iter 70 | Min: 52.2835 | Sum: 3044.3 | BestMin: 63.1927
+
+  P1: Min=56.70 | JFI_eff=0.9002 | JointScore=0.9226 | OL=1/6
+      UAV users: [15, 5, 18, 11, 9, 14]
+      Eff load:  [7.20, 1.79, 5.04, 6.93, 5.84, 5.21]
+
+  -- Phase 2: Ground-Aware Monte Carlo Search --
+  MC start: JointScore=0.9226 | Min=56.70 | JFI_eff=0.9002 | EffLoad=[7.20,1.79,5.04,6.93,5.84,5.21]
+  MC round 0: JointScore=0.9445 | Min=55.29 | JFI_eff=0.9675 | r=60 | improved
+  MC round 1: JointScore=0.9618 | Min=56.59 | JFI_eff=0.9805 | r=60 | improved
+  MC round 2: JointScore=0.9618 | Min=56.59 | JFI_eff=0.9805 | r=42 | no change
+  MC round 3: JointScore=0.9627 | Min=56.98 | JFI_eff=0.9757 | r=42 | improved
+  MC round 4: JointScore=0.9628 | Min=58.75 | JFI_eff=0.9464 | r=42 | improved
+  MC round 5: JointScore=0.9628 | Min=58.75 | JFI_eff=0.9464 | r=29 | no change
+  MC round 6: JointScore=0.9632 | Min=57.73 | JFI_eff=0.9641 | r=29 | improved
+  MC round 7: JointScore=0.9632 | Min=57.73 | JFI_eff=0.9641 | r=21 | no change
+  MC done: JointScore=0.9632 | Min=57.73 | JFI_eff=0.9641 | EffLoad=[5.28,7.18,4.16,6.41,5.64,4.37]
+
+  -> P2 wins | dMin=+1.03 | dJFI_eff=+0.0638 | dJointScore=+0.0405
+      UAV users: [12, 9, 17, 9, 11, 13]
+      Eff load:  [5.28, 7.18, 4.16, 6.41, 5.64, 4.37]
+       LB-BVF-MC: Min= 57.73 | JFI_eff=0.9641 | JFI_uc=0.9493 | Joint=0.9632 | Users=[12, 9, 17, 9, 11, 13]
+                  Time=28.9s
+
+  Δ vs V6  [V3-Style]:  Joint=+0.0132  min=-2.11  JFI=+0.0616
+  Δ vs V6  [LB-MC]:     Joint=+0.0405  min=+1.03  JFI=+0.0638
+  V3-Style: [OK]  LB-MC: [OK]
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Seed = 51
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+         Initial: Min= 39.48 | JFI_eff=0.5035 | JFI_uc=0.6176 | Joint=0.5807 | Users=[16, 4, 1, 5, 3, 13]
+
+  --- BVF V6 ---
+Start Optimizing...
+Iter  0 | Min: 41.7874 | Sum: 2869.3 | BestMin: 41.7874
+Iter 10 | Min: 44.1937 | Sum: 3038.5 | BestMin: 50.8329
+Iter 20 | Min: 58.9956 | Sum: 3279.8 | BestMin: 59.1859
+Iter 30 | Min: 61.4386 | Sum: 3186.7 | BestMin: 61.4386
+Iter 40 | Min: 57.3443 | Sum: 3138.0 | BestMin: 61.4386
+Iter 50 | Min: 55.4673 | Sum: 3112.4 | BestMin: 61.4386
+ Renewing...
+Iter 60 | Min: 56.1573 | Sum: 3241.4 | BestMin: 61.4386
+Iter 70 | Min: 60.7356 | Sum: 3170.7 | BestMin: 63.9074
+              V6: Min= 61.64 | JFI_eff=0.8523 | JFI_uc=0.7836 | Joint=0.9398 | Users=[14, 3, 4, 10, 9, 17]
+                  Time=4.9s
+
+  --- LB-BVF V3-Style ---
+================================================================================
+                LB-BVF V3-Pro (Deep Force-Integrated Load Balance)              
+================================================================================
+  damping=0.55 | boost=1.6 | threshold=1.3 | dep_bias=0.35
+  JointScore = 0.5*(min/60.0) + 0.5*JFI_eff
+================================================================================
+  Iter   0 | Min=41.79 | JFI=0.5035 | JS=0.6000 | LF=[0.55,1.60,1.60,1.60,1.60,0.55] | EL=[4.4,1.1,0.5,0.8,0.5,1.0]
+  Iter  10 | Min=42.39 | JFI=0.7429 | JS=0.7247 | LF=[0.55,1.60,1.60,1.00,1.60,0.55] | EL=[5.9,2.3,0.4,2.3,2.8,2.9]
+  Iter  20 | Min=56.87 | JFI=0.7912 | JS=0.8695 | LF=[1.00,1.00,1.60,1.60,1.00,0.55] | EL=[4.3,6.1,0.2,2.8,6.0,6.3]
+  Iter  30 | Min=48.57 | JFI=0.9868 | JS=0.8982 | LF=[1.00,1.60,1.00,1.00,1.00,0.55] | EL=[5.4,4.1,4.4,5.7,4.7,5.1]
+  Iter  40 | Min=50.44 | JFI=0.9739 | JS=0.9073 | LF=[1.60,1.00,1.00,1.00,1.00,0.55] | EL=[4.7,4.7,3.4,5.9,5.5,5.5]
+  Iter  50 | Min=57.90 | JFI=0.9155 | JS=0.9403 | LF=[1.60,1.00,1.60,1.00,1.00,0.55] | EL=[2.3,4.5,4.2,6.7,4.6,3.7]
+  Restart #1 (load-aware)
+  Iter  60 | Min=55.08 | JFI=0.9867 | JS=0.9524 | LF=[1.00,1.00,1.00,1.00,1.00,0.55] | EL=[5.0,5.0,4.5,5.2,4.2,6.1]
+  Iter  70 | Min=60.99 | JFI=0.8850 | JS=0.9507 | LF=[1.60,1.00,1.00,1.00,1.00,0.55] | EL=[1.3,5.1,5.2,7.2,5.9,5.5]
+
+  Final (det): Min=61.81 | JFI_eff=0.9565 | JointScore=0.9933
+        V3-Style: Min= 61.81 | JFI_eff=0.9565 | JFI_uc=0.8982 | Joint=0.9933 | Users=[9, 11, 8, 7, 8, 17]
+                  Time=4.9s
+
+  --- LB-BVF (MC) ---
+================================================================================
+                  Load-Balanced BVF V6 (Ground-Aware MC Search)                 
+================================================================================
+  P1: Pure V6 | P2: 8x50 ground-aware MC search
+  JointScore = 0.5*(min_rate/60.0) + 0.5*JFI_eff  [equal weights, normalized]
+  JFI on dependency-weighted effective UAV load
+================================================================================
+Start Optimizing...
+Iter  0 | Min: 41.7874 | Sum: 2869.3 | BestMin: 41.7874
+Iter 10 | Min: 44.1937 | Sum: 3038.5 | BestMin: 50.8329
+Iter 20 | Min: 58.9956 | Sum: 3279.8 | BestMin: 59.1859
+Iter 30 | Min: 61.4386 | Sum: 3186.7 | BestMin: 61.4386
+Iter 40 | Min: 57.3443 | Sum: 3138.0 | BestMin: 61.4386
+Iter 50 | Min: 55.4673 | Sum: 3112.4 | BestMin: 61.4386
+ Renewing...
+Iter 60 | Min: 56.1573 | Sum: 3241.4 | BestMin: 61.4386
+Iter 70 | Min: 60.7356 | Sum: 3170.7 | BestMin: 63.9074
+
+  P1: Min=61.64 | JFI_eff=0.8523 | JointScore=0.9398 | OL=2/6
+      UAV users: [14, 3, 4, 10, 9, 17]
+      Eff load:  [6.07, 2.04, 2.17, 4.19, 3.42, 6.22]
+
+  -- Phase 2: Ground-Aware Monte Carlo Search --
+  MC start: JointScore=0.9398 | Min=61.64 | JFI_eff=0.8523 | EffLoad=[6.07,2.04,2.17,4.19,3.42,6.22]
+  MC round 0: JointScore=0.9398 | Min=61.64 | JFI_eff=0.8523 | r=42 | no change
+  MC round 1: JointScore=0.9398 | Min=61.64 | JFI_eff=0.8523 | r=29 | no change
+  MC round 2: JointScore=0.9398 | Min=61.64 | JFI_eff=0.8523 | r=21 | no change
+  MC round 3: JointScore=0.9417 | Min=61.82 | JFI_eff=0.8532 | r=21 | improved
+  MC round 4: JointScore=0.9417 | Min=61.82 | JFI_eff=0.8532 | r=14 | no change
+  MC round 5: JointScore=0.9417 | Min=61.82 | JFI_eff=0.8532 | r=10 | no change
+  MC round 6: JointScore=0.9446 | Min=61.82 | JFI_eff=0.8589 | r=10 | improved
+  MC round 7: JointScore=0.9446 | Min=61.82 | JFI_eff=0.8589 | r=7 | no change
+  MC done: JointScore=0.9446 | Min=61.82 | JFI_eff=0.8589 | EffLoad=[6.35,2.01,2.00,4.14,3.40,4.00]
+
+  -> P2 wins | dMin=+0.18 | dJFI_eff=+0.0066 | dJointScore=+0.0048
+      UAV users: [14, 3, 4, 9, 9, 17]
+      Eff load:  [6.35, 2.01, 2.00, 4.14, 3.40, 4.00]
+       LB-BVF-MC: Min= 61.82 | JFI_eff=0.8589 | JFI_uc=0.7778 | Joint=0.9446 | Users=[14, 3, 4, 9, 9, 17]
+                  Time=28.9s
+
+  Δ vs V6  [V3-Style]:  Joint=+0.0535  min=+0.17  JFI=+0.1041
+  Δ vs V6  [LB-MC]:     Joint=+0.0048  min=+0.18  JFI=+0.0066
+  V3-Style: [OK]  LB-MC: [OK]
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Seed = 62
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+         Initial: Min= 35.72 | JFI_eff=0.4642 | JFI_uc=0.6268 | Joint=0.5298 | Users=[14, 8, 3, 3, 0, 13]
+
+  --- BVF V6 ---
+Start Optimizing...
+Iter  0 | Min: 37.8749 | Sum: 2592.6 | BestMin: 37.8749
+Iter 10 | Min: 51.0269 | Sum: 2994.6 | BestMin: 51.0269
+Iter 20 | Min: 47.2190 | Sum: 2901.6 | BestMin: 51.3323
+Iter 30 | Min: 45.5408 | Sum: 2855.9 | BestMin: 51.3323
+Iter 40 | Min: 52.1018 | Sum: 3090.9 | BestMin: 52.6937
+Iter 50 | Min: 48.9074 | Sum: 3053.4 | BestMin: 53.1403
+Iter 60 | Min: 54.1810 | Sum: 3107.3 | BestMin: 54.6698
+Iter 70 | Min: 53.8321 | Sum: 3139.4 | BestMin: 54.6698
+              V6: Min= 50.06 | JFI_eff=0.8524 | JFI_uc=0.9404 | Joint=0.8434 | Users=[9, 11, 14, 10, 7, 15]
+                  Time=4.8s
+
+  --- LB-BVF V3-Style ---
+================================================================================
+                LB-BVF V3-Pro (Deep Force-Integrated Load Balance)              
+================================================================================
+  damping=0.55 | boost=1.6 | threshold=1.3 | dep_bias=0.35
+  JointScore = 0.5*(min/60.0) + 0.5*JFI_eff
+================================================================================
+  Iter   0 | Min=37.87 | JFI=0.4642 | JS=0.5477 | LF=[0.55,1.00,1.60,1.60,1.60,0.55] | EL=[2.9,0.4,1.3,0.1,0.0,0.8]
+  Iter  10 | Min=45.03 | JFI=0.4981 | JS=0.6243 | LF=[0.55,1.60,1.60,1.60,0.55,0.55] | EL=[4.4,0.1,0.6,0.1,2.1,5.5]
+  Iter  20 | Min=48.24 | JFI=0.6756 | JS=0.7398 | LF=[0.55,1.60,1.60,1.60,0.55,0.55] | EL=[6.2,1.0,2.4,0.0,5.5,4.7]
+  Iter  30 | Min=48.28 | JFI=0.7367 | JS=0.7707 | LF=[0.55,1.00,1.60,1.60,0.55,1.00] | EL=[6.0,3.3,1.7,0.2,6.2,5.4]
+  Iter  40 | Min=49.70 | JFI=0.8154 | JS=0.8219 | LF=[1.00,1.00,1.60,1.60,0.55,1.00] | EL=[4.1,7.0,1.4,2.3,6.9,5.6]
+  Iter  50 | Min=49.06 | JFI=0.8658 | JS=0.8418 | LF=[1.00,1.00,1.00,1.60,1.00,1.00] | EL=[3.1,6.4,3.6,1.4,4.3,4.8]
+  Iter  60 | Min=53.60 | JFI=0.8807 | JS=0.8870 | LF=[1.00,1.00,1.00,1.00,1.00,1.60] | EL=[8.9,8.5,4.5,7.3,5.5,2.4]
+  Iter  70 | Min=53.78 | JFI=0.9725 | JS=0.9344 | LF=[1.00,1.00,1.00,1.00,1.00,1.00] | EL=[6.6,7.8,4.5,6.5,7.3,5.6]
+
+  Final (det): Min=49.57 | JFI_eff=0.9725 | JointScore=0.8994
+        V3-Style: Min= 49.57 | JFI_eff=0.9725 | JFI_uc=0.9886 | Joint=0.8994 | Users=[12, 10, 11, 12, 13, 14]
+                  Time=4.9s
+
+  --- LB-BVF (MC) ---
+================================================================================
+                  Load-Balanced BVF V6 (Ground-Aware MC Search)                 
+================================================================================
+  P1: Pure V6 | P2: 8x50 ground-aware MC search
+  JointScore = 0.5*(min_rate/60.0) + 0.5*JFI_eff  [equal weights, normalized]
+  JFI on dependency-weighted effective UAV load
+================================================================================
+Start Optimizing...
+Iter  0 | Min: 37.8749 | Sum: 2592.6 | BestMin: 37.8749
+Iter 10 | Min: 51.0269 | Sum: 2994.6 | BestMin: 51.0269
+Iter 20 | Min: 47.2190 | Sum: 2901.6 | BestMin: 51.3323
+Iter 30 | Min: 45.5408 | Sum: 2855.9 | BestMin: 51.3323
+Iter 40 | Min: 52.1018 | Sum: 3090.9 | BestMin: 52.6937
+Iter 50 | Min: 48.9074 | Sum: 3053.4 | BestMin: 53.1403
+Iter 60 | Min: 54.1810 | Sum: 3107.3 | BestMin: 54.6698
+Iter 70 | Min: 53.8321 | Sum: 3139.4 | BestMin: 54.6698
+
+  P1: Min=50.06 | JFI_eff=0.8524 | JointScore=0.8434 | OL=1/6
+      UAV users: [9, 11, 14, 10, 7, 15]
+      Eff load:  [2.63, 7.20, 6.76, 3.67, 2.38, 4.42]
+
+  -- Phase 2: Ground-Aware Monte Carlo Search --
+  MC start: JointScore=0.8434 | Min=50.06 | JFI_eff=0.8524 | EffLoad=[2.63,7.20,6.76,3.67,2.38,4.42]
+  MC round 0: JointScore=0.8754 | Min=50.04 | JFI_eff=0.9168 | r=60 | improved
+  MC round 1: JointScore=0.8754 | Min=50.06 | JFI_eff=0.9164 | r=60 | improved
+  MC round 2: JointScore=0.8818 | Min=51.24 | JFI_eff=0.9096 | r=60 | improved
+  MC round 3: JointScore=0.8818 | Min=51.24 | JFI_eff=0.9096 | r=42 | no change
+  MC round 4: JointScore=0.8818 | Min=51.24 | JFI_eff=0.9096 | r=29 | no change
+  MC round 5: JointScore=0.8908 | Min=52.33 | JFI_eff=0.9095 | r=29 | improved
+  MC round 6: JointScore=0.8908 | Min=52.33 | JFI_eff=0.9095 | r=21 | no change
+  MC round 7: JointScore=0.8908 | Min=52.33 | JFI_eff=0.9095 | r=14 | no change
+  MC done: JointScore=0.8908 | Min=52.33 | JFI_eff=0.9095 | EffLoad=[6.76,2.03,6.52,5.94,4.45,4.81]
+
+  -> P2 wins | dMin=+2.26 | dJFI_eff=+0.0570 | dJointScore=+0.0474
+      UAV users: [15, 3, 15, 15, 17, 8]
+      Eff load:  [6.76, 2.03, 6.52, 5.94, 4.45, 4.81]
+       LB-BVF-MC: Min= 52.33 | JFI_eff=0.9095 | JFI_uc=0.8565 | Joint=0.8908 | Users=[15, 3, 15, 15, 17, 8]
+                  Time=28.7s
+
+  Δ vs V6  [V3-Style]:  Joint=+0.0559  min=-0.49  JFI=+0.1201
+  Δ vs V6  [LB-MC]:     Joint=+0.0474  min=+2.26  JFI=+0.0570
+  V3-Style: [OK]  LB-MC: [OK]
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Seed = 71
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+         Initial: Min= 36.92 | JFI_eff=0.2478 | JFI_uc=0.4486 | Joint=0.4316 | Users=[15, 1, 1, 3, 0, 11]
+
+  --- BVF V6 ---
+Start Optimizing...
+Iter  0 | Min: 41.8677 | Sum: 2644.5 | BestMin: 41.8677
+Iter 10 | Min: 47.0303 | Sum: 2706.0 | BestMin: 50.1904
+Iter 20 | Min: 53.8512 | Sum: 2891.1 | BestMin: 53.8512
+Iter 30 | Min: 38.8787 | Sum: 3010.4 | BestMin: 57.2472
+Iter 40 | Min: 56.7905 | Sum: 3068.9 | BestMin: 58.5759
+Iter 50 | Min: 46.5647 | Sum: 2985.9 | BestMin: 58.5759
+Iter 60 | Min: 48.5782 | Sum: 3096.0 | BestMin: 58.5759
+ Renewing...
+Iter 70 | Min: 51.9204 | Sum: 3002.5 | BestMin: 58.5759
+              V6: Min= 53.17 | JFI_eff=0.8281 | JFI_uc=0.8725 | Joint=0.8572 | Users=[8, 7, 15, 15, 7, 18]
+                  Time=4.8s
+
+  --- LB-BVF V3-Style ---
+================================================================================
+                LB-BVF V3-Pro (Deep Force-Integrated Load Balance)              
+================================================================================
+  damping=0.55 | boost=1.6 | threshold=1.3 | dep_bias=0.35
+  JointScore = 0.5*(min/60.0) + 0.5*JFI_eff
+================================================================================
+  Iter   0 | Min=41.87 | JFI=0.2478 | JS=0.4728 | LF=[0.55,1.60,1.60,1.60,1.60,0.55] | EL=[4.0,0.0,0.4,0.1,0.0,0.4]
+  Iter  10 | Min=45.18 | JFI=0.4429 | JS=0.5979 | LF=[0.55,1.60,1.60,1.60,0.55,0.55] | EL=[4.1,0.2,0.0,0.0,1.4,4.6]
+  Iter  20 | Min=52.28 | JFI=0.6819 | JS=0.7766 | LF=[1.00,1.00,1.00,1.60,1.00,0.55] | EL=[4.4,1.4,2.9,0.0,2.1,5.7]
+  Iter  30 | Min=38.69 | JFI=0.8963 | JS=0.7705 | LF=[1.60,1.00,1.00,1.00,0.55,1.00] | EL=[1.6,5.9,6.1,4.4,5.2,3.9]
+  Iter  40 | Min=57.44 | JFI=0.9661 | JS=0.9618 | LF=[1.00,1.00,1.00,1.00,1.00,1.00] | EL=[5.3,6.8,6.2,6.2,4.3,4.0]
+  Iter  50 | Min=53.11 | JFI=0.8641 | JS=0.8746 | LF=[1.00,1.60,1.00,1.00,1.00,1.00] | EL=[4.2,1.0,6.3,5.2,4.7,3.7]
+  Iter  60 | Min=47.68 | JFI=0.8744 | JS=0.8345 | LF=[0.55,1.60,1.00,1.60,1.00,1.00] | EL=[4.9,1.1,6.2,5.8,4.8,3.8]
+  Restart #1 (load-aware)
+  Iter  70 | Min=41.15 | JFI=0.9352 | JS=0.8105 | LF=[1.00,1.00,1.00,1.00,0.55,1.00] | EL=[4.1,6.2,5.6,2.7,5.2,3.5]
+
+  Final (det): Min=56.47 | JFI_eff=0.9661 | JointScore=0.9537
+        V3-Style: Min= 56.47 | JFI_eff=0.9661 | JFI_uc=0.9920 | Joint=0.9537 | Users=[12, 11, 13, 11, 14, 13]
+                  Time=4.9s
+
+  --- LB-BVF (MC) ---
+================================================================================
+                  Load-Balanced BVF V6 (Ground-Aware MC Search)                 
+================================================================================
+  P1: Pure V6 | P2: 8x50 ground-aware MC search
+  JointScore = 0.5*(min_rate/60.0) + 0.5*JFI_eff  [equal weights, normalized]
+  JFI on dependency-weighted effective UAV load
+================================================================================
+Start Optimizing...
+Iter  0 | Min: 41.8677 | Sum: 2644.5 | BestMin: 41.8677
+Iter 10 | Min: 47.0303 | Sum: 2706.0 | BestMin: 50.1904
+Iter 20 | Min: 53.8512 | Sum: 2891.1 | BestMin: 53.8512
+Iter 30 | Min: 38.8787 | Sum: 3010.4 | BestMin: 57.2472
+Iter 40 | Min: 56.7905 | Sum: 3068.9 | BestMin: 58.5759
+Iter 50 | Min: 46.5647 | Sum: 2985.9 | BestMin: 58.5759
+Iter 60 | Min: 48.5782 | Sum: 3096.0 | BestMin: 58.5759
+ Renewing...
+Iter 70 | Min: 51.9204 | Sum: 3002.5 | BestMin: 58.5759
+
+  P1: Min=53.17 | JFI_eff=0.8281 | JointScore=0.8572 | OL=2/6
+      UAV users: [8, 7, 15, 15, 7, 18]
+      Eff load:  [5.90, 1.15, 4.09, 4.89, 1.98, 5.66]
+
+  -- Phase 2: Ground-Aware Monte Carlo Search --
+  MC start: JointScore=0.8572 | Min=53.17 | JFI_eff=0.8281 | EffLoad=[5.90,1.15,4.09,4.89,1.98,5.66]
+  MC round 0: JointScore=0.8784 | Min=51.29 | JFI_eff=0.9019 | r=60 | improved
+  MC round 1: JointScore=0.8990 | Min=54.82 | JFI_eff=0.8843 | r=60 | improved
+  MC round 2: JointScore=0.8990 | Min=54.82 | JFI_eff=0.8843 | r=42 | no change
+  MC round 3: JointScore=0.8990 | Min=54.82 | JFI_eff=0.8843 | r=29 | no change
+  MC round 4: JointScore=0.8990 | Min=54.82 | JFI_eff=0.8843 | r=21 | no change
+  MC round 5: JointScore=0.8990 | Min=54.82 | JFI_eff=0.8843 | r=14 | no change
+  MC round 6: JointScore=0.8990 | Min=54.82 | JFI_eff=0.8843 | r=10 | no change
+  MC round 7: JointScore=0.8990 | Min=54.82 | JFI_eff=0.8843 | r=7 | no change
+  MC done: JointScore=0.8990 | Min=54.82 | JFI_eff=0.8843 | EffLoad=[5.77,6.03,6.06,5.15,1.18,4.21]
+
+  -> P2 wins | dMin=+1.65 | dJFI_eff=+0.0562 | dJointScore=+0.0419
+      UAV users: [9, 14, 16, 11, 5, 18]
+      Eff load:  [5.77, 6.03, 6.06, 5.15, 1.18, 4.21]
+       LB-BVF-MC: Min= 54.82 | JFI_eff=0.8843 | JFI_uc=0.8855 | Joint=0.8990 | Users=[9, 14, 16, 11, 5, 18]
+                  Time=28.9s
+
+  Δ vs V6  [V3-Style]:  Joint=+0.0965  min=+3.30  JFI=+0.1380
+  Δ vs V6  [LB-MC]:     Joint=+0.0419  min=+1.65  JFI=+0.0562
+  V3-Style: [OK]  LB-MC: [OK]
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Seed = 75
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+         Initial: Min= 36.62 | JFI_eff=0.4273 | JFI_uc=0.4677 | Joint=0.5188 | Users=[18, 1, 0, 3, 3, 16]
+
+  --- BVF V6 ---
+Start Optimizing...
+Iter  0 | Min: 37.9799 | Sum: 2982.4 | BestMin: 37.9799
+Iter 10 | Min: 53.1129 | Sum: 3114.2 | BestMin: 53.1129
+Iter 20 | Min: 55.3619 | Sum: 3111.9 | BestMin: 56.4063
+Iter 30 | Min: 48.0781 | Sum: 3114.8 | BestMin: 56.4063
+Iter 40 | Min: 52.7159 | Sum: 3263.9 | BestMin: 56.5729
+Iter 50 | Min: 52.5477 | Sum: 3289.9 | BestMin: 58.5170
+Iter 60 | Min: 56.6004 | Sum: 3342.4 | BestMin: 58.5170
+Iter 70 | Min: 54.9536 | Sum: 3191.9 | BestMin: 59.2693
+              V6: Min= 55.93 | JFI_eff=0.7939 | JFI_uc=0.9304 | Joint=0.8630 | Users=[7, 12, 12, 7, 10, 15]
+                  Time=4.8s
+
+  --- LB-BVF V3-Style ---
+================================================================================
+                LB-BVF V3-Pro (Deep Force-Integrated Load Balance)              
+================================================================================
+  damping=0.55 | boost=1.6 | threshold=1.3 | dep_bias=0.35
+  JointScore = 0.5*(min/60.0) + 0.5*JFI_eff
+================================================================================
+  Iter   0 | Min=37.98 | JFI=0.4273 | JS=0.5302 | LF=[0.55,1.60,1.60,1.60,1.60,0.55] | EL=[4.9,0.4,0.0,1.1,0.5,1.6]
+  Iter  10 | Min=48.71 | JFI=0.6423 | JS=0.7271 | LF=[1.00,1.00,1.60,1.60,0.55,0.55] | EL=[2.5,4.7,0.0,1.0,6.3,2.6]
+  Iter  20 | Min=56.56 | JFI=0.6865 | JS=0.8146 | LF=[1.00,0.55,1.60,1.60,1.00,0.55] | EL=[1.8,4.5,0.0,2.3,6.9,5.9]
+  Iter  30 | Min=43.24 | JFI=0.6920 | JS=0.7064 | LF=[1.00,1.00,1.60,0.55,1.00,0.55] | EL=[1.5,2.1,0.1,5.4,6.1,5.4]
+  Iter  40 | Min=53.89 | JFI=0.7393 | JS=0.8188 | LF=[0.55,1.00,1.60,1.60,1.00,0.55] | EL=[6.7,4.7,0.1,1.6,6.6,5.9]
+  Restart #1 (load-aware)
+  Iter  50 | Min=48.01 | JFI=0.7703 | JS=0.7853 | LF=[1.00,0.55,1.60,1.00,1.00,0.55] | EL=[7.6,8.9,0.4,7.4,2.8,5.5]
+  Iter  60 | Min=57.83 | JFI=0.7598 | JS=0.8618 | LF=[1.00,1.00,1.60,1.00,1.00,0.55] | EL=[6.0,1.5,1.5,1.8,5.5,5.6]
+  Iter  70 | Min=53.34 | JFI=0.8090 | JS=0.8490 | LF=[1.00,1.60,1.60,1.00,1.00,0.55] | EL=[7.5,1.9,1.8,7.4,8.1,5.5]
+
+  Final (det): Min=49.20 | JFI_eff=0.8677 | JointScore=0.8438
+        V3-Style: Min= 49.20 | JFI_eff=0.8677 | JFI_uc=0.9435 | Joint=0.8438 | Users=[9, 10, 16, 12, 8, 14]
+                  Time=4.9s
+
+  --- LB-BVF (MC) ---
+================================================================================
+                  Load-Balanced BVF V6 (Ground-Aware MC Search)                 
+================================================================================
+  P1: Pure V6 | P2: 8x50 ground-aware MC search
+  JointScore = 0.5*(min_rate/60.0) + 0.5*JFI_eff  [equal weights, normalized]
+  JFI on dependency-weighted effective UAV load
+================================================================================
+Start Optimizing...
+Iter  0 | Min: 37.9799 | Sum: 2982.4 | BestMin: 37.9799
+Iter 10 | Min: 53.1129 | Sum: 3114.2 | BestMin: 53.1129
+Iter 20 | Min: 55.3619 | Sum: 3111.9 | BestMin: 56.4063
+Iter 30 | Min: 48.0781 | Sum: 3114.8 | BestMin: 56.4063
+Iter 40 | Min: 52.7159 | Sum: 3263.9 | BestMin: 56.5729
+Iter 50 | Min: 52.5477 | Sum: 3289.9 | BestMin: 58.5170
+Iter 60 | Min: 56.6004 | Sum: 3342.4 | BestMin: 58.5170
+Iter 70 | Min: 54.9536 | Sum: 3191.9 | BestMin: 59.2693
+
+  P1: Min=55.93 | JFI_eff=0.7939 | JointScore=0.8630 | OL=1/6
+      UAV users: [7, 12, 12, 7, 10, 15]
+      Eff load:  [1.68, 5.53, 2.29, 1.99, 6.80, 4.64]
+
+  -- Phase 2: Ground-Aware Monte Carlo Search --
+  MC start: JointScore=0.8630 | Min=55.93 | JFI_eff=0.7939 | EffLoad=[1.68,5.53,2.29,1.99,6.80,4.64]
+  MC round 0: JointScore=0.8630 | Min=55.93 | JFI_eff=0.7939 | r=42 | no change
+  MC round 1: JointScore=0.8630 | Min=55.93 | JFI_eff=0.7939 | r=29 | no change
+  MC round 2: JointScore=0.8751 | Min=51.52 | JFI_eff=0.8914 | r=29 | improved
+  MC round 3: JointScore=0.9016 | Min=53.61 | JFI_eff=0.9098 | r=29 | improved
+  MC round 4: JointScore=0.9029 | Min=53.41 | JFI_eff=0.9155 | r=29 | improved
+  MC round 5: JointScore=0.9029 | Min=53.41 | JFI_eff=0.9155 | r=21 | no change
+  MC round 6: JointScore=0.9040 | Min=54.86 | JFI_eff=0.8937 | r=21 | improved
+  MC round 7: JointScore=0.9040 | Min=54.86 | JFI_eff=0.8937 | r=14 | no change
+  MC done: JointScore=0.9040 | Min=54.86 | JFI_eff=0.8937 | EffLoad=[7.91,6.23,4.91,2.41,6.67,3.82]
+
+  -> P2 wins | dMin=-1.07 | dJFI_eff=+0.0997 | dJointScore=+0.0410
+      UAV users: [16, 11, 15, 3, 11, 13]
+      Eff load:  [7.91, 6.23, 4.91, 2.41, 6.67, 3.82]
+       LB-BVF-MC: Min= 54.86 | JFI_eff=0.8937 | JFI_uc=0.8807 | Joint=0.9040 | Users=[16, 11, 15, 3, 11, 13]
+                  Time=28.7s
+
+  Δ vs V6  [V3-Style]:  Joint=-0.0192  min=-6.73  JFI=+0.0737
+  Δ vs V6  [LB-MC]:     Joint=+0.0410  min=-1.07  JFI=+0.0997
+  V3-Style: [!!]  LB-MC: [OK]
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Seed = 33
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+         Initial: Min= 47.91 | JFI_eff=0.4871 | JFI_uc=0.4977 | Joint=0.6428 | Users=[14, 2, 1, 2, 2, 15]
+
+  --- BVF V6 ---
+Start Optimizing...
+Iter  0 | Min: 50.2804 | Sum: 2963.8 | BestMin: 50.2804
+Iter 10 | Min: 51.9013 | Sum: 3102.9 | BestMin: 54.7871
+Iter 20 | Min: 54.4746 | Sum: 3235.1 | BestMin: 58.0210
+Iter 30 | Min: 51.0416 | Sum: 3324.4 | BestMin: 59.5545
+Iter 40 | Min: 53.5342 | Sum: 3294.6 | BestMin: 62.3861
+Iter 50 | Min: 56.8043 | Sum: 3272.9 | BestMin: 64.2299
+Iter 60 | Min: 50.1501 | Sum: 3299.0 | BestMin: 64.2299
+Iter 70 | Min: 52.3613 | Sum: 3280.2 | BestMin: 64.2299
+              V6: Min= 49.14 | JFI_eff=0.9275 | JFI_uc=0.9328 | Joint=0.8732 | Users=[13, 8, 16, 14, 16, 8]
+                  Time=4.9s
+
+  --- LB-BVF V3-Style ---
+================================================================================
+                LB-BVF V3-Pro (Deep Force-Integrated Load Balance)              
+================================================================================
+  damping=0.55 | boost=1.6 | threshold=1.3 | dep_bias=0.35
+  JointScore = 0.5*(min/60.0) + 0.5*JFI_eff
+================================================================================
+  Iter   0 | Min=50.28 | JFI=0.4871 | JS=0.6626 | LF=[0.55,1.60,1.60,1.60,1.60,0.55] | EL=[3.8,0.7,0.4,0.1,0.6,2.0]
+  Iter  10 | Min=51.72 | JFI=0.5847 | JS=0.7233 | LF=[0.55,1.00,1.60,1.60,1.00,1.00] | EL=[5.5,4.3,0.1,0.9,1.2,1.9]
+  Iter  20 | Min=59.47 | JFI=0.8320 | JS=0.9116 | LF=[1.00,1.00,1.60,1.00,0.55,1.00] | EL=[8.3,8.7,0.9,7.2,6.2,4.4]
+  Iter  30 | Min=59.67 | JFI=0.7520 | JS=0.8733 | LF=[1.00,1.00,1.60,1.00,0.55,1.00] | EL=[5.1,6.2,0.6,3.9,8.2,2.2]
+  Iter  40 | Min=57.22 | JFI=0.8223 | JS=0.8880 | LF=[1.00,0.55,1.60,1.60,0.55,1.00] | EL=[7.2,8.4,2.0,5.2,5.3,2.2]
+  Iter  50 | Min=62.87 | JFI=0.8749 | JS=0.9614 | LF=[1.60,1.00,1.60,1.00,0.55,1.00] | EL=[3.6,9.0,6.7,8.8,6.6,2.8]
+  Iter  60 | Min=61.35 | JFI=0.8656 | JS=0.9441 | LF=[1.60,1.00,1.00,1.00,0.55,1.00] | EL=[4.5,9.3,8.7,5.4,6.3,2.3]
+  Iter  70 | Min=62.74 | JFI=0.9119 | JS=0.9787 | LF=[1.00,1.00,1.00,1.00,0.55,1.00] | EL=[7.2,5.8,8.0,6.6,7.6,2.2]
+
+  Final (det): Min=57.81 | JFI_eff=0.9133 | JointScore=0.9384
+        V3-Style: Min= 57.81 | JFI_eff=0.9133 | JFI_uc=0.9152 | Joint=0.9384 | Users=[11, 9, 9, 8, 17, 8]
+                  Time=5.0s
+
+  --- LB-BVF (MC) ---
+================================================================================
+                  Load-Balanced BVF V6 (Ground-Aware MC Search)                 
+================================================================================
+  P1: Pure V6 | P2: 8x50 ground-aware MC search
+  JointScore = 0.5*(min_rate/60.0) + 0.5*JFI_eff  [equal weights, normalized]
+  JFI on dependency-weighted effective UAV load
+================================================================================
+Start Optimizing...
+Iter  0 | Min: 50.2804 | Sum: 2963.8 | BestMin: 50.2804
+Iter 10 | Min: 51.9013 | Sum: 3102.9 | BestMin: 54.7871
+Iter 20 | Min: 54.4746 | Sum: 3235.1 | BestMin: 58.0210
+Iter 30 | Min: 51.0416 | Sum: 3324.4 | BestMin: 59.5545
+Iter 40 | Min: 53.5342 | Sum: 3294.6 | BestMin: 62.3861
+Iter 50 | Min: 56.8043 | Sum: 3272.9 | BestMin: 64.2299
+Iter 60 | Min: 50.1501 | Sum: 3299.0 | BestMin: 64.2299
+Iter 70 | Min: 52.3613 | Sum: 3280.2 | BestMin: 64.2299
+
+  P1: Min=49.14 | JFI_eff=0.9275 | JointScore=0.8732 | OL=0/6
+      UAV users: [13, 8, 16, 14, 16, 8]
+      Eff load:  [7.49, 4.66, 10.81, 6.97, 10.73, 6.76]
+
+  -- Phase 2: Ground-Aware Monte Carlo Search --
+  MC start: JointScore=0.8732 | Min=49.14 | JFI_eff=0.9275 | EffLoad=[7.49,4.66,10.81,6.97,10.73,6.76]
+  MC round 0: JointScore=0.8866 | Min=53.95 | JFI_eff=0.8740 | r=60 | improved
+  MC round 1: JointScore=0.8866 | Min=53.95 | JFI_eff=0.8740 | r=42 | no change
+  MC round 2: JointScore=0.8866 | Min=53.95 | JFI_eff=0.8740 | r=29 | no change
+  MC round 3: JointScore=0.8866 | Min=53.95 | JFI_eff=0.8740 | r=21 | no change
+  MC round 4: JointScore=0.8866 | Min=53.95 | JFI_eff=0.8740 | r=14 | no change
+  MC round 5: JointScore=0.8866 | Min=53.95 | JFI_eff=0.8740 | r=10 | no change
+  MC round 6: JointScore=0.8913 | Min=54.39 | JFI_eff=0.8761 | r=10 | improved
+  MC round 7: JointScore=0.8913 | Min=54.39 | JFI_eff=0.8761 | r=7 | no change
+  MC done: JointScore=0.8913 | Min=54.39 | JFI_eff=0.8761 | EffLoad=[7.00,2.41,10.91,7.47,11.65,9.22]
+
+  -> P2 wins | dMin=+5.25 | dJFI_eff=-0.0514 | dJointScore=+0.0180
+      UAV users: [14, 6, 17, 14, 17, 11]
+      Eff load:  [7.00, 2.41, 10.91, 7.47, 11.65, 9.22]
+       LB-BVF-MC: Min= 54.39 | JFI_eff=0.8761 | JFI_uc=0.9230 | Joint=0.8913 | Users=[14, 6, 17, 14, 17, 11]
+                  Time=29.0s
+
+  Δ vs V6  [V3-Style]:  Joint=+0.0652  min=+8.67  JFI=-0.0142
+  Δ vs V6  [LB-MC]:     Joint=+0.0180  min=+5.25  JFI=-0.0514
+  V3-Style: [OK]  LB-MC: [OK]
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Seed = 88
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+         Initial: Min= 43.93 | JFI_eff=0.5007 | JFI_uc=0.5375 | Joint=0.6164 | Users=[15, 17, 1, 1, 0, 13]
+
+  --- BVF V6 ---
+Start Optimizing...
+Iter  0 | Min: 46.8645 | Sum: 2666.9 | BestMin: 46.8645
+Iter 10 | Min: 50.6326 | Sum: 2960.6 | BestMin: 55.4053
+Iter 20 | Min: 56.4792 | Sum: 3135.9 | BestMin: 57.9033
+Iter 30 | Min: 53.6485 | Sum: 3133.5 | BestMin: 57.9033
+Iter 40 | Min: 51.4007 | Sum: 3113.1 | BestMin: 57.9033
+ Renewing...
+Iter 50 | Min: 52.0108 | Sum: 3040.6 | BestMin: 57.9033
+Iter 60 | Min: 48.9515 | Sum: 3179.7 | BestMin: 57.9033
+Iter 70 | Min: 48.7799 | Sum: 3078.3 | BestMin: 60.8496
+              V6: Min= 53.27 | JFI_eff=0.7308 | JFI_uc=0.7814 | Joint=0.8093 | Users=[8, 11, 1, 13, 7, 17]
+                  Time=4.8s
+
+  --- LB-BVF V3-Style ---
+================================================================================
+                LB-BVF V3-Pro (Deep Force-Integrated Load Balance)              
+================================================================================
+  damping=0.55 | boost=1.6 | threshold=1.3 | dep_bias=0.35
+  JointScore = 0.5*(min/60.0) + 0.5*JFI_eff
+================================================================================
+  Iter   0 | Min=46.86 | JFI=0.5007 | JS=0.6409 | LF=[0.55,0.55,1.60,1.60,1.60,0.55] | EL=[4.2,2.9,0.4,0.4,0.0,1.4]
+  Iter  10 | Min=47.47 | JFI=0.7223 | JS=0.7567 | LF=[0.55,1.00,1.60,1.00,1.60,0.55] | EL=[7.1,6.0,1.0,0.8,3.5,4.0]
+  Iter  20 | Min=56.41 | JFI=0.7912 | JS=0.8657 | LF=[1.60,1.00,1.60,0.55,1.00,0.55] | EL=[3.1,8.0,0.7,9.3,8.4,7.9]
+  Iter  30 | Min=48.12 | JFI=0.8226 | JS=0.8122 | LF=[1.60,1.00,1.60,1.00,0.55,0.55] | EL=[2.3,7.9,2.0,7.2,8.8,6.1]
+  Iter  40 | Min=51.39 | JFI=0.9277 | JS=0.8921 | LF=[1.00,1.60,1.60,1.00,1.00,0.55] | EL=[3.5,6.0,4.9,7.7,3.6,6.1]
+  Iter  50 | Min=49.08 | JFI=0.9102 | JS=0.8641 | LF=[1.60,1.00,1.00,1.00,1.60,0.55] | EL=[6.0,8.2,8.4,8.5,2.9,5.3]
+  Iter  60 | Min=49.94 | JFI=0.8909 | JS=0.8617 | LF=[1.00,1.00,1.60,1.00,1.00,0.55] | EL=[7.0,6.1,3.4,7.0,2.2,5.3]
+  Iter  70 | Min=52.30 | JFI=0.9218 | JS=0.8967 | LF=[1.60,1.00,1.00,1.00,1.00,0.55] | EL=[4.4,5.0,7.8,7.5,3.5,4.8]
+
+  Final (det): Min=54.93 | JFI_eff=0.9530 | JointScore=0.9343
+        V3-Style: Min= 54.93 | JFI_eff=0.9530 | JFI_uc=0.9225 | Joint=0.9343 | Users=[8, 12, 9, 9, 9, 17]
+                  Time=5.0s
+
+  --- LB-BVF (MC) ---
+================================================================================
+                  Load-Balanced BVF V6 (Ground-Aware MC Search)                 
+================================================================================
+  P1: Pure V6 | P2: 8x50 ground-aware MC search
+  JointScore = 0.5*(min_rate/60.0) + 0.5*JFI_eff  [equal weights, normalized]
+  JFI on dependency-weighted effective UAV load
+================================================================================
+Start Optimizing...
+Iter  0 | Min: 46.8645 | Sum: 2666.9 | BestMin: 46.8645
+Iter 10 | Min: 50.6326 | Sum: 2960.6 | BestMin: 55.4053
+Iter 20 | Min: 56.4792 | Sum: 3135.9 | BestMin: 57.9033
+Iter 30 | Min: 53.6485 | Sum: 3133.5 | BestMin: 57.9033
+Iter 40 | Min: 51.4007 | Sum: 3113.1 | BestMin: 57.9033
+ Renewing...
+Iter 50 | Min: 52.0108 | Sum: 3040.6 | BestMin: 57.9033
+Iter 60 | Min: 48.9515 | Sum: 3179.7 | BestMin: 57.9033
+Iter 70 | Min: 48.7799 | Sum: 3078.3 | BestMin: 60.8496
+
+  P1: Min=53.27 | JFI_eff=0.7308 | JointScore=0.8093 | OL=2/6
+      UAV users: [8, 11, 1, 13, 7, 17]
+      Eff load:  [2.09, 4.91, 0.02, 8.01, 4.57, 6.02]
+
+  -- Phase 2: Ground-Aware Monte Carlo Search --
+  MC start: JointScore=0.8093 | Min=53.27 | JFI_eff=0.7308 | EffLoad=[2.09,4.91,0.02,8.01,4.57,6.02]
+  MC round 0: JointScore=0.9175 | Min=53.60 | JFI_eff=0.9416 | r=60 | improved
+  MC round 1: JointScore=0.9175 | Min=53.60 | JFI_eff=0.9416 | r=42 | no change
+  MC round 2: JointScore=0.9232 | Min=56.24 | JFI_eff=0.9090 | r=42 | improved
+  MC round 3: JointScore=0.9283 | Min=54.48 | JFI_eff=0.9487 | r=42 | improved
+  MC round 4: JointScore=0.9361 | Min=54.79 | JFI_eff=0.9590 | r=42 | improved
+  MC round 5: JointScore=0.9361 | Min=54.79 | JFI_eff=0.9590 | r=29 | no change
+  MC round 6: JointScore=0.9491 | Min=55.64 | JFI_eff=0.9709 | r=29 | improved
+  MC round 7: JointScore=0.9491 | Min=55.64 | JFI_eff=0.9709 | r=21 | no change
+  MC done: JointScore=0.9491 | Min=55.64 | JFI_eff=0.9709 | EffLoad=[5.76,4.58,5.36,4.29,7.20,5.98]
+
+  -> P2 wins | dMin=+2.37 | dJFI_eff=+0.2401 | dJointScore=+0.1398
+      UAV users: [11, 11, 6, 6, 8, 17]
+      Eff load:  [5.76, 4.58, 5.36, 4.29, 7.20, 5.98]
+       LB-BVF-MC: Min= 55.64 | JFI_eff=0.9709 | JFI_uc=0.8698 | Joint=0.9491 | Users=[11, 11, 6, 6, 8, 17]
+                  Time=28.9s
+
+  Δ vs V6  [V3-Style]:  Joint=+0.1249  min=+1.66  JFI=+0.2222
+  Δ vs V6  [LB-MC]:     Joint=+0.1398  min=+2.37  JFI=+0.2401
+  V3-Style: [OK]  LB-MC: [OK]
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Seed = 99
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+         Initial: Min= 37.55 | JFI_eff=0.5199 | JFI_uc=0.6039 | Joint=0.5729 | Users=[16, 14, 0, 3, 2, 15]
+
+  --- BVF V6 ---
+Start Optimizing...
+Iter  0 | Min: 37.9158 | Sum: 2548.4 | BestMin: 37.9158
+Iter 10 | Min: 43.8281 | Sum: 2821.7 | BestMin: 48.4414
+Iter 20 | Min: 54.1474 | Sum: 3081.7 | BestMin: 55.2765
+Iter 30 | Min: 53.7773 | Sum: 3179.6 | BestMin: 55.9289
+Iter 40 | Min: 54.1135 | Sum: 3114.7 | BestMin: 58.1159
+Iter 50 | Min: 53.5928 | Sum: 3067.6 | BestMin: 58.1159
+Iter 60 | Min: 48.3600 | Sum: 3133.7 | BestMin: 58.1159
+ Renewing...
+Iter 70 | Min: 53.2515 | Sum: 2977.3 | BestMin: 58.1159
+              V6: Min= 43.15 | JFI_eff=0.8286 | JFI_uc=0.8499 | Joint=0.7739 | Users=[4, 11, 12, 10, 6, 17]
+                  Time=5.1s
+
+  --- LB-BVF V3-Style ---
+================================================================================
+                LB-BVF V3-Pro (Deep Force-Integrated Load Balance)              
+================================================================================
+  damping=0.55 | boost=1.6 | threshold=1.3 | dep_bias=0.35
+  JointScore = 0.5*(min/60.0) + 0.5*JFI_eff
+================================================================================
+  Iter   0 | Min=37.92 | JFI=0.5199 | JS=0.5759 | LF=[0.55,0.55,1.60,1.60,1.60,0.55] | EL=[4.1,1.5,0.0,1.0,0.4,1.3]
+  Iter  10 | Min=42.79 | JFI=0.5506 | JS=0.6319 | LF=[0.55,1.00,1.60,1.00,1.60,0.55] | EL=[8.6,3.3,0.0,0.6,2.3,4.0]
+  Iter  20 | Min=54.49 | JFI=0.7931 | JS=0.8506 | LF=[1.00,1.00,1.60,0.55,1.60,0.55] | EL=[7.0,8.2,0.8,8.8,3.3,5.1]
+  Iter  30 | Min=54.00 | JFI=0.8928 | JS=0.8964 | LF=[1.00,1.00,1.00,1.00,1.00,0.55] | EL=[8.4,2.6,6.1,8.5,8.3,4.7]
+  Iter  40 | Min=56.82 | JFI=0.8640 | JS=0.9055 | LF=[1.00,1.00,1.00,1.00,1.00,0.55] | EL=[9.5,9.0,4.2,3.1,8.0,4.4]
+  Iter  50 | Min=52.63 | JFI=0.9449 | JS=0.9110 | LF=[1.00,1.00,1.00,1.00,1.00,0.55] | EL=[5.9,4.5,7.5,7.6,8.4,4.5]
+  Iter  60 | Min=51.97 | JFI=0.8436 | JS=0.8549 | LF=[1.00,1.00,1.00,1.00,1.00,0.55] | EL=[9.9,3.0,3.2,8.0,7.6,4.7]
+  Restart #1 (load-aware)
+  Iter  70 | Min=50.15 | JFI=0.9067 | JS=0.8712 | LF=[1.00,1.60,1.00,1.60,1.00,0.55] | EL=[7.8,5.0,9.5,4.4,4.9,4.5]
+
+  Final (det): Min=43.25 | JFI_eff=0.8755 | JointScore=0.7981
+        V3-Style: Min= 43.25 | JFI_eff=0.8755 | JFI_uc=0.8855 | Joint=0.7981 | Users=[5, 8, 12, 9, 12, 17]
+                  Time=4.9s
+
+  --- LB-BVF (MC) ---
+================================================================================
+                  Load-Balanced BVF V6 (Ground-Aware MC Search)                 
+================================================================================
+  P1: Pure V6 | P2: 8x50 ground-aware MC search
+  JointScore = 0.5*(min_rate/60.0) + 0.5*JFI_eff  [equal weights, normalized]
+  JFI on dependency-weighted effective UAV load
+================================================================================
+Start Optimizing...
+Iter  0 | Min: 37.9158 | Sum: 2548.4 | BestMin: 37.9158
+Iter 10 | Min: 43.8281 | Sum: 2821.7 | BestMin: 48.4414
+Iter 20 | Min: 54.1474 | Sum: 3081.7 | BestMin: 55.2765
+Iter 30 | Min: 53.7773 | Sum: 3179.6 | BestMin: 55.9289
+Iter 40 | Min: 54.1135 | Sum: 3114.7 | BestMin: 58.1159
+Iter 50 | Min: 53.5928 | Sum: 3067.6 | BestMin: 58.1159
+Iter 60 | Min: 48.3600 | Sum: 3133.7 | BestMin: 58.1159
+ Renewing...
+Iter 70 | Min: 53.2515 | Sum: 2977.3 | BestMin: 58.1159
+
+  P1: Min=43.15 | JFI_eff=0.8286 | JointScore=0.7739 | OL=1/6
+      UAV users: [4, 11, 12, 10, 6, 17]
+      Eff load:  [3.83, 8.41, 8.84, 5.44, 1.82, 4.45]
+
+  -- Phase 2: Ground-Aware Monte Carlo Search --
+  MC start: JointScore=0.7739 | Min=43.15 | JFI_eff=0.8286 | EffLoad=[3.83,8.41,8.84,5.44,1.82,4.45]
+  MC round 0: JointScore=0.8069 | Min=41.16 | JFI_eff=0.9278 | r=60 | improved
+  MC round 1: JointScore=0.8214 | Min=43.13 | JFI_eff=0.9239 | r=60 | improved
+  MC round 2: JointScore=0.8214 | Min=43.13 | JFI_eff=0.9239 | r=42 | no change
+  MC round 3: JointScore=0.8214 | Min=43.13 | JFI_eff=0.9239 | r=29 | no change
+  MC round 4: JointScore=0.8214 | Min=43.13 | JFI_eff=0.9239 | r=21 | no change
+  MC round 5: JointScore=0.8214 | Min=43.13 | JFI_eff=0.9239 | r=14 | no change
+  MC round 6: JointScore=0.8321 | Min=42.34 | JFI_eff=0.9584 | r=14 | improved
+  MC round 7: JointScore=0.8349 | Min=43.30 | JFI_eff=0.9481 | r=14 | improved
+  MC done: JointScore=0.8349 | Min=43.30 | JFI_eff=0.9481 | EffLoad=[8.00,6.34,8.59,4.60,6.61,4.64]
+
+  -> P2 wins | dMin=+0.15 | dJFI_eff=+0.1196 | dJointScore=+0.0610
+      UAV users: [8, 12, 9, 10, 7, 17]
+      Eff load:  [8.00, 6.34, 8.59, 4.60, 6.61, 4.64]
+       LB-BVF-MC: Min= 43.30 | JFI_eff=0.9481 | JFI_uc=0.9099 | Joint=0.8349 | Users=[8, 12, 9, 10, 7, 17]
+                  Time=28.7s
+
+  Δ vs V6  [V3-Style]:  Joint=+0.0242  min=+0.10  JFI=+0.0469
+  Δ vs V6  [LB-MC]:     Joint=+0.0610  min=+0.15  JFI=+0.1196
+  V3-Style: [OK]  LB-MC: [OK]
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Seed = 107
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+         Initial: Min= 28.18 | JFI_eff=0.4398 | JFI_uc=0.4566 | Joint=0.4547 | Users=[17, 1, 3, 1, 1, 11]
+
+  --- BVF V6 ---
+Start Optimizing...
+Iter  0 | Min: 28.1640 | Sum: 2655.5 | BestMin: 28.1640
+Iter 10 | Min: 30.6967 | Sum: 2772.2 | BestMin: 38.1231
+Iter 20 | Min: 44.1568 | Sum: 2777.9 | BestMin: 45.0380
+Iter 30 | Min: 37.3940 | Sum: 2882.7 | BestMin: 47.2308
+Iter 40 | Min: 48.0962 | Sum: 3020.5 | BestMin: 48.0962
+Iter 50 | Min: 49.7250 | Sum: 3019.1 | BestMin: 55.1841
+Iter 60 | Min: 47.1511 | Sum: 3002.0 | BestMin: 55.1841
+Iter 70 | Min: 51.9048 | Sum: 3024.4 | BestMin: 56.1285
+              V6: Min= 51.77 | JFI_eff=0.8991 | JFI_uc=0.9623 | Joint=0.8810 | Users=[11, 12, 12, 17, 9, 12]
+                  Time=4.9s
+
+  --- LB-BVF V3-Style ---
+================================================================================
+                LB-BVF V3-Pro (Deep Force-Integrated Load Balance)              
+================================================================================
+  damping=0.55 | boost=1.6 | threshold=1.3 | dep_bias=0.35
+  JointScore = 0.5*(min/60.0) + 0.5*JFI_eff
+================================================================================
+  Iter   0 | Min=28.16 | JFI=0.4398 | JS=0.4546 | LF=[0.55,1.60,1.60,1.60,1.60,0.55] | EL=[5.2,0.5,1.1,0.3,0.5,1.4]
+  Iter  10 | Min=32.08 | JFI=0.5390 | JS=0.5368 | LF=[0.55,1.60,1.00,1.60,0.55,1.00] | EL=[6.3,1.0,1.4,0.5,1.9,1.4]
+  Iter  20 | Min=43.85 | JFI=0.7227 | JS=0.7268 | LF=[0.55,1.60,0.55,1.60,1.00,1.60] | EL=[5.3,0.9,4.6,0.5,2.9,2.6]
+  Iter  30 | Min=39.59 | JFI=0.8974 | JS=0.7786 | LF=[0.55,1.00,1.00,1.60,1.00,1.00] | EL=[7.3,4.4,6.0,2.8,3.2,4.0]
+  Iter  40 | Min=45.75 | JFI=0.8435 | JS=0.8030 | LF=[1.60,1.00,1.00,0.55,1.00,1.00] | EL=[1.3,6.6,5.4,5.4,2.9,3.3]
+  Iter  50 | Min=47.81 | JFI=0.8134 | JS=0.8051 | LF=[1.00,1.60,1.00,0.55,1.00,1.00] | EL=[6.4,1.2,4.1,6.7,2.5,3.9]
+  Iter  60 | Min=46.94 | JFI=0.9200 | JS=0.8512 | LF=[1.00,1.00,1.00,1.00,1.00,1.00] | EL=[6.5,3.3,5.4,4.2,3.1,3.3]
+  Iter  70 | Min=51.57 | JFI=0.9102 | JS=0.8849 | LF=[1.00,1.00,1.00,1.00,1.60,1.00] | EL=[6.2,4.0,6.0,3.3,2.4,5.5]
+
+  Final (det): Min=50.49 | JFI_eff=0.9270 | JointScore=0.8843
+        V3-Style: Min= 50.49 | JFI_eff=0.9270 | JFI_uc=0.9642 | Joint=0.8843 | Users=[15, 11, 14, 10, 10, 9]
+                  Time=4.9s
+
+  --- LB-BVF (MC) ---
+================================================================================
+                  Load-Balanced BVF V6 (Ground-Aware MC Search)                 
+================================================================================
+  P1: Pure V6 | P2: 8x50 ground-aware MC search
+  JointScore = 0.5*(min_rate/60.0) + 0.5*JFI_eff  [equal weights, normalized]
+  JFI on dependency-weighted effective UAV load
+================================================================================
+Start Optimizing...
+Iter  0 | Min: 28.1640 | Sum: 2655.5 | BestMin: 28.1640
+Iter 10 | Min: 30.6967 | Sum: 2772.2 | BestMin: 38.1231
+Iter 20 | Min: 44.1568 | Sum: 2777.9 | BestMin: 45.0380
+Iter 30 | Min: 37.3940 | Sum: 2882.7 | BestMin: 47.2308
+Iter 40 | Min: 48.0962 | Sum: 3020.5 | BestMin: 48.0962
+Iter 50 | Min: 49.7250 | Sum: 3019.1 | BestMin: 55.1841
+Iter 60 | Min: 47.1511 | Sum: 3002.0 | BestMin: 55.1841
+Iter 70 | Min: 51.9048 | Sum: 3024.4 | BestMin: 56.1285
+
+  P1: Min=51.77 | JFI_eff=0.8991 | JointScore=0.8810 | OL=1/6
+      UAV users: [11, 12, 12, 17, 9, 12]
+      Eff load:  [4.96, 6.92, 4.72, 7.16, 2.72, 3.28]
+
+  -- Phase 2: Ground-Aware Monte Carlo Search --
+  MC start: JointScore=0.8810 | Min=51.77 | JFI_eff=0.8991 | EffLoad=[4.96,6.92,4.72,7.16,2.72,3.28]
+  MC round 0: JointScore=0.8997 | Min=56.38 | JFI_eff=0.8598 | r=60 | improved
+  MC round 1: JointScore=0.8997 | Min=56.38 | JFI_eff=0.8598 | r=42 | no change
+  MC round 2: JointScore=0.9113 | Min=56.29 | JFI_eff=0.8844 | r=42 | improved
+  MC round 3: JointScore=0.9174 | Min=53.66 | JFI_eff=0.9405 | r=42 | improved
+  MC round 4: JointScore=0.9174 | Min=53.66 | JFI_eff=0.9405 | r=29 | no change
+  MC round 5: JointScore=0.9174 | Min=53.66 | JFI_eff=0.9405 | r=21 | no change
+  MC round 6: JointScore=0.9174 | Min=53.66 | JFI_eff=0.9405 | r=14 | no change
+  MC round 7: JointScore=0.9174 | Min=53.66 | JFI_eff=0.9405 | r=10 | no change
+  MC done: JointScore=0.9174 | Min=53.66 | JFI_eff=0.9405 | EffLoad=[4.04,5.00,2.51,5.94,3.69,4.94]
+
+  -> P2 wins | dMin=+1.89 | dJFI_eff=+0.0414 | dJointScore=+0.0364
+      UAV users: [6, 16, 8, 16, 14, 11]
+      Eff load:  [4.04, 5.00, 2.51, 5.94, 3.69, 4.94]
+       LB-BVF-MC: Min= 53.66 | JFI_eff=0.9405 | JFI_uc=0.9044 | Joint=0.9174 | Users=[6, 16, 8, 16, 14, 11]
+                  Time=28.7s
+
+  Δ vs V6  [V3-Style]:  Joint=+0.0033  min=-1.28  JFI=+0.0279
+  Δ vs V6  [LB-MC]:     Joint=+0.0364  min=+1.89  JFI=+0.0414
+  V3-Style: [OK]  LB-MC: [OK]
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Seed = 123
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+         Initial: Min= 50.94 | JFI_eff=0.6360 | JFI_uc=0.7168 | Joint=0.7425 | Users=[13, 13, 4, 4, 1, 11]
+
+  --- BVF V6 ---
+Start Optimizing...
+Iter  0 | Min: 47.4971 | Sum: 3037.9 | BestMin: 47.4971
+Iter 10 | Min: 48.9232 | Sum: 3025.8 | BestMin: 54.7495
+Iter 20 | Min: 43.2969 | Sum: 3219.7 | BestMin: 59.2724
+Iter 30 | Min: 51.2884 | Sum: 3180.5 | BestMin: 59.2724
+Iter 40 | Min: 53.5739 | Sum: 3276.5 | BestMin: 63.9498
+Iter 50 | Min: 57.2971 | Sum: 3305.6 | BestMin: 63.9498
+ Renewing...
+Iter 60 | Min: 62.2862 | Sum: 3301.9 | BestMin: 63.9498
+Iter 70 | Min: 50.8060 | Sum: 3194.6 | BestMin: 63.9498
+              V6: Min= 62.35 | JFI_eff=0.9818 | JFI_uc=0.9518 | Joint=1.0104 | Users=[14, 11, 8, 10, 16, 11]
+                  Time=4.8s
+
+  --- LB-BVF V3-Style ---
+================================================================================
+                LB-BVF V3-Pro (Deep Force-Integrated Load Balance)              
+================================================================================
+  damping=0.55 | boost=1.6 | threshold=1.3 | dep_bias=0.35
+  JointScore = 0.5*(min/60.0) + 0.5*JFI_eff
+================================================================================
+  Iter   0 | Min=47.50 | JFI=0.6360 | JS=0.7138 | LF=[0.55,0.55,1.60,1.60,1.60,0.55] | EL=[4.3,2.8,1.6,0.6,0.4,1.2]
+  Iter  10 | Min=48.53 | JFI=0.6464 | JS=0.7276 | LF=[0.55,1.00,1.60,1.60,1.00,0.55] | EL=[4.8,2.1,1.1,1.4,1.4,0.5]
+  Iter  20 | Min=42.95 | JFI=0.7793 | JS=0.7475 | LF=[1.00,1.00,1.60,1.00,0.55,1.00] | EL=[5.8,3.3,0.9,2.4,5.5,2.1]
+  Iter  30 | Min=50.74 | JFI=0.9503 | JS=0.8980 | LF=[1.00,1.00,1.60,1.00,1.00,1.00] | EL=[5.4,3.6,3.4,2.7,3.7,4.8]
+  Iter  40 | Min=53.19 | JFI=0.9854 | JS=0.9359 | LF=[1.00,1.60,1.00,1.00,1.00,1.00] | EL=[6.9,5.1,6.2,5.7,4.9,6.4]
+  Iter  50 | Min=58.09 | JFI=0.8695 | JS=0.9188 | LF=[1.00,1.00,1.00,0.55,1.00,1.00] | EL=[1.9,5.1,6.2,5.7,2.3,4.6]
+  Iter  60 | Min=58.61 | JFI=0.9132 | JS=0.9450 | LF=[1.00,1.00,1.00,1.00,1.00,1.00] | EL=[2.7,4.6,5.8,4.9,2.2,3.9]
+  Restart #1 (load-aware)
+  Iter  70 | Min=54.85 | JFI=0.9816 | JS=0.9479 | LF=[1.00,1.00,1.60,1.00,1.00,1.00] | EL=[5.9,6.0,5.3,5.4,4.1,6.5]
+
+  Final (det): Min=63.98 | JFI_eff=0.9737 | JointScore=1.0200
+        V3-Style: Min= 63.98 | JFI_eff=0.9737 | JFI_uc=0.9298 | Joint=1.0200 | Users=[13, 12, 6, 7, 10, 13]
+                  Time=4.9s
+
+  --- LB-BVF (MC) ---
+================================================================================
+                  Load-Balanced BVF V6 (Ground-Aware MC Search)                 
+================================================================================
+  P1: Pure V6 | P2: 8x50 ground-aware MC search
+  JointScore = 0.5*(min_rate/60.0) + 0.5*JFI_eff  [equal weights, normalized]
+  JFI on dependency-weighted effective UAV load
+================================================================================
+Start Optimizing...
+Iter  0 | Min: 47.4971 | Sum: 3037.9 | BestMin: 47.4971
+Iter 10 | Min: 48.9232 | Sum: 3025.8 | BestMin: 54.7495
+Iter 20 | Min: 43.2969 | Sum: 3219.7 | BestMin: 59.2724
+Iter 30 | Min: 51.2884 | Sum: 3180.5 | BestMin: 59.2724
+Iter 40 | Min: 53.5739 | Sum: 3276.5 | BestMin: 63.9498
+Iter 50 | Min: 57.2971 | Sum: 3305.6 | BestMin: 63.9498
+ Renewing...
+Iter 60 | Min: 62.2862 | Sum: 3301.9 | BestMin: 63.9498
+Iter 70 | Min: 50.8060 | Sum: 3194.6 | BestMin: 63.9498
+
+  P1: Min=62.35 | JFI_eff=0.9818 | JointScore=1.0104 | OL=1/6
+      UAV users: [14, 11, 8, 10, 16, 11]
+      Eff load:  [6.96, 5.62, 6.22, 5.22, 7.17, 5.02]
+
+  -- Phase 2: Ground-Aware Monte Carlo Search --
+  MC start: JointScore=1.0104 | Min=62.35 | JFI_eff=0.9818 | EffLoad=[6.96,5.62,6.22,5.22,7.17,5.02]
+  MC round 0: JointScore=1.0219 | Min=64.47 | JFI_eff=0.9693 | r=60 | improved
+  MC round 1: JointScore=1.0219 | Min=64.47 | JFI_eff=0.9693 | r=42 | no change
+  MC round 2: JointScore=1.0219 | Min=64.47 | JFI_eff=0.9693 | r=29 | no change
+  MC round 3: JointScore=1.0252 | Min=65.28 | JFI_eff=0.9626 | r=29 | improved
+  MC round 4: JointScore=1.0252 | Min=65.28 | JFI_eff=0.9626 | r=21 | no change
+  MC round 5: JointScore=1.0308 | Min=66.19 | JFI_eff=0.9585 | r=21 | improved
+  MC round 6: JointScore=1.0308 | Min=66.19 | JFI_eff=0.9585 | r=14 | no change
+  MC round 7: JointScore=1.0308 | Min=66.19 | JFI_eff=0.9585 | r=10 | no change
+  MC done: JointScore=1.0308 | Min=66.19 | JFI_eff=0.9585 | EffLoad=[5.55,6.14,3.31,4.69,6.50,4.62]
+
+  -> P2 wins | dMin=+3.84 | dJFI_eff=-0.0233 | dJointScore=+0.0204
+      UAV users: [12, 14, 5, 9, 16, 11]
+      Eff load:  [5.55, 6.14, 3.31, 4.69, 6.50, 4.62]
+       LB-BVF-MC: Min= 66.19 | JFI_eff=0.9585 | JFI_uc=0.9091 | Joint=1.0308 | Users=[12, 14, 5, 9, 16, 11]
+                  Time=28.6s
+
+  Δ vs V6  [V3-Style]:  Joint=+0.0095  min=+1.63  JFI=-0.0081
+  Δ vs V6  [LB-MC]:     Joint=+0.0204  min=+3.84  JFI=-0.0233
+  V3-Style: [OK]  LB-MC: [OK]
+
+==============================================================================================================
+  SUMMARY (Δ vs V6 baseline)  [10 seeds]
+  Method            SUCCESS   Avg ΔJoint   Avg Δmin  Avg ΔJFI_eff
+  V3-Style                9/10      +0.0427      +0.49       +0.0772
+  LB-BVF-MC              10/10      +0.0451      +1.76       +0.0610
+==============================================================================================================
+
+       Seed |    V6 Joint/min/JFIe |    V3 Joint/min/JFIe |    MC Joint/min/JFIe |      ΔV3      ΔMC
+  ++   42 | 0.9226/ 56.7/0.900 | 0.9359/ 54.6/0.962 | 0.9632/ 57.7/0.964 |  +0.0132  +0.0405
+  ++   51 | 0.9398/ 61.6/0.852 | 0.9933/ 61.8/0.956 | 0.9446/ 61.8/0.859 |  +0.0535  +0.0048
+  ++   62 | 0.8434/ 50.1/0.852 | 0.8994/ 49.6/0.973 | 0.8908/ 52.3/0.909 |  +0.0559  +0.0474
+  ++   71 | 0.8572/ 53.2/0.828 | 0.9537/ 56.5/0.966 | 0.8990/ 54.8/0.884 |  +0.0965  +0.0419
+  -+   75 | 0.8630/ 55.9/0.794 | 0.8438/ 49.2/0.868 | 0.9040/ 54.9/0.894 |  -0.0192  +0.0410
+  ++   33 | 0.8732/ 49.1/0.927 | 0.9384/ 57.8/0.913 | 0.8913/ 54.4/0.876 |  +0.0652  +0.0180
+  ++   88 | 0.8093/ 53.3/0.731 | 0.9343/ 54.9/0.953 | 0.9491/ 55.6/0.971 |  +0.1249  +0.1398
+  ++   99 | 0.7739/ 43.2/0.829 | 0.7981/ 43.2/0.875 | 0.8349/ 43.3/0.948 |  +0.0242  +0.0610
+  ++  107 | 0.8810/ 51.8/0.899 | 0.8843/ 50.5/0.927 | 0.9174/ 53.7/0.940 |  +0.0033  +0.0364
+  ++  123 | 1.0104/ 62.3/0.982 | 1.0200/ 64.0/0.974 | 1.0308/ 66.2/0.958 |  +0.0095  +0.0204
+==============================================================================================================

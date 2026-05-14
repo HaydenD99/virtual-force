@@ -1,0 +1,213 @@
+================================================================================
+                      FAIR OPTIMIZER COMPARISON EXPERIMENT                      
+================================================================================
+
+公平性保证：
+  ✓ 总评估次数: 1500 (种群30 × 迭代50)
+  ✓ 信道实现次数: 50
+  ✓ 随机种子: 42
+  ✓ 相同的初始位置和场景
+  ✓ 固定的导频分配
+
+
+[1/5] Generating neutral scenario...
+[Neutral Initialization]
+  ✓ UE positions: 60 users randomly distributed
+  ✓ Ground APs: 4 APs at corners
+  ✓ UAVs: 9 UAVs in 3x3 grid
+  ✓ Random seed: 42
+
+[2/5] Creating fair configurations...
+  ✓ All configurations created with unified parameters
+
+[3/5] Computing initial performance...
+  Initial Min Rate: 28.7006 Mbps
+  Initial Sum Rate: 2495.80 Mbps
+  Initial Mean Rate: 41.5966 Mbps
+  Initial Std Rate: 5.8129 Mbps
+
+[4/5] Running optimizers...
+
+================================================================================
+[4/4] Running Balanced Virtual Force Optimizer V3...
+================================================================================
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2510.89Mbps, Min=29.4981Mbps, BestMin=29.4981Mbps (Iter0), Time=0.088s
+Iter 10: Sum=2568.72Mbps, Min=30.7887Mbps, BestMin=34.3968Mbps (Iter9), Time=0.087s
+Iter 20: Sum=2558.04Mbps, Min=31.5841Mbps, BestMin=34.3968Mbps (Iter9), Time=0.090s
+Iter 30: Sum=2516.84Mbps, Min=31.5605Mbps, BestMin=34.3968Mbps (Iter9), Time=0.090s
+
+🔄 智能重启 #1 (Iter 34)
+Iter 40: Sum=2460.55Mbps, Min=27.4603Mbps, BestMin=34.3968Mbps (Iter9), Time=0.089s
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 9 次迭代
+📊 历代最优总速率: 2538.16 Mbps
+🎯 历代最优最小速率: 34.3968 Mbps
+📈 速率标准差: 5.5428 Mbps
+⏱️  优化时间: 4.52 秒
+⚡ 平均每次迭代: 0.090 秒
+🔄 重启次数: 1
+
+✓ Balanced Virtual Force Optimizer V3 Complete
+   Final Min Rate: 34.3968 Mbps
+   Final Sum Rate: 2538.16 Mbps
+   Time: 4.52 s
+
+================================================================================
+[4/4] Running Discrete Genetic Algorithm...
+================================================================================
+离散网格生成完成: 9x9 = 81个候选点
+开始离散遗传算法优化（网格: 9x9）...
+Gen 0: Fitness=3.1387, Sum=2436.01Mbps, Min=25.2759Mbps, Time=2.825s
+Gen 10: Fitness=3.5278, Sum=2428.58Mbps, Min=34.1355Mbps, Time=2.836s
+Gen 20: Fitness=3.5466, Sum=2426.86Mbps, Min=33.5013Mbps, Time=2.821s
+Gen 30: Fitness=3.5466, Sum=2409.36Mbps, Min=33.0601Mbps, Time=3.720s
+Gen 40: Fitness=3.5466, Sum=2399.92Mbps, Min=33.3133Mbps, Time=311.555s
+
+🎉 离散遗传算法优化完成!
+✨ 最佳性能出现在第 12 代
+📊 最终总速率: 2392.42 Mbps
+🎯 最终最小速率: 32.3207 Mbps
+📈 速率标准差: 4.2057 Mbps
+⏱️  优化时间: 10323.33 秒
+⚡ 平均每代: 206.467 秒
+🎲 使用网格点: [5, 12, 23, 35, 36, 37, 48, 51, 76]
+
+✓ Discrete Genetic Algorithm Complete
+   Final Min Rate: 32.3207 Mbps
+   Final Sum Rate: 2392.42 Mbps
+   Time: 10323.46 s
+
+================================================================================
+[4/4] Running Distributed PSO...
+================================================================================
+✅ 分布式PSO优化器初始化完成
+   - 粒子数量: 30
+   - 最大迭代次数: 50
+   - PSO参数: w=0.729, c1=1.49445, c2=1.49445
+
+================================================================================
+                            分布式PSO优化算法 (Algorithm 2)                            
+================================================================================
+
+[Step 1] 初始化粒子群...
+   ✓ 粒子群初始化完成
+   ✓ 初始全局最佳适应度: 55.9653
+
+[开始迭代] 最大迭代次数: 50
+--------------------------------------------------------------------------------
+Iter   0 | Fitness:  56.0299 | Min Rate: 31.7859 Mbps | Sum Rate:  2483.65 Mbps | Mean Rate: 41.3941 Mbps
+Iter  10 | Fitness:  58.5622 | Min Rate: 30.2856 Mbps | Sum Rate:  2458.20 Mbps | Mean Rate: 40.9699 Mbps
+Iter  20 | Fitness:  60.6747 | Min Rate: 34.0975 Mbps | Sum Rate:  2521.43 Mbps | Mean Rate: 42.0239 Mbps
+Iter  30 | Fitness:  61.2314 | Min Rate: 34.6091 Mbps | Sum Rate:  2554.15 Mbps | Mean Rate: 42.5691 Mbps
+Iter  40 | Fitness:  62.1469 | Min Rate: 34.6508 Mbps | Sum Rate:  2540.07 Mbps | Mean Rate: 42.3345 Mbps
+Iter  49 | Fitness:  62.1469 | Min Rate: 34.0345 Mbps | Sum Rate:  2554.72 Mbps | Mean Rate: 42.5787 Mbps
+
+================================================================================
+                                      优化完成                                      
+================================================================================
+
+📊 最终性能指标:
+   - 总速率 (Sum Rate):      2530.54 Mbps
+   - 最小速率 (Min Rate):    33.5280 Mbps
+   - 平均速率 (Mean Rate):   42.1757 Mbps
+   - 速率标准差 (Std):        4.9826 Mbps
+   - 最佳适应度 (Fitness):   62.1469
+
+📈 性能提升:
+   - 总速率提升:   +1.89%
+   - 最小速率提升: +5.48%
+
+⏱️  计算时间:
+   - 总优化时间: 12560.56 秒
+   - 平均每代:   251.211 秒
+
+✓ Distributed PSO Complete
+   Final Min Rate: 33.5280 Mbps
+   Final Sum Rate: 2530.54 Mbps
+   Time: 12560.67 s
+
+================================================================================
+[4/4] Running Improved Sparrow Search Algorithm...
+================================================================================
+开始ISSA优化（基于BVF信道模型）...
+Iter 10/50: Sum=2326.86Mbps, Min=25.0551Mbps, Time=5.725s
+Iter 20/50: Sum=2308.10Mbps, Min=24.7839Mbps, Time=5.622s
+Iter 30/50: Sum=2238.92Mbps, Min=19.3919Mbps, Time=5.514s
+Iter 40/50: Sum=2219.46Mbps, Min=20.9196Mbps, Time=5.459s
+Iter 50/50: Sum=2249.75Mbps, Min=20.2522Mbps, Time=5.473s
+
+🎉 ISSA优化完成!
+📊 最终总速率: 2254.47 Mbps
+🎯 最终最小速率: 19.7567 Mbps
+⏱️  优化时间: 279.72 秒
+
+✓ Improved Sparrow Search Algorithm Complete
+   Final Min Rate: 19.7567 Mbps
+   Final Sum Rate: 2254.47 Mbps
+   Time: 282.53 s
+
+==========================================================================================
+                         FAIR COMPARISON - FINAL RESULTS SUMMARY                          
+==========================================================================================
+
+Method               Min Rate        Sum Rate        Mean Rate       Time(s)     
+------------------------------------------------------------------------------------------
+Initial              28.7006         2495.80         41.5966         0.00        
+Virtual Force        34.3968         2538.16         42.3027         4.52        
+Genetic Algorithm    32.3207         2392.42         39.8737         10323.46    
+PSO                  33.5280         2530.54         42.1757         12560.67    
+ISSA                 19.7567         2254.47         37.5745         282.53      
+------------------------------------------------------------------------------------------
+
+==========================================================================================
+                               IMPROVEMENT OVER INITIAL (%)                               
+==========================================================================================
+
+Method               Min Rate             Sum Rate             Mean Rate           
+------------------------------------------------------------------------------------------
+Virtual Force                    +19.85%              +1.70%              +1.70%
+Genetic Algorithm                +12.61%              -4.14%              -4.14%
+PSO                              +16.82%              +1.39%              +1.39%
+ISSA                             -31.16%              -9.67%              -9.67%
+------------------------------------------------------------------------------------------
+
+==========================================================================================
+                                   PERFORMANCE RANKING                                    
+==========================================================================================
+
+📊 Minimum Rate Ranking:
+   1. Virtual Force        34.3968 Mbps
+   2. PSO                  33.5280 Mbps
+   3. Genetic Algorithm    32.3207 Mbps
+   4. ISSA                 19.7567 Mbps
+
+📊 Sum Rate Ranking:
+   1. Virtual Force        2538.16 Mbps
+   2. PSO                  2530.54 Mbps
+   3. Genetic Algorithm    2392.42 Mbps
+   4. ISSA                 2254.47 Mbps
+
+⏱️  Time Efficiency Ranking:
+   1. Virtual Force        4.52 s
+   2. ISSA                 282.53 s
+   3. Genetic Algorithm    10323.46 s
+   4. PSO                  12560.67 s
+------------------------------------------------------------------------------------------
+
+✓ Fair comparison plot saved to: optimizer_comparison_fair.png
+
+==========================================================================================
+                                 FAIR COMPARISON COMPLETE                                 
+==========================================================================================
+
+✅ All four optimizations completed successfully!
+✅ Fair comparison plot generated!
+
+🎯 Fairness guarantees:
+   ✓ Same initial positions for all algorithms
+   ✓ Same random seed for reproducibility
+   ✓ Unified channel realizations (50)
+   ✓ Unified computation budget (1500 evaluations)
+   ✓ Fixed pilot allocation

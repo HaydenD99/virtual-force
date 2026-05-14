@@ -1,0 +1,120 @@
+
+=== Static Config B: K=50, L=8, G=9  (G+L)*M/K=1.36 ===
+  [ 1/50] seed=1  LB-BVF: mr=47.6 jfi=0.870
+  [ 2/50] seed=6  LB-BVF: mr=52.4 jfi=0.914
+  [ 3/50] seed=2  LB-BVF: mr=44.4 jfi=0.956
+  [ 4/50] seed=8  LB-BVF: mr=52.3 jfi=0.984
+  [ 5/50] seed=3  LB-BVF: mr=47.4 jfi=0.901
+  [ 6/50] seed=4  LB-BVF: mr=54.3 jfi=0.954
+  [ 7/50] seed=5  LB-BVF: mr=50.6 jfi=0.945
+  [ 8/50] seed=7  LB-BVF: mr=43.1 jfi=0.923
+  [ 9/50] seed=10  LB-BVF: mr=48.4 jfi=0.976
+  [10/50] seed=14  LB-BVF: mr=52.1 jfi=0.976
+  [11/50] seed=9  LB-BVF: mr=54.5 jfi=0.946
+  [12/50] seed=16  LB-BVF: mr=44.9 jfi=0.911
+  [13/50] seed=11  LB-BVF: mr=47.9 jfi=0.939
+  [14/50] seed=13  LB-BVF: mr=48.3 jfi=0.927
+  [15/50] seed=15  LB-BVF: mr=39.0 jfi=0.882
+  [16/50] seed=12  LB-BVF: mr=43.0 jfi=0.976
+  [17/50] seed=17  LB-BVF: mr=50.9 jfi=0.936
+  [18/50] seed=19  LB-BVF: mr=41.6 jfi=0.826
+  [19/50] seed=18  LB-BVF: mr=49.1 jfi=0.992
+  [20/50] seed=23  LB-BVF: mr=51.4 jfi=0.947
+  [21/50] seed=24  LB-BVF: mr=49.5 jfi=0.964
+  [22/50] seed=20  LB-BVF: mr=54.8 jfi=0.959
+  [23/50] seed=21  LB-BVF: mr=53.3 jfi=0.947
+  [24/50] seed=22  LB-BVF: mr=44.1 jfi=0.821
+  [25/50] seed=25  LB-BVF: mr=47.9 jfi=0.951
+  [26/50] seed=27  LB-BVF: mr=45.2 jfi=0.979
+  [27/50] seed=26  LB-BVF: mr=46.1 jfi=0.841
+  [28/50] seed=31  LB-BVF: mr=46.5 jfi=0.913
+  [29/50] seed=29  LB-BVF: mr=51.3 jfi=0.960
+  [30/50] seed=28  LB-BVF: mr=44.1 jfi=0.862
+  [31/50] seed=30  LB-BVF: mr=49.6 jfi=0.923
+  [32/50] seed=32  LB-BVF: mr=51.8 jfi=0.937
+  [33/50] seed=33  LB-BVF: mr=46.8 jfi=0.919
+  [34/50] seed=34  LB-BVF: mr=41.8 jfi=0.801
+  [35/50] seed=35  LB-BVF: mr=47.4 jfi=0.882
+  [36/50] seed=36  LB-BVF: mr=58.8 jfi=0.979
+  [37/50] seed=38  LB-BVF: mr=58.5 jfi=0.935
+  [38/50] seed=37  LB-BVF: mr=53.7 jfi=0.837
+  [39/50] seed=39  LB-BVF: mr=52.1 jfi=0.962
+  [40/50] seed=40  LB-BVF: mr=48.9 jfi=0.940
+  [41/50] seed=41  LB-BVF: mr=51.0 jfi=0.941
+  [42/50] seed=43  LB-BVF: mr=50.1 jfi=0.972
+  [43/50] seed=42  LB-BVF: mr=41.5 jfi=0.854
+  [44/50] seed=45  LB-BVF: mr=52.9 jfi=0.882
+  [45/50] seed=44  LB-BVF: mr=49.6 jfi=0.960
+  [46/50] seed=47  LB-BVF: mr=48.8 jfi=0.946
+  [47/50] seed=46  LB-BVF: mr=46.2 jfi=0.865
+  [48/50] seed=48  LB-BVF: mr=50.8 jfi=0.961
+  [49/50] seed=49  LB-BVF: mr=49.0 jfi=0.924
+  [50/50] seed=50  LB-BVF: mr=55.9 jfi=0.961
+
+  Config B 完成 (3019s)
+  LB-BVF          : mr=49.02  jfi=0.9251  js=0.8460
+  GA-3D-LB        : mr=38.55  jfi=0.7315  js=0.4575
+  PSO-3D-LB       : mr=36.20  jfi=0.6979  js=0.3861
+  SSA-3D-LB       : mr=35.44  jfi=0.6520  js=0.3521
+  → result/multiconfig/static_cfgB.json
+
+=== Static Config C: K=40, L=9, G=9  (G+L)*M/K=1.80 ===
+  [ 1/50] seed=3  LB-BVF: mr=48.0 jfi=0.904
+  [ 2/50] seed=1  LB-BVF: mr=67.7 jfi=0.883
+  [ 3/50] seed=6  LB-BVF: mr=57.7 jfi=0.939
+  [ 4/50] seed=8  LB-BVF: mr=68.5 jfi=0.943
+  [ 5/50] seed=5  LB-BVF: mr=51.3 jfi=0.955
+  [ 6/50] seed=2  LB-BVF: mr=60.8 jfi=0.876
+  [ 7/50] seed=4  LB-BVF: mr=58.3 jfi=0.948
+  [ 8/50] seed=7  LB-BVF: mr=61.7 jfi=0.868
+  [ 9/50] seed=9  LB-BVF: mr=57.0 jfi=0.925
+  [10/50] seed=11  LB-BVF: mr=62.3 jfi=0.908
+  [11/50] seed=12  LB-BVF: mr=64.1 jfi=0.947
+  [12/50] seed=10  LB-BVF: mr=71.5 jfi=0.934
+  [13/50] seed=15  LB-BVF: mr=56.6 jfi=0.823
+  [14/50] seed=16  LB-BVF: mr=66.0 jfi=0.925
+  [15/50] seed=14  LB-BVF: mr=53.8 jfi=0.901
+  [16/50] seed=13  LB-BVF: mr=60.0 jfi=0.941
+  [17/50] seed=17  LB-BVF: mr=56.1 jfi=0.954
+  [18/50] seed=18  LB-BVF: mr=63.0 jfi=0.907
+  [19/50] seed=22  LB-BVF: mr=62.9 jfi=0.941
+  [20/50] seed=20  LB-BVF: mr=59.8 jfi=0.932
+  [21/50] seed=19  LB-BVF: mr=52.7 jfi=0.844
+  [22/50] seed=21  LB-BVF: mr=56.6 jfi=0.913
+  [23/50] seed=24  LB-BVF: mr=60.2 jfi=0.934
+  [24/50] seed=23  LB-BVF: mr=55.7 jfi=0.918
+  [25/50] seed=25  LB-BVF: mr=65.8 jfi=0.971
+  [26/50] seed=29  LB-BVF: mr=56.5 jfi=0.963
+  [27/50] seed=26  LB-BVF: mr=58.0 jfi=0.954
+  [28/50] seed=27  LB-BVF: mr=53.3 jfi=0.894
+  [29/50] seed=28  LB-BVF: mr=45.6 jfi=0.804
+  [30/50] seed=31  LB-BVF: mr=63.4 jfi=0.884
+  [31/50] seed=30  LB-BVF: mr=54.7 jfi=0.975
+  [32/50] seed=32  LB-BVF: mr=59.3 jfi=0.939
+  [33/50] seed=33  LB-BVF: mr=55.5 jfi=0.965
+  [34/50] seed=36  LB-BVF: mr=59.0 jfi=0.971
+  [35/50] seed=34  LB-BVF: mr=57.9 jfi=0.867
+  [36/50] seed=38  LB-BVF: mr=49.8 jfi=0.972
+  [37/50] seed=35  LB-BVF: mr=50.0 jfi=0.972
+  [38/50] seed=37  LB-BVF: mr=56.2 jfi=0.930
+  [39/50] seed=39  LB-BVF: mr=66.5 jfi=0.867
+  [40/50] seed=40  LB-BVF: mr=71.5 jfi=0.930
+  [41/50] seed=41  LB-BVF: mr=65.3 jfi=0.896
+  [42/50] seed=43  LB-BVF: mr=60.6 jfi=0.895
+  [43/50] seed=42  LB-BVF: mr=57.2 jfi=0.952
+  [44/50] seed=44  LB-BVF: mr=66.6 jfi=0.978
+  [45/50] seed=47  LB-BVF: mr=60.3 jfi=0.978
+  [46/50] seed=45  LB-BVF: mr=66.9 jfi=0.913
+  [47/50] seed=46  LB-BVF: mr=61.5 jfi=0.899
+  [48/50] seed=48  LB-BVF: mr=51.8 jfi=0.944
+  [49/50] seed=49  LB-BVF: mr=67.4 jfi=0.961
+  [50/50] seed=50  LB-BVF: mr=50.0 jfi=0.931
+
+  Config C 完成 (2407s)
+  LB-BVF          : mr=59.26  jfi=0.9234  js=0.9444
+  GA-3D-LB        : mr=45.29  jfi=0.6967  js=0.5980
+  PSO-3D-LB       : mr=44.15  jfi=0.6468  js=0.5589
+  SSA-3D-LB       : mr=43.45  jfi=0.6027  js=0.5187
+  → result/multiconfig/static_cfgC.json
+
+全部静态配置完成

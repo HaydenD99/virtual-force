@@ -1,0 +1,356 @@
+{
+  "6UAV": {
+    "p50": {
+      "initial": {
+        "min_rate": 22.089413896780055,
+        "sum_rate": 2091.9594088093845,
+        "ap_stats": {
+          "mean": 5.016666666666667,
+          "std": 0.12801909579781015,
+          "min": 5.0,
+          "max": 6.0,
+          "total_APs": 10.0,
+          "users": 60.0,
+          "avg_utilization": 50.16666666666667
+        }
+      },
+      "VF": {
+        "min_rate": 23.343912549183315,
+        "sum_rate": 1947.2245794230257,
+        "time": 3.605008125305176,
+        "ap_stats": {
+          "mean": 5.0,
+          "std": 0.0,
+          "min": 5.0,
+          "max": 5.0,
+          "total_APs": 10.0,
+          "users": 60.0,
+          "avg_utilization": 50.0
+        }
+      }
+    },
+    "p60": {
+      "initial": {
+        "min_rate": 19.075032538767193,
+        "sum_rate": 2081.5986706839135,
+        "ap_stats": {
+          "mean": 4.8,
+          "std": 0.4,
+          "min": 4.0,
+          "max": 5.0,
+          "total_APs": 10.0,
+          "users": 60.0,
+          "avg_utilization": 48.0
+        }
+      },
+      "VF": {
+        "min_rate": 25.92824293270743,
+        "sum_rate": 2046.1976027542528,
+        "time": 3.77459716796875,
+        "ap_stats": {
+          "mean": 4.0,
+          "std": 0.0,
+          "min": 4.0,
+          "max": 4.0,
+          "total_APs": 10.0,
+          "users": 60.0,
+          "avg_utilization": 40.0
+        }
+      }
+    },
+    "p75": {
+      "initial": {
+        "min_rate": 25.634736512319357,
+        "sum_rate": 2264.063281633114,
+        "ap_stats": {
+          "mean": 3.183333333333333,
+          "std": 0.3869395588747966,
+          "min": 3.0,
+          "max": 4.0,
+          "total_APs": 10.0,
+          "users": 60.0,
+          "avg_utilization": 31.83333333333333
+        }
+      },
+      "VF": {
+        "min_rate": 26.628542262641652,
+        "sum_rate": 2170.579988487226,
+        "time": 3.6744561195373535,
+        "ap_stats": {
+          "mean": 3.0,
+          "std": 0.0,
+          "min": 3.0,
+          "max": 3.0,
+          "total_APs": 10.0,
+          "users": 60.0,
+          "avg_utilization": 30.0
+        }
+      }
+    },
+    "p80": {
+      "initial": {
+        "min_rate": 19.976015109292742,
+        "sum_rate": 2278.1264691000833,
+        "ap_stats": {
+          "mean": 3.0,
+          "std": 0.0,
+          "min": 3.0,
+          "max": 3.0,
+          "total_APs": 10.0,
+          "users": 60.0,
+          "avg_utilization": 30.0
+        }
+      },
+      "VF": {
+        "min_rate": 26.872100687507686,
+        "sum_rate": 2179.4434675372854,
+        "time": 3.8466548919677734,
+        "ap_stats": {
+          "mean": 3.0,
+          "std": 0.0,
+          "min": 3.0,
+          "max": 3.0,
+          "total_APs": 10.0,
+          "users": 60.0,
+          "avg_utilization": 30.0
+        }
+      }
+    }
+  },
+  "9UAV": {
+    "p50": {
+      "initial": {
+        "min_rate": 31.43858320292334,
+        "sum_rate": 2476.1318247688896,
+        "ap_stats": {
+          "mean": 7.0,
+          "std": 0.0,
+          "min": 7.0,
+          "max": 7.0,
+          "total_APs": 13.0,
+          "users": 60.0,
+          "avg_utilization": 53.84615384615385
+        }
+      },
+      "VF": {
+        "min_rate": 32.491363516057596,
+        "sum_rate": 2348.1672321726523,
+        "time": 4.710277795791626,
+        "ap_stats": {
+          "mean": 7.0,
+          "std": 0.0,
+          "min": 7.0,
+          "max": 7.0,
+          "total_APs": 13.0,
+          "users": 60.0,
+          "avg_utilization": 53.84615384615385
+        }
+      }
+    },
+    "p60": {
+      "initial": {
+        "min_rate": 33.43684048922223,
+        "sum_rate": 2656.53314341129,
+        "ap_stats": {
+          "mean": 5.0,
+          "std": 0.0,
+          "min": 5.0,
+          "max": 5.0,
+          "total_APs": 13.0,
+          "users": 60.0,
+          "avg_utilization": 38.46153846153847
+        }
+      },
+      "VF": {
+        "min_rate": 34.41318924348536,
+        "sum_rate": 2431.327806729791,
+        "time": 4.710837125778198,
+        "ap_stats": {
+          "mean": 5.0,
+          "std": 0.0,
+          "min": 5.0,
+          "max": 5.0,
+          "total_APs": 13.0,
+          "users": 60.0,
+          "avg_utilization": 38.46153846153847
+        }
+      }
+    },
+    "p75": {
+      "initial": {
+        "min_rate": 34.012757472985804,
+        "sum_rate": 2656.9176016083097,
+        "ap_stats": {
+          "mean": 4.0,
+          "std": 0.0,
+          "min": 4.0,
+          "max": 4.0,
+          "total_APs": 13.0,
+          "users": 60.0,
+          "avg_utilization": 30.76923076923077
+        }
+      },
+      "VF": {
+        "min_rate": 36.82841253392229,
+        "sum_rate": 2607.7855784525464,
+        "time": 4.7729551792144775,
+        "ap_stats": {
+          "mean": 4.0,
+          "std": 0.0,
+          "min": 4.0,
+          "max": 4.0,
+          "total_APs": 13.0,
+          "users": 60.0,
+          "avg_utilization": 30.76923076923077
+        }
+      }
+    },
+    "p80": {
+      "initial": {
+        "min_rate": 32.05469865174901,
+        "sum_rate": 2677.9079554486984,
+        "ap_stats": {
+          "mean": 3.0,
+          "std": 0.0,
+          "min": 3.0,
+          "max": 3.0,
+          "total_APs": 13.0,
+          "users": 60.0,
+          "avg_utilization": 23.076923076923077
+        }
+      },
+      "VF": {
+        "min_rate": 35.93741584126733,
+        "sum_rate": 2730.0079940910437,
+        "time": 4.757230043411255,
+        "ap_stats": {
+          "mean": 3.0,
+          "std": 0.0,
+          "min": 3.0,
+          "max": 3.0,
+          "total_APs": 13.0,
+          "users": 60.0,
+          "avg_utilization": 23.076923076923077
+        }
+      }
+    }
+  },
+  "12UAV": {
+    "p50": {
+      "initial": {
+        "min_rate": 39.42731282173853,
+        "sum_rate": 2889.8917885761844,
+        "ap_stats": {
+          "mean": 8.0,
+          "std": 0.0,
+          "min": 8.0,
+          "max": 8.0,
+          "total_APs": 16.0,
+          "users": 60.0,
+          "avg_utilization": 50.0
+        }
+      },
+      "VF": {
+        "min_rate": 37.87388814868127,
+        "sum_rate": 2752.7813000977058,
+        "time": 5.710359811782837,
+        "ap_stats": {
+          "mean": 8.0,
+          "std": 0.0,
+          "min": 8.0,
+          "max": 8.0,
+          "total_APs": 16.0,
+          "users": 60.0,
+          "avg_utilization": 50.0
+        }
+      }
+    },
+    "p60": {
+      "initial": {
+        "min_rate": 39.78599627879379,
+        "sum_rate": 2917.7399970678503,
+        "ap_stats": {
+          "mean": 7.0,
+          "std": 0.0,
+          "min": 7.0,
+          "max": 7.0,
+          "total_APs": 16.0,
+          "users": 60.0,
+          "avg_utilization": 43.75
+        }
+      },
+      "VF": {
+        "min_rate": 39.327323594233754,
+        "sum_rate": 2790.3674658868713,
+        "time": 5.709439992904663,
+        "ap_stats": {
+          "mean": 7.0,
+          "std": 0.0,
+          "min": 7.0,
+          "max": 7.0,
+          "total_APs": 16.0,
+          "users": 60.0,
+          "avg_utilization": 43.75
+        }
+      }
+    },
+    "p75": {
+      "initial": {
+        "min_rate": 36.70156646553989,
+        "sum_rate": 3024.135667426093,
+        "ap_stats": {
+          "mean": 4.0,
+          "std": 0.0,
+          "min": 4.0,
+          "max": 4.0,
+          "total_APs": 16.0,
+          "users": 60.0,
+          "avg_utilization": 25.0
+        }
+      },
+      "VF": {
+        "min_rate": 43.00052605314985,
+        "sum_rate": 3044.7803964250834,
+        "time": 5.705034017562866,
+        "ap_stats": {
+          "mean": 4.0,
+          "std": 0.0,
+          "min": 4.0,
+          "max": 4.0,
+          "total_APs": 16.0,
+          "users": 60.0,
+          "avg_utilization": 25.0
+        }
+      }
+    },
+    "p80": {
+      "initial": {
+        "min_rate": 36.70156646553989,
+        "sum_rate": 3024.135667426093,
+        "ap_stats": {
+          "mean": 4.0,
+          "std": 0.0,
+          "min": 4.0,
+          "max": 4.0,
+          "total_APs": 16.0,
+          "users": 60.0,
+          "avg_utilization": 25.0
+        }
+      },
+      "VF": {
+        "min_rate": 43.00052605314985,
+        "sum_rate": 3044.7803964250834,
+        "time": 5.750971078872681,
+        "ap_stats": {
+          "mean": 4.0,
+          "std": 0.0,
+          "min": 4.0,
+          "max": 4.0,
+          "total_APs": 16.0,
+          "users": 60.0,
+          "avg_utilization": 25.0
+        }
+      }
+    }
+  }
+}

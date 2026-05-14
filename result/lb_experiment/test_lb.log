@@ -1,0 +1,238 @@
+==========================================================================================
+  LB-BVF Test | K=40, L=6, G=9 | Hotspot (75% concentrated)
+==========================================================================================
+
+──────────────────────────────────────────────────────────────────────────────────────────
+  Seed = 42
+──────────────────────────────────────────────────────────────────────────────────────────
+       Initial: Min= 39.28 | Sum= 2705.3 | JFI=0.6448 | OL=2/6 | Users/UAV=[17, 8, 2, 3, 1, 15]
+
+  --- BVF V6 ---
+Start Optimizing...
+Iter  0 | Min: 44.9544 | Sum: 2752.7 | BestMin: 44.9544
+Iter 10 | Min: 45.1673 | Sum: 2727.3 | BestMin: 45.5086
+Iter 20 | Min: 54.1494 | Sum: 2998.7 | BestMin: 54.1494
+Iter 30 | Min: 52.1321 | Sum: 3101.0 | BestMin: 60.7040
+Iter 40 | Min: 51.1881 | Sum: 3085.6 | BestMin: 60.7040
+Iter 50 | Min: 45.1826 | Sum: 3025.3 | BestMin: 60.7040
+ Renewing...
+Iter 60 | Min: 53.4658 | Sum: 3024.7 | BestMin: 60.7040
+Iter 70 | Min: 52.2835 | Sum: 3044.3 | BestMin: 63.1927
+            V6: Min= 56.70 | Sum= 3158.2 | JFI=0.8900 | OL=1/6 | Users/UAV=[15, 5, 18, 11, 9, 14]
+                Time=9.0s
+
+  --- LB-BVF ---
+================================================================================
+                               Load-Balanced BVF V6                             
+================================================================================
+  Phase 1 (iter 0-35%): Pure V6 (6 forces)
+  Phase 2 (iter 35%-100%): +Load Redistribution (w=0.1)
+  Score = min_rate - 5.0 * max(0, 0.9 - JFI)
+================================================================================
+[P1] Iter   0 | Min= 42.38 | JFI=0.6513 | OL=2/6 | Score=41.14 | Best=41.14
+[P1] Iter  10 | Min= 38.82 | JFI=0.7298 | OL=2/6 | Score=37.97 | Best=46.88
+[P1] Iter  20 | Min= 55.65 | JFI=0.8057 | OL=1/6 | Score=55.18 | Best=58.71
+[P2] Iter  30 | Min= 55.15 | JFI=0.8717 | OL=1/6 | Score=55.01 | Best=61.40
+[P2] Iter  40 | Min= 53.49 | JFI=0.9246 | OL=1/6 | Score=53.49 | Best=61.40
+  Restart #1 @ iter 46
+[P2] Iter  50 | Min= 52.79 | JFI=0.8228 | OL=2/6 | Score=52.40 | Best=61.40
+[P2] Iter  60 | Min= 59.81 | JFI=0.9552 | OL=0/6 | Score=59.81 | Best=61.40
+[P2] Iter  70 | Min= 42.08 | JFI=0.9627 | OL=1/6 | Score=42.08 | Best=61.40
+[P2] Iter  79 | Min= 42.05 | JFI=0.9350 | OL=1/6 | Score=42.05 | Best=61.40
+
+Done @ iter=21 (restarts=1)
+  BestMin=61.78 | BestJFI=0.8253 | BestScore=61.40
+        LB-BVF: Min= 55.68 | Sum= 3221.5 | JFI=0.8189 | OL=2/6 | Users/UAV=[13, 16, 2, 6, 17, 14]
+                Time=8.6s
+
+  Δ min_rate = -1.03 Mbps
+  Δ JFI     = -0.0712
+  ✗ FAIL: min_rate degraded by 1.03 Mbps
+
+──────────────────────────────────────────────────────────────────────────────────────────
+  Seed = 51
+──────────────────────────────────────────────────────────────────────────────────────────
+       Initial: Min= 39.48 | Sum= 2848.9 | JFI=0.7614 | OL=2/6 | Users/UAV=[16, 4, 1, 5, 3, 13]
+
+  --- BVF V6 ---
+Start Optimizing...
+Iter  0 | Min: 41.7874 | Sum: 2869.3 | BestMin: 41.7874
+Iter 10 | Min: 44.1937 | Sum: 3038.5 | BestMin: 50.8329
+Iter 20 | Min: 58.9956 | Sum: 3279.8 | BestMin: 59.1859
+Iter 30 | Min: 61.4386 | Sum: 3186.7 | BestMin: 61.4386
+Iter 40 | Min: 57.3443 | Sum: 3138.0 | BestMin: 61.4386
+Iter 50 | Min: 55.4673 | Sum: 3112.4 | BestMin: 61.4386
+ Renewing...
+Iter 60 | Min: 56.1573 | Sum: 3241.4 | BestMin: 61.4386
+Iter 70 | Min: 60.7356 | Sum: 3170.7 | BestMin: 63.9074
+            V6: Min= 61.64 | Sum= 3262.2 | JFI=0.8301 | OL=2/6 | Users/UAV=[14, 3, 4, 10, 9, 17]
+                Time=8.3s
+
+  --- LB-BVF ---
+================================================================================
+                               Load-Balanced BVF V6                             
+================================================================================
+  Phase 1 (iter 0-35%): Pure V6 (6 forces)
+  Phase 2 (iter 35%-100%): +Load Redistribution (w=0.1)
+  Score = min_rate - 5.0 * max(0, 0.9 - JFI)
+================================================================================
+[P1] Iter   0 | Min= 42.29 | JFI=0.7591 | OL=2/6 | Score=41.59 | Best=41.59
+[P1] Iter  10 | Min= 47.16 | JFI=0.8519 | OL=1/6 | Score=46.92 | Best=51.27
+[P1] Iter  20 | Min= 53.68 | JFI=0.8792 | OL=1/6 | Score=53.58 | Best=56.02
+[P2] Iter  30 | Min= 51.64 | JFI=0.9401 | OL=1/6 | Score=51.64 | Best=59.81
+[P2] Iter  40 | Min= 56.97 | JFI=0.8649 | OL=2/6 | Score=56.80 | Best=59.81
+  Restart #1 @ iter 48
+[P2] Iter  50 | Min= 52.21 | JFI=0.7165 | OL=3/6 | Score=51.30 | Best=59.81
+[P2] Iter  60 | Min= 60.63 | JFI=0.8236 | OL=2/6 | Score=60.25 | Best=60.25
+[P2] Iter  70 | Min= 52.70 | JFI=0.9429 | OL=1/6 | Score=52.70 | Best=64.41
+[P2] Iter  79 | Min= 53.09 | JFI=0.8877 | OL=2/6 | Score=53.02 | Best=64.82
+
+Done @ iter=73 (restarts=1)
+  BestMin=64.93 | BestJFI=0.8795 | BestScore=64.82
+        LB-BVF: Min= 61.82 | Sum= 3200.9 | JFI=0.8692 | OL=1/6 | Users/UAV=[6, 5, 12, 10, 10, 17]
+                Time=8.2s
+
+  Δ min_rate = +0.18 Mbps
+  Δ JFI     = +0.0391
+  ✓ SUCCESS: JFI improved, min_rate maintained
+
+──────────────────────────────────────────────────────────────────────────────────────────
+  Seed = 62
+──────────────────────────────────────────────────────────────────────────────────────────
+       Initial: Min= 35.72 | Sum= 2574.2 | JFI=0.6640 | OL=2/6 | Users/UAV=[14, 8, 3, 3, 0, 13]
+
+  --- BVF V6 ---
+Start Optimizing...
+Iter  0 | Min: 37.8749 | Sum: 2592.6 | BestMin: 37.8749
+Iter 10 | Min: 51.0269 | Sum: 2994.6 | BestMin: 51.0269
+Iter 20 | Min: 47.2190 | Sum: 2901.6 | BestMin: 51.3323
+Iter 30 | Min: 45.5408 | Sum: 2855.9 | BestMin: 51.3323
+Iter 40 | Min: 52.1018 | Sum: 3090.9 | BestMin: 52.6937
+Iter 50 | Min: 48.9074 | Sum: 3053.4 | BestMin: 53.1403
+Iter 60 | Min: 54.1810 | Sum: 3107.3 | BestMin: 54.6698
+Iter 70 | Min: 53.8321 | Sum: 3139.4 | BestMin: 54.6698
+            V6: Min= 50.06 | Sum= 3116.0 | JFI=0.9350 | OL=1/6 | Users/UAV=[9, 11, 14, 10, 7, 15]
+                Time=8.3s
+
+  --- LB-BVF ---
+================================================================================
+                               Load-Balanced BVF V6                             
+================================================================================
+  Phase 1 (iter 0-35%): Pure V6 (6 forces)
+  Phase 2 (iter 35%-100%): +Load Redistribution (w=0.1)
+  Score = min_rate - 5.0 * max(0, 0.9 - JFI)
+================================================================================
+[P1] Iter   0 | Min= 38.27 | JFI=0.6711 | OL=2/6 | Score=37.12 | Best=37.12
+[P1] Iter  10 | Min= 34.58 | JFI=0.6304 | OL=3/6 | Score=33.23 | Best=41.69
+[P1] Iter  20 | Min= 44.14 | JFI=0.8347 | OL=2/6 | Score=43.81 | Best=48.25
+[P2] Iter  30 | Min= 48.67 | JFI=0.9392 | OL=1/6 | Score=48.67 | Best=55.45
+[P2] Iter  40 | Min= 53.08 | JFI=0.9631 | OL=0/6 | Score=53.08 | Best=55.45
+[P2] Iter  50 | Min= 52.00 | JFI=0.9119 | OL=1/6 | Score=52.00 | Best=55.45
+  Restart #1 @ iter 54
+[P2] Iter  60 | Min= 50.38 | JFI=0.8198 | OL=3/6 | Score=49.98 | Best=55.45
+[P2] Iter  70 | Min= 50.91 | JFI=0.8209 | OL=2/6 | Score=50.51 | Best=55.45
+[P2] Iter  79 | Min= 51.39 | JFI=0.9637 | OL=0/6 | Score=51.39 | Best=55.45
+
+Done @ iter=29 (restarts=1)
+  BestMin=55.45 | BestJFI=0.9559 | BestScore=55.45
+        LB-BVF: Min= 47.25 | Sum= 2950.1 | JFI=0.9530 | OL=1/6 | Users/UAV=[15, 10, 12, 8, 13, 10]
+                Time=8.3s
+
+  Δ min_rate = -2.81 Mbps
+  Δ JFI     = +0.0180
+  ✗ FAIL: min_rate degraded by 2.81 Mbps
+
+──────────────────────────────────────────────────────────────────────────────────────────
+  Seed = 71
+──────────────────────────────────────────────────────────────────────────────────────────
+       Initial: Min= 36.92 | Sum= 2545.2 | JFI=0.5151 | OL=2/6 | Users/UAV=[15, 1, 1, 3, 0, 11]
+
+  --- BVF V6 ---
+Start Optimizing...
+Iter  0 | Min: 41.8677 | Sum: 2644.5 | BestMin: 41.8677
+Iter 10 | Min: 47.0303 | Sum: 2706.0 | BestMin: 50.1904
+Iter 20 | Min: 53.8512 | Sum: 2891.1 | BestMin: 53.8512
+Iter 30 | Min: 38.8787 | Sum: 3010.4 | BestMin: 57.2472
+Iter 40 | Min: 56.7905 | Sum: 3068.9 | BestMin: 58.5759
+Iter 50 | Min: 46.5647 | Sum: 2985.9 | BestMin: 58.5759
+Iter 60 | Min: 48.5782 | Sum: 3096.0 | BestMin: 58.5759
+ Renewing...
+Iter 70 | Min: 51.9204 | Sum: 3002.5 | BestMin: 58.5759
+            V6: Min= 53.17 | Sum= 3042.8 | JFI=0.8923 | OL=2/6 | Users/UAV=[8, 7, 15, 15, 7, 18]
+                Time=8.2s
+
+  --- LB-BVF ---
+================================================================================
+                               Load-Balanced BVF V6                             
+================================================================================
+  Phase 1 (iter 0-35%): Pure V6 (6 forces)
+  Phase 2 (iter 35%-100%): +Load Redistribution (w=0.1)
+  Score = min_rate - 5.0 * max(0, 0.9 - JFI)
+================================================================================
+[P1] Iter   0 | Min= 40.72 | JFI=0.4991 | OL=2/6 | Score=38.71 | Best=38.71
+[P1] Iter  10 | Min= 43.61 | JFI=0.5408 | OL=3/6 | Score=41.82 | Best=42.10
+[P1] Iter  20 | Min= 44.19 | JFI=0.8751 | OL=0/6 | Score=44.07 | Best=50.15
+[P2] Iter  30 | Min= 57.23 | JFI=0.9577 | OL=1/6 | Score=57.23 | Best=57.23
+[P2] Iter  40 | Min= 57.17 | JFI=0.9038 | OL=2/6 | Score=57.17 | Best=58.70
+[P2] Iter  50 | Min= 46.33 | JFI=0.9159 | OL=1/6 | Score=46.33 | Best=58.70
+  Restart #1 @ iter 59
+[P2] Iter  60 | Min= 47.77 | JFI=0.9103 | OL=1/6 | Score=47.77 | Best=58.70
+[P2] Iter  70 | Min= 55.22 | JFI=0.9247 | OL=1/6 | Score=55.22 | Best=58.70
+[P2] Iter  79 | Min= 54.65 | JFI=0.9170 | OL=2/6 | Score=54.65 | Best=59.33
+
+Done @ iter=71 (restarts=1)
+  BestMin=59.33 | BestJFI=0.9174 | BestScore=59.33
+        LB-BVF: Min= 54.39 | Sum= 3113.8 | JFI=0.9280 | OL=1/6 | Users/UAV=[8, 8, 13, 14, 9, 18]
+                Time=8.2s
+
+  Δ min_rate = +1.21 Mbps
+  Δ JFI     = +0.0356
+  ✓ SUCCESS: JFI improved, min_rate maintained
+
+──────────────────────────────────────────────────────────────────────────────────────────
+  Seed = 75
+──────────────────────────────────────────────────────────────────────────────────────────
+       Initial: Min= 36.62 | Sum= 2891.0 | JFI=0.5279 | OL=2/6 | Users/UAV=[18, 1, 0, 3, 3, 16]
+
+  --- BVF V6 ---
+Start Optimizing...
+Iter  0 | Min: 37.9799 | Sum: 2982.4 | BestMin: 37.9799
+Iter 10 | Min: 53.1129 | Sum: 3114.2 | BestMin: 53.1129
+Iter 20 | Min: 55.3619 | Sum: 3111.9 | BestMin: 56.4063
+Iter 30 | Min: 48.0781 | Sum: 3114.8 | BestMin: 56.4063
+Iter 40 | Min: 52.7159 | Sum: 3263.9 | BestMin: 56.5729
+Iter 50 | Min: 52.5477 | Sum: 3289.9 | BestMin: 58.5170
+Iter 60 | Min: 56.6004 | Sum: 3342.4 | BestMin: 58.5170
+Iter 70 | Min: 54.9536 | Sum: 3191.9 | BestMin: 59.2693
+            V6: Min= 55.93 | Sum= 3175.4 | JFI=0.9290 | OL=1/6 | Users/UAV=[7, 12, 12, 7, 10, 15]
+                Time=8.3s
+
+  --- LB-BVF ---
+================================================================================
+                               Load-Balanced BVF V6                             
+================================================================================
+  Phase 1 (iter 0-35%): Pure V6 (6 forces)
+  Phase 2 (iter 35%-100%): +Load Redistribution (w=0.1)
+  Score = min_rate - 5.0 * max(0, 0.9 - JFI)
+================================================================================
+[P1] Iter   0 | Min= 35.48 | JFI=0.5184 | OL=2/6 | Score=33.57 | Best=33.57
+[P1] Iter  10 | Min= 45.65 | JFI=0.7443 | OL=2/6 | Score=44.87 | Best=47.64
+[P1] Iter  20 | Min= 49.66 | JFI=0.7588 | OL=2/6 | Score=48.96 | Best=50.64
+[P2] Iter  30 | Min= 50.96 | JFI=0.9342 | OL=1/6 | Score=50.96 | Best=56.69
+[P2] Iter  40 | Min= 53.00 | JFI=0.9275 | OL=1/6 | Score=53.00 | Best=59.45
+[P2] Iter  50 | Min= 51.74 | JFI=0.9501 | OL=0/6 | Score=51.74 | Best=59.45
+[P2] Iter  60 | Min= 56.11 | JFI=0.9308 | OL=1/6 | Score=56.11 | Best=61.62
+[P2] Iter  70 | Min= 52.69 | JFI=0.9448 | OL=1/6 | Score=52.69 | Best=61.62
+[P2] Iter  79 | Min= 52.38 | JFI=0.8964 | OL=1/6 | Score=52.36 | Best=61.62
+
+Done @ iter=57 (restarts=0)
+  BestMin=61.62 | BestJFI=0.9506 | BestScore=61.62
+        LB-BVF: Min= 54.74 | Sum= 3228.7 | JFI=0.9352 | OL=1/6 | Users/UAV=[10, 8, 14, 12, 6, 13]
+                Time=8.2s
+
+  Δ min_rate = -1.19 Mbps
+  Δ JFI     = +0.0062
+  ✗ FAIL: min_rate degraded by 1.19 Mbps
+
+==========================================================================================
+Test complete.

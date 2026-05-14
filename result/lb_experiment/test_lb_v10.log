@@ -1,0 +1,519 @@
+==========================================================================================
+  LB-BVF Test | K=40, L=6, G=9 | Hotspot (75%) | Same random state
+==========================================================================================
+
+──────────────────────────────────────────────────────────────────────────────────────────
+  Seed = 42
+──────────────────────────────────────────────────────────────────────────────────────────
+       Initial: Min= 39.28 | Sum= 2705.3 | JFI=0.6448 | OL=2/6 | Users/UAV=[17, 8, 2, 3, 1, 15]
+
+  --- BVF V6 ---
+Start Optimizing...
+Iter  0 | Min: 44.9544 | Sum: 2752.7 | BestMin: 44.9544
+Iter 10 | Min: 45.1673 | Sum: 2727.3 | BestMin: 45.5086
+Iter 20 | Min: 54.1494 | Sum: 2998.7 | BestMin: 54.1494
+Iter 30 | Min: 52.1321 | Sum: 3101.0 | BestMin: 60.7040
+Iter 40 | Min: 51.1881 | Sum: 3085.6 | BestMin: 60.7040
+Iter 50 | Min: 45.1826 | Sum: 3025.3 | BestMin: 60.7040
+ Renewing...
+Iter 60 | Min: 53.4658 | Sum: 3024.7 | BestMin: 60.7040
+Iter 70 | Min: 52.2835 | Sum: 3044.3 | BestMin: 63.1927
+            V6: Min= 56.70 | Sum= 3158.2 | JFI=0.8900 | OL=1/6 | Users/UAV=[15, 5, 18, 11, 9, 14]
+                Time=5.1s
+
+  --- LB-BVF ---
+================================================================================
+                Load-Balanced BVF V6 (V6 + Gradient Local Search)               
+================================================================================
+  P1: Pure V6 | P2: 15-step gradient local search
+  Score = min_rate - 12.0*max(0, 0.92-JFI)
+================================================================================
+Start Optimizing...
+Iter  0 | Min: 44.9544 | Sum: 2752.7 | BestMin: 44.9544
+Iter 10 | Min: 45.1673 | Sum: 2727.3 | BestMin: 45.5086
+Iter 20 | Min: 54.1494 | Sum: 2998.7 | BestMin: 54.1494
+Iter 30 | Min: 52.1321 | Sum: 3101.0 | BestMin: 60.7040
+Iter 40 | Min: 51.1881 | Sum: 3085.6 | BestMin: 60.7040
+Iter 50 | Min: 45.1826 | Sum: 3025.3 | BestMin: 60.7040
+ Renewing...
+Iter 60 | Min: 53.4658 | Sum: 3024.7 | BestMin: 60.7040
+Iter 70 | Min: 52.2835 | Sum: 3044.3 | BestMin: 63.1927
+
+  P1: Min=56.70 | JFI=0.8900 | OL=1/6 | Score=56.34
+
+  ── Phase 2: Gradient Local Search ──
+  LS start: Score=56.34 | Min=56.70 | JFI=0.8900 | OL=1/6
+  LS step  0: Score=56.34 | Min=49.50 | JFI=0.9013 | step=15.0
+  LS step  3: Score=56.34 | Min=50.23 | JFI=0.9011 | step=6.8
+  LS step  6: Score=56.34 | Min=55.21 | JFI=0.8931 | step=6.0
+  LS step  9: Score=56.36 | Min=55.74 | JFI=0.8930 | step=2.6
+  LS done: Score=56.36 | Min=56.69 | JFI=0.8927
+
+  → P2 wins | Δmin=-0.01 | ΔJFI=+0.0027
+        LB-BVF: Min= 56.69 | Sum= 3141.5 | JFI=0.8927 | OL=1/6 | Users/UAV=[15, 5, 18, 11, 9, 15]
+                Time=15.7s
+
+  Δ min_rate = -0.01 Mbps
+  Δ JFI     = +0.0027
+  ✓ SUCCESS: JFI↑ min_rate maintained
+
+──────────────────────────────────────────────────────────────────────────────────────────
+  Seed = 51
+──────────────────────────────────────────────────────────────────────────────────────────
+       Initial: Min= 39.48 | Sum= 2848.9 | JFI=0.7614 | OL=2/6 | Users/UAV=[16, 4, 1, 5, 3, 13]
+
+  --- BVF V6 ---
+Start Optimizing...
+Iter  0 | Min: 41.7874 | Sum: 2869.3 | BestMin: 41.7874
+Iter 10 | Min: 44.1937 | Sum: 3038.5 | BestMin: 50.8329
+Iter 20 | Min: 58.9956 | Sum: 3279.8 | BestMin: 59.1859
+Iter 30 | Min: 61.4386 | Sum: 3186.7 | BestMin: 61.4386
+Iter 40 | Min: 57.3443 | Sum: 3138.0 | BestMin: 61.4386
+Iter 50 | Min: 55.4673 | Sum: 3112.4 | BestMin: 61.4386
+ Renewing...
+Iter 60 | Min: 56.1573 | Sum: 3241.4 | BestMin: 61.4386
+Iter 70 | Min: 60.7356 | Sum: 3170.7 | BestMin: 63.9074
+            V6: Min= 61.64 | Sum= 3262.2 | JFI=0.8301 | OL=2/6 | Users/UAV=[14, 3, 4, 10, 9, 17]
+                Time=5.0s
+
+  --- LB-BVF ---
+================================================================================
+                Load-Balanced BVF V6 (V6 + Gradient Local Search)               
+================================================================================
+  P1: Pure V6 | P2: 15-step gradient local search
+  Score = min_rate - 12.0*max(0, 0.92-JFI)
+================================================================================
+Start Optimizing...
+Iter  0 | Min: 41.7874 | Sum: 2869.3 | BestMin: 41.7874
+Iter 10 | Min: 44.1937 | Sum: 3038.5 | BestMin: 50.8329
+Iter 20 | Min: 58.9956 | Sum: 3279.8 | BestMin: 59.1859
+Iter 30 | Min: 61.4386 | Sum: 3186.7 | BestMin: 61.4386
+Iter 40 | Min: 57.3443 | Sum: 3138.0 | BestMin: 61.4386
+Iter 50 | Min: 55.4673 | Sum: 3112.4 | BestMin: 61.4386
+ Renewing...
+Iter 60 | Min: 56.1573 | Sum: 3241.4 | BestMin: 61.4386
+Iter 70 | Min: 60.7356 | Sum: 3170.7 | BestMin: 63.9074
+
+  P1: Min=61.64 | JFI=0.8301 | OL=2/6 | Score=60.56
+
+  ── Phase 2: Gradient Local Search ──
+  LS start: Score=60.56 | Min=61.64 | JFI=0.8301 | OL=2/6
+  LS step  0: Score=60.56 | Min=61.64 | JFI=0.8036 | step=15.0
+  LS step  3: Score=60.56 | Min=61.64 | JFI=0.8037 | step=6.8
+  LS step  6: Score=60.56 | Min=61.64 | JFI=0.8301 | step=6.0
+  LS step  9: Score=60.57 | Min=61.64 | JFI=0.8308 | step=2.6
+  LS step 12: Score=60.57 | Min=61.64 | JFI=0.8306 | step=2.2
+  LS done: Score=60.57 | Min=61.64 | JFI=0.8308
+
+  → P2 wins | Δmin=-0.00 | ΔJFI=+0.0007
+        LB-BVF: Min= 61.64 | Sum= 3260.0 | JFI=0.8308 | OL=2/6 | Users/UAV=[14, 3, 4, 10, 9, 17]
+                Time=16.5s
+
+  Δ min_rate = -0.00 Mbps
+  Δ JFI     = +0.0007
+  ✓ SUCCESS: JFI↑ min_rate maintained
+
+──────────────────────────────────────────────────────────────────────────────────────────
+  Seed = 62
+──────────────────────────────────────────────────────────────────────────────────────────
+       Initial: Min= 35.72 | Sum= 2574.2 | JFI=0.6640 | OL=2/6 | Users/UAV=[14, 8, 3, 3, 0, 13]
+
+  --- BVF V6 ---
+Start Optimizing...
+Iter  0 | Min: 37.8749 | Sum: 2592.6 | BestMin: 37.8749
+Iter 10 | Min: 51.0269 | Sum: 2994.6 | BestMin: 51.0269
+Iter 20 | Min: 47.2190 | Sum: 2901.6 | BestMin: 51.3323
+Iter 30 | Min: 45.5408 | Sum: 2855.9 | BestMin: 51.3323
+Iter 40 | Min: 52.1018 | Sum: 3090.9 | BestMin: 52.6937
+Iter 50 | Min: 48.9074 | Sum: 3053.4 | BestMin: 53.1403
+Iter 60 | Min: 54.1810 | Sum: 3107.3 | BestMin: 54.6698
+Iter 70 | Min: 53.8321 | Sum: 3139.4 | BestMin: 54.6698
+            V6: Min= 50.06 | Sum= 3116.0 | JFI=0.9350 | OL=1/6 | Users/UAV=[9, 11, 14, 10, 7, 15]
+                Time=5.0s
+
+  --- LB-BVF ---
+================================================================================
+                Load-Balanced BVF V6 (V6 + Gradient Local Search)               
+================================================================================
+  P1: Pure V6 | P2: 15-step gradient local search
+  Score = min_rate - 12.0*max(0, 0.92-JFI)
+================================================================================
+Start Optimizing...
+Iter  0 | Min: 37.8749 | Sum: 2592.6 | BestMin: 37.8749
+Iter 10 | Min: 51.0269 | Sum: 2994.6 | BestMin: 51.0269
+Iter 20 | Min: 47.2190 | Sum: 2901.6 | BestMin: 51.3323
+Iter 30 | Min: 45.5408 | Sum: 2855.9 | BestMin: 51.3323
+Iter 40 | Min: 52.1018 | Sum: 3090.9 | BestMin: 52.6937
+Iter 50 | Min: 48.9074 | Sum: 3053.4 | BestMin: 53.1403
+Iter 60 | Min: 54.1810 | Sum: 3107.3 | BestMin: 54.6698
+Iter 70 | Min: 53.8321 | Sum: 3139.4 | BestMin: 54.6698
+
+  P1: Min=50.06 | JFI=0.9350 | OL=1/6 | Score=50.06
+  Skip P2 (JFI=0.9350 >= 0.92)
+        LB-BVF: Min= 50.06 | Sum= 3116.0 | JFI=0.9350 | OL=1/6 | Users/UAV=[9, 11, 14, 10, 7, 15]
+                Time=5.1s
+
+  Δ min_rate = +0.00 Mbps
+  Δ JFI     = +0.0000
+  ~ NEUTRAL: JFI not improved
+
+──────────────────────────────────────────────────────────────────────────────────────────
+  Seed = 71
+──────────────────────────────────────────────────────────────────────────────────────────
+       Initial: Min= 36.92 | Sum= 2545.2 | JFI=0.5151 | OL=2/6 | Users/UAV=[15, 1, 1, 3, 0, 11]
+
+  --- BVF V6 ---
+Start Optimizing...
+Iter  0 | Min: 41.8677 | Sum: 2644.5 | BestMin: 41.8677
+Iter 10 | Min: 47.0303 | Sum: 2706.0 | BestMin: 50.1904
+Iter 20 | Min: 53.8512 | Sum: 2891.1 | BestMin: 53.8512
+Iter 30 | Min: 38.8787 | Sum: 3010.4 | BestMin: 57.2472
+Iter 40 | Min: 56.7905 | Sum: 3068.9 | BestMin: 58.5759
+Iter 50 | Min: 46.5647 | Sum: 2985.9 | BestMin: 58.5759
+Iter 60 | Min: 48.5782 | Sum: 3096.0 | BestMin: 58.5759
+ Renewing...
+Iter 70 | Min: 51.9204 | Sum: 3002.5 | BestMin: 58.5759
+            V6: Min= 53.17 | Sum= 3042.8 | JFI=0.8923 | OL=2/6 | Users/UAV=[8, 7, 15, 15, 7, 18]
+                Time=5.1s
+
+  --- LB-BVF ---
+================================================================================
+                Load-Balanced BVF V6 (V6 + Gradient Local Search)               
+================================================================================
+  P1: Pure V6 | P2: 15-step gradient local search
+  Score = min_rate - 12.0*max(0, 0.92-JFI)
+================================================================================
+Start Optimizing...
+Iter  0 | Min: 41.8677 | Sum: 2644.5 | BestMin: 41.8677
+Iter 10 | Min: 47.0303 | Sum: 2706.0 | BestMin: 50.1904
+Iter 20 | Min: 53.8512 | Sum: 2891.1 | BestMin: 53.8512
+Iter 30 | Min: 38.8787 | Sum: 3010.4 | BestMin: 57.2472
+Iter 40 | Min: 56.7905 | Sum: 3068.9 | BestMin: 58.5759
+Iter 50 | Min: 46.5647 | Sum: 2985.9 | BestMin: 58.5759
+Iter 60 | Min: 48.5782 | Sum: 3096.0 | BestMin: 58.5759
+ Renewing...
+Iter 70 | Min: 51.9204 | Sum: 3002.5 | BestMin: 58.5759
+
+  P1: Min=53.17 | JFI=0.8923 | OL=2/6 | Score=52.84
+
+  ── Phase 2: Gradient Local Search ──
+  LS start: Score=52.84 | Min=53.17 | JFI=0.8923 | OL=2/6
+  LS step  0: Score=54.21 | Min=54.45 | JFI=0.9006 | step=15.0
+  LS step  3: Score=54.21 | Min=52.35 | JFI=0.9068 | step=13.5
+  LS step  6: Score=54.21 | Min=53.60 | JFI=0.9008 | step=6.0
+  LS step  9: Score=54.21 | Min=54.14 | JFI=0.9007 | step=2.6
+  LS done: Score=54.21 | Min=54.45 | JFI=0.9006
+
+  → P2 wins | Δmin=+1.28 | ΔJFI=+0.0083
+        LB-BVF: Min= 54.45 | Sum= 3029.5 | JFI=0.9006 | OL=2/6 | Users/UAV=[8, 7, 14, 15, 8, 18]
+                Time=16.1s
+
+  Δ min_rate = +1.28 Mbps
+  Δ JFI     = +0.0083
+  ✓ SUCCESS: JFI↑ min_rate maintained
+
+──────────────────────────────────────────────────────────────────────────────────────────
+  Seed = 75
+──────────────────────────────────────────────────────────────────────────────────────────
+       Initial: Min= 36.62 | Sum= 2891.0 | JFI=0.5279 | OL=2/6 | Users/UAV=[18, 1, 0, 3, 3, 16]
+
+  --- BVF V6 ---
+Start Optimizing...
+Iter  0 | Min: 37.9799 | Sum: 2982.4 | BestMin: 37.9799
+Iter 10 | Min: 53.1129 | Sum: 3114.2 | BestMin: 53.1129
+Iter 20 | Min: 55.3619 | Sum: 3111.9 | BestMin: 56.4063
+Iter 30 | Min: 48.0781 | Sum: 3114.8 | BestMin: 56.4063
+Iter 40 | Min: 52.7159 | Sum: 3263.9 | BestMin: 56.5729
+Iter 50 | Min: 52.5477 | Sum: 3289.9 | BestMin: 58.5170
+Iter 60 | Min: 56.6004 | Sum: 3342.4 | BestMin: 58.5170
+Iter 70 | Min: 54.9536 | Sum: 3191.9 | BestMin: 59.2693
+            V6: Min= 55.93 | Sum= 3175.4 | JFI=0.9290 | OL=1/6 | Users/UAV=[7, 12, 12, 7, 10, 15]
+                Time=5.1s
+
+  --- LB-BVF ---
+================================================================================
+                Load-Balanced BVF V6 (V6 + Gradient Local Search)               
+================================================================================
+  P1: Pure V6 | P2: 15-step gradient local search
+  Score = min_rate - 12.0*max(0, 0.92-JFI)
+================================================================================
+Start Optimizing...
+Iter  0 | Min: 37.9799 | Sum: 2982.4 | BestMin: 37.9799
+Iter 10 | Min: 53.1129 | Sum: 3114.2 | BestMin: 53.1129
+Iter 20 | Min: 55.3619 | Sum: 3111.9 | BestMin: 56.4063
+Iter 30 | Min: 48.0781 | Sum: 3114.8 | BestMin: 56.4063
+Iter 40 | Min: 52.7159 | Sum: 3263.9 | BestMin: 56.5729
+Iter 50 | Min: 52.5477 | Sum: 3289.9 | BestMin: 58.5170
+Iter 60 | Min: 56.6004 | Sum: 3342.4 | BestMin: 58.5170
+Iter 70 | Min: 54.9536 | Sum: 3191.9 | BestMin: 59.2693
+
+  P1: Min=55.93 | JFI=0.9290 | OL=1/6 | Score=55.93
+  Skip P2 (JFI=0.9290 >= 0.92)
+        LB-BVF: Min= 55.93 | Sum= 3175.4 | JFI=0.9290 | OL=1/6 | Users/UAV=[7, 12, 12, 7, 10, 15]
+                Time=5.2s
+
+  Δ min_rate = +0.00 Mbps
+  Δ JFI     = +0.0000
+  ~ NEUTRAL: JFI not improved
+
+──────────────────────────────────────────────────────────────────────────────────────────
+  Seed = 33
+──────────────────────────────────────────────────────────────────────────────────────────
+       Initial: Min= 47.91 | Sum= 2822.8 | JFI=0.5960 | OL=2/6 | Users/UAV=[14, 2, 1, 2, 2, 15]
+
+  --- BVF V6 ---
+Start Optimizing...
+Iter  0 | Min: 50.2804 | Sum: 2963.8 | BestMin: 50.2804
+Iter 10 | Min: 51.9013 | Sum: 3102.9 | BestMin: 54.7871
+Iter 20 | Min: 54.4746 | Sum: 3235.1 | BestMin: 58.0210
+Iter 30 | Min: 51.0416 | Sum: 3324.4 | BestMin: 59.5545
+Iter 40 | Min: 53.5342 | Sum: 3294.6 | BestMin: 62.3861
+Iter 50 | Min: 56.8043 | Sum: 3272.9 | BestMin: 64.2299
+Iter 60 | Min: 50.1501 | Sum: 3299.0 | BestMin: 64.2299
+Iter 70 | Min: 52.3613 | Sum: 3280.2 | BestMin: 64.2299
+            V6: Min= 49.14 | Sum= 3219.5 | JFI=0.9520 | OL=0/6 | Users/UAV=[13, 8, 16, 14, 16, 8]
+                Time=5.0s
+
+  --- LB-BVF ---
+================================================================================
+                Load-Balanced BVF V6 (V6 + Gradient Local Search)               
+================================================================================
+  P1: Pure V6 | P2: 15-step gradient local search
+  Score = min_rate - 12.0*max(0, 0.92-JFI)
+================================================================================
+Start Optimizing...
+Iter  0 | Min: 50.2804 | Sum: 2963.8 | BestMin: 50.2804
+Iter 10 | Min: 51.9013 | Sum: 3102.9 | BestMin: 54.7871
+Iter 20 | Min: 54.4746 | Sum: 3235.1 | BestMin: 58.0210
+Iter 30 | Min: 51.0416 | Sum: 3324.4 | BestMin: 59.5545
+Iter 40 | Min: 53.5342 | Sum: 3294.6 | BestMin: 62.3861
+Iter 50 | Min: 56.8043 | Sum: 3272.9 | BestMin: 64.2299
+Iter 60 | Min: 50.1501 | Sum: 3299.0 | BestMin: 64.2299
+Iter 70 | Min: 52.3613 | Sum: 3280.2 | BestMin: 64.2299
+
+  P1: Min=49.14 | JFI=0.9520 | OL=0/6 | Score=49.14
+  Skip P2 (JFI=0.9520 >= 0.92)
+        LB-BVF: Min= 49.14 | Sum= 3219.5 | JFI=0.9520 | OL=0/6 | Users/UAV=[13, 8, 16, 14, 16, 8]
+                Time=5.1s
+
+  Δ min_rate = +0.00 Mbps
+  Δ JFI     = +0.0000
+  ~ NEUTRAL: JFI not improved
+
+──────────────────────────────────────────────────────────────────────────────────────────
+  Seed = 88
+──────────────────────────────────────────────────────────────────────────────────────────
+       Initial: Min= 43.93 | Sum= 2702.2 | JFI=0.5761 | OL=3/6 | Users/UAV=[15, 17, 1, 1, 0, 13]
+
+  --- BVF V6 ---
+Start Optimizing...
+Iter  0 | Min: 46.8645 | Sum: 2666.9 | BestMin: 46.8645
+Iter 10 | Min: 50.6326 | Sum: 2960.6 | BestMin: 55.4053
+Iter 20 | Min: 56.4792 | Sum: 3135.9 | BestMin: 57.9033
+Iter 30 | Min: 53.6485 | Sum: 3133.5 | BestMin: 57.9033
+Iter 40 | Min: 51.4007 | Sum: 3113.1 | BestMin: 57.9033
+ Renewing...
+Iter 50 | Min: 52.0108 | Sum: 3040.6 | BestMin: 57.9033
+Iter 60 | Min: 48.9515 | Sum: 3179.7 | BestMin: 57.9033
+Iter 70 | Min: 48.7799 | Sum: 3078.3 | BestMin: 60.8496
+            V6: Min= 53.27 | Sum= 3060.6 | JFI=0.8238 | OL=2/6 | Users/UAV=[8, 11, 1, 13, 7, 17]
+                Time=5.2s
+
+  --- LB-BVF ---
+================================================================================
+                Load-Balanced BVF V6 (V6 + Gradient Local Search)               
+================================================================================
+  P1: Pure V6 | P2: 15-step gradient local search
+  Score = min_rate - 12.0*max(0, 0.92-JFI)
+================================================================================
+Start Optimizing...
+Iter  0 | Min: 46.8645 | Sum: 2666.9 | BestMin: 46.8645
+Iter 10 | Min: 50.6326 | Sum: 2960.6 | BestMin: 55.4053
+Iter 20 | Min: 56.4792 | Sum: 3135.9 | BestMin: 57.9033
+Iter 30 | Min: 53.6485 | Sum: 3133.5 | BestMin: 57.9033
+Iter 40 | Min: 51.4007 | Sum: 3113.1 | BestMin: 57.9033
+ Renewing...
+Iter 50 | Min: 52.0108 | Sum: 3040.6 | BestMin: 57.9033
+Iter 60 | Min: 48.9515 | Sum: 3179.7 | BestMin: 57.9033
+Iter 70 | Min: 48.7799 | Sum: 3078.3 | BestMin: 60.8496
+
+  P1: Min=53.27 | JFI=0.8238 | OL=2/6 | Score=52.12
+
+  ── Phase 2: Gradient Local Search ──
+  LS start: Score=52.12 | Min=53.27 | JFI=0.8238 | OL=2/6
+  LS step  0: Score=52.12 | Min=52.87 | JFI=0.8233 | step=15.0
+  LS step  3: Score=52.12 | Min=53.01 | JFI=0.8234 | step=6.8
+  LS step  6: Score=52.26 | Min=53.04 | JFI=0.8235 | step=6.0
+  LS step  9: Score=52.26 | Min=53.31 | JFI=0.8233 | step=2.6
+  LS done: Score=52.26 | Min=53.42 | JFI=0.8232
+
+  → P2 wins | Δmin=+0.15 | ΔJFI=-0.0006
+        LB-BVF: Min= 53.42 | Sum= 3065.1 | JFI=0.8232 | OL=2/6 | Users/UAV=[8, 11, 1, 13, 7, 17]
+                Time=15.5s
+
+  Δ min_rate = +0.15 Mbps
+  Δ JFI     = -0.0006
+  ~ NEUTRAL: JFI not improved
+
+──────────────────────────────────────────────────────────────────────────────────────────
+  Seed = 99
+──────────────────────────────────────────────────────────────────────────────────────────
+       Initial: Min= 37.55 | Sum= 2538.0 | JFI=0.6626 | OL=3/6 | Users/UAV=[16, 14, 0, 3, 2, 15]
+
+  --- BVF V6 ---
+Start Optimizing...
+Iter  0 | Min: 37.9158 | Sum: 2548.4 | BestMin: 37.9158
+Iter 10 | Min: 43.8281 | Sum: 2821.7 | BestMin: 48.4414
+Iter 20 | Min: 54.1474 | Sum: 3081.7 | BestMin: 55.2765
+Iter 30 | Min: 53.7773 | Sum: 3179.6 | BestMin: 55.9289
+Iter 40 | Min: 54.1135 | Sum: 3114.7 | BestMin: 58.1159
+Iter 50 | Min: 53.5928 | Sum: 3067.6 | BestMin: 58.1159
+Iter 60 | Min: 48.3600 | Sum: 3133.7 | BestMin: 58.1159
+ Renewing...
+Iter 70 | Min: 53.2515 | Sum: 2977.3 | BestMin: 58.1159
+            V6: Min= 43.15 | Sum= 2998.1 | JFI=0.9002 | OL=1/6 | Users/UAV=[4, 11, 12, 10, 6, 17]
+                Time=5.0s
+
+  --- LB-BVF ---
+================================================================================
+                Load-Balanced BVF V6 (V6 + Gradient Local Search)               
+================================================================================
+  P1: Pure V6 | P2: 15-step gradient local search
+  Score = min_rate - 12.0*max(0, 0.92-JFI)
+================================================================================
+Start Optimizing...
+Iter  0 | Min: 37.9158 | Sum: 2548.4 | BestMin: 37.9158
+Iter 10 | Min: 43.8281 | Sum: 2821.7 | BestMin: 48.4414
+Iter 20 | Min: 54.1474 | Sum: 3081.7 | BestMin: 55.2765
+Iter 30 | Min: 53.7773 | Sum: 3179.6 | BestMin: 55.9289
+Iter 40 | Min: 54.1135 | Sum: 3114.7 | BestMin: 58.1159
+Iter 50 | Min: 53.5928 | Sum: 3067.6 | BestMin: 58.1159
+Iter 60 | Min: 48.3600 | Sum: 3133.7 | BestMin: 58.1159
+ Renewing...
+Iter 70 | Min: 53.2515 | Sum: 2977.3 | BestMin: 58.1159
+
+  P1: Min=43.15 | JFI=0.9002 | OL=1/6 | Score=42.91
+
+  ── Phase 2: Gradient Local Search ──
+  LS start: Score=42.91 | Min=43.15 | JFI=0.9002 | OL=1/6
+  LS step  0: Score=42.99 | Min=43.25 | JFI=0.8987 | step=15.0
+  LS step  3: Score=43.03 | Min=43.27 | JFI=0.8999 | step=13.5
+  LS step  6: Score=43.73 | Min=42.81 | JFI=0.8973 | step=12.0
+  LS step  9: Score=43.73 | Min=42.91 | JFI=0.8972 | step=5.2
+  LS step 12: Score=43.73 | Min=43.18 | JFI=0.8982 | step=4.5
+  LS done: Score=43.73 | Min=43.98 | JFI=0.8989
+
+  → P2 wins | Δmin=+0.83 | ΔJFI=-0.0013
+        LB-BVF: Min= 43.98 | Sum= 3009.8 | JFI=0.8989 | OL=1/6 | Users/UAV=[4, 11, 12, 10, 6, 17]
+                Time=17.0s
+
+  Δ min_rate = +0.83 Mbps
+  Δ JFI     = -0.0013
+  ~ NEUTRAL: JFI not improved
+
+──────────────────────────────────────────────────────────────────────────────────────────
+  Seed = 107
+──────────────────────────────────────────────────────────────────────────────────────────
+       Initial: Min= 28.18 | Sum= 2693.7 | JFI=0.5645 | OL=2/6 | Users/UAV=[17, 1, 3, 1, 1, 11]
+
+  --- BVF V6 ---
+Start Optimizing...
+Iter  0 | Min: 28.1640 | Sum: 2655.5 | BestMin: 28.1640
+Iter 10 | Min: 30.6967 | Sum: 2772.2 | BestMin: 38.1231
+Iter 20 | Min: 44.1568 | Sum: 2777.9 | BestMin: 45.0380
+Iter 30 | Min: 37.3940 | Sum: 2882.7 | BestMin: 47.2308
+Iter 40 | Min: 48.0962 | Sum: 3020.5 | BestMin: 48.0962
+Iter 50 | Min: 49.7250 | Sum: 3019.1 | BestMin: 55.1841
+Iter 60 | Min: 47.1511 | Sum: 3002.0 | BestMin: 55.1841
+Iter 70 | Min: 51.9048 | Sum: 3024.4 | BestMin: 56.1285
+            V6: Min= 51.77 | Sum= 3053.4 | JFI=0.9634 | OL=1/6 | Users/UAV=[11, 12, 12, 17, 9, 12]
+                Time=5.0s
+
+  --- LB-BVF ---
+================================================================================
+                Load-Balanced BVF V6 (V6 + Gradient Local Search)               
+================================================================================
+  P1: Pure V6 | P2: 15-step gradient local search
+  Score = min_rate - 12.0*max(0, 0.92-JFI)
+================================================================================
+Start Optimizing...
+Iter  0 | Min: 28.1640 | Sum: 2655.5 | BestMin: 28.1640
+Iter 10 | Min: 30.6967 | Sum: 2772.2 | BestMin: 38.1231
+Iter 20 | Min: 44.1568 | Sum: 2777.9 | BestMin: 45.0380
+Iter 30 | Min: 37.3940 | Sum: 2882.7 | BestMin: 47.2308
+Iter 40 | Min: 48.0962 | Sum: 3020.5 | BestMin: 48.0962
+Iter 50 | Min: 49.7250 | Sum: 3019.1 | BestMin: 55.1841
+Iter 60 | Min: 47.1511 | Sum: 3002.0 | BestMin: 55.1841
+Iter 70 | Min: 51.9048 | Sum: 3024.4 | BestMin: 56.1285
+
+  P1: Min=51.77 | JFI=0.9634 | OL=1/6 | Score=51.77
+  Skip P2 (JFI=0.9634 >= 0.92)
+        LB-BVF: Min= 51.77 | Sum= 3053.4 | JFI=0.9634 | OL=1/6 | Users/UAV=[11, 12, 12, 17, 9, 12]
+                Time=5.0s
+
+  Δ min_rate = +0.00 Mbps
+  Δ JFI     = +0.0000
+  ~ NEUTRAL: JFI not improved
+
+──────────────────────────────────────────────────────────────────────────────────────────
+  Seed = 123
+──────────────────────────────────────────────────────────────────────────────────────────
+       Initial: Min= 50.94 | Sum= 2962.8 | JFI=0.7872 | OL=2/6 | Users/UAV=[13, 13, 4, 4, 1, 11]
+
+  --- BVF V6 ---
+Start Optimizing...
+Iter  0 | Min: 47.4971 | Sum: 3037.9 | BestMin: 47.4971
+Iter 10 | Min: 48.9232 | Sum: 3025.8 | BestMin: 54.7495
+Iter 20 | Min: 43.2969 | Sum: 3219.7 | BestMin: 59.2724
+Iter 30 | Min: 51.2884 | Sum: 3180.5 | BestMin: 59.2724
+Iter 40 | Min: 53.5739 | Sum: 3276.5 | BestMin: 63.9498
+Iter 50 | Min: 57.2971 | Sum: 3305.6 | BestMin: 63.9498
+ Renewing...
+Iter 60 | Min: 62.2862 | Sum: 3301.9 | BestMin: 63.9498
+Iter 70 | Min: 50.8060 | Sum: 3194.6 | BestMin: 63.9498
+            V6: Min= 62.35 | Sum= 3335.5 | JFI=0.9548 | OL=1/6 | Users/UAV=[14, 11, 8, 10, 16, 11]
+                Time=5.0s
+
+  --- LB-BVF ---
+================================================================================
+                Load-Balanced BVF V6 (V6 + Gradient Local Search)               
+================================================================================
+  P1: Pure V6 | P2: 15-step gradient local search
+  Score = min_rate - 12.0*max(0, 0.92-JFI)
+================================================================================
+Start Optimizing...
+Iter  0 | Min: 47.4971 | Sum: 3037.9 | BestMin: 47.4971
+Iter 10 | Min: 48.9232 | Sum: 3025.8 | BestMin: 54.7495
+Iter 20 | Min: 43.2969 | Sum: 3219.7 | BestMin: 59.2724
+Iter 30 | Min: 51.2884 | Sum: 3180.5 | BestMin: 59.2724
+Iter 40 | Min: 53.5739 | Sum: 3276.5 | BestMin: 63.9498
+Iter 50 | Min: 57.2971 | Sum: 3305.6 | BestMin: 63.9498
+ Renewing...
+Iter 60 | Min: 62.2862 | Sum: 3301.9 | BestMin: 63.9498
+Iter 70 | Min: 50.8060 | Sum: 3194.6 | BestMin: 63.9498
+
+  P1: Min=62.35 | JFI=0.9548 | OL=1/6 | Score=62.35
+  Skip P2 (JFI=0.9548 >= 0.92)
+        LB-BVF: Min= 62.35 | Sum= 3335.5 | JFI=0.9548 | OL=1/6 | Users/UAV=[14, 11, 8, 10, 16, 11]
+                Time=5.0s
+
+  Δ min_rate = +0.00 Mbps
+  Δ JFI     = +0.0000
+  ~ NEUTRAL: JFI not improved
+
+==========================================================================================
+  SUMMARY: 3 SUCCESS / 7 NEUTRAL / 0 FAIL  (out of 10)
+  Avg Δ min_rate = +0.22 Mbps
+  Avg Δ JFI     = +0.0010
+==========================================================================================
+  ✓ Seed  42 | V6:  56.7/0.890 | LB:  56.7/0.893 | Δ min= -0.0 Δ JFI=+0.003
+  ✓ Seed  51 | V6:  61.6/0.830 | LB:  61.6/0.831 | Δ min= -0.0 Δ JFI=+0.001
+  ~ Seed  62 | V6:  50.1/0.935 | LB:  50.1/0.935 | Δ min= +0.0 Δ JFI=+0.000
+  ✓ Seed  71 | V6:  53.2/0.892 | LB:  54.4/0.901 | Δ min= +1.3 Δ JFI=+0.008
+  ~ Seed  75 | V6:  55.9/0.929 | LB:  55.9/0.929 | Δ min= +0.0 Δ JFI=+0.000
+  ~ Seed  33 | V6:  49.1/0.952 | LB:  49.1/0.952 | Δ min= +0.0 Δ JFI=+0.000
+  ~ Seed  88 | V6:  53.3/0.824 | LB:  53.4/0.823 | Δ min= +0.2 Δ JFI=-0.001
+  ~ Seed  99 | V6:  43.2/0.900 | LB:  44.0/0.899 | Δ min= +0.8 Δ JFI=-0.001
+  ~ Seed 107 | V6:  51.8/0.963 | LB:  51.8/0.963 | Δ min= +0.0 Δ JFI=+0.000
+  ~ Seed 123 | V6:  62.3/0.955 | LB:  62.3/0.955 | Δ min= +0.0 Δ JFI=+0.000
+==========================================================================================

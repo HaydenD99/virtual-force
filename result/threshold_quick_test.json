@@ -1,0 +1,33 @@
+{
+  "config": "6 UAVs, seed 71",
+  "fixed": {
+    "min_rate": 20.156766895140933,
+    "sum_rate": 2278.079609393952,
+    "ap_stats": {
+      "mean": 3.0,
+      "std": 0.0,
+      "min": 3.0,
+      "max": 3.0,
+      "total_APs": 10.0,
+      "users": 60.0,
+      "avg_utilization": 30.0
+    }
+  },
+  "threshold": {
+    "min_rate": 23.608190715414807,
+    "sum_rate": 2276.201470981736,
+    "ap_stats": {
+      "mean": 3.183333333333333,
+      "std": 0.3869395588747966,
+      "min": 3.0,
+      "max": 4.0,
+      "total_APs": 10.0,
+      "users": 60.0,
+      "avg_utilization": 31.83333333333333
+    }
+  },
+  "improvement": {
+    "min_rate_pct": 17.122903877535474,
+    "sum_rate_pct": -0.08244393235738941
+  }
+}

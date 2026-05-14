@@ -1,0 +1,165 @@
+/Users/haydd/.matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /var/folders/r6/dcf4cdw91gq6nbp1qy0xyx4w0000gn/T/matplotlib-lksnqmti because there was an issue with the default path (/Users/haydd/.matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib is building the font cache; this may take a moment.
+Traceback (most recent call last):
+  File "/Users/haydd/PycharmProjects/PythonProject1/virtualForce/run_threshold_based_comparison.py", line 331, in <module>
+    results = run_single_experiment(num_uav, SEED)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/haydd/PycharmProjects/PythonProject1/virtualForce/run_threshold_based_comparison.py", line 234, in run_single_experiment
+    H_final, Hhat_final, betas_final = optimizer.compute_channel_model(UE_pos, final_all_AP_pos)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ThresholdBasedNewSSAOptimizer' object has no attribute 'compute_channel_model'
+
+==========================================================================================
+                                  基于信道质量阈值的AP选择 - 四算法对比                                   
+==========================================================================================
+
+📊 实验配置:
+   • 随机种子: 71
+   • UAV配置: [6, 9, 12]
+   • AP选择策略: 阈值选择（百分位=70%）
+   • 连接范围: 3-8 APs
+   • 信道实现: 50
+   • 总评估次数: 1500
+
+🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
+                                        实验: 6 UAVs                                        
+🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
+
+==========================================================================================
+                                  阈值选择方案 - 6 UAVs - 种子71                                  
+==========================================================================================
+阈值百分位: 70%, 最少连接: 3, 最多连接: 8
+
+[1/4] 生成场景...
+[2/4] 创建阈值选择配置...
+[3/4] 计算初始性能...
+  初始AP选择统计:
+    总AP数: 10
+    每用户连接AP数: 3.00 ± 0.00 [3, 3]
+    平均利用率: 30.0%
+  初始 Min Rate: 13.7547 Mbps
+
+[4/4] 运行优化器...
+
+  运行 BVF (Threshold)...
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2128.24Mbps, Min=12.5943Mbps, BestMin=12.5943Mbps (Iter0), Time=0.088s
+Iter 10: Sum=2190.33Mbps, Min=19.1733Mbps, BestMin=19.1733Mbps (Iter10), Time=0.094s
+Iter 20: Sum=2179.64Mbps, Min=21.4818Mbps, BestMin=21.4818Mbps (Iter20), Time=0.088s
+Iter 30: Sum=2128.99Mbps, Min=19.2733Mbps, BestMin=21.8682Mbps (Iter28), Time=0.092s
+Iter 40: Sum=2145.25Mbps, Min=19.7422Mbps, BestMin=21.8682Mbps (Iter28), Time=0.088s
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 28 次迭代
+📊 历代最优总速率: 2171.92 Mbps
+🎯 历代最优最小速率: 21.8682 Mbps
+📈 速率标准差: 7.8225 Mbps
+⏱️  优化时间: 4.58 秒
+⚡ 平均每次迭代: 0.092 秒
+🔄 重启次数: 0
+    Min Rate: 21.8682 Mbps
+    AP连接数: 3.00 ± 0.00 [3, 3]
+    时间: 4.6s
+
+  运行 GA (Threshold)...
+离散网格生成完成: 9x9 = 81个候选点
+开始离散遗传算法优化（网格: 9x9）...
+Gen 0: Fitness=3.0283, Sum=2132.28Mbps, Min=19.5781Mbps, Time=2.829s
+Gen 10: Fitness=3.2224, Sum=2204.67Mbps, Min=23.8742Mbps, Time=3.027s
+Gen 20: Fitness=3.2584, Sum=2183.39Mbps, Min=24.5189Mbps, Time=3.329s
+Gen 30: Fitness=3.2584, Sum=2176.93Mbps, Min=24.2894Mbps, Time=3.362s
+Gen 40: Fitness=3.2584, Sum=2187.04Mbps, Min=24.8535Mbps, Time=3.615s
+
+🎉 离散遗传算法优化完成!
+✨ 最佳性能出现在第 47 代
+📊 最终总速率: 2270.76 Mbps
+🎯 最终最小速率: 25.0870 Mbps
+📈 速率标准差: 7.7088 Mbps
+⏱️  优化时间: 163.32 秒
+⚡ 平均每代: 3.266 秒
+🎲 使用网格点: [5, 10, 33, 52, 55, 68]
+    Min Rate: 25.0870 Mbps
+    AP连接数: 3.00 ± 0.00 [3, 3]
+    时间: 163.4s
+
+  运行 PSO (Threshold)...
+✅ 分布式PSO优化器初始化完成
+   - 粒子数量: 30
+   - 最大迭代次数: 50
+   - PSO参数: w=0.729, c1=1.49445, c2=1.49445
+
+================================================================================
+                            分布式PSO优化算法 (Algorithm 2)                            
+================================================================================
+
+[Step 1] 初始化粒子群...
+   ✓ 粒子群初始化完成
+   ✓ 初始全局最佳适应度: 43.9109
+
+[开始迭代] 最大迭代次数: 50
+--------------------------------------------------------------------------------
+Iter   0 | Fitness:  44.8385 | Min Rate: 21.7081 Mbps | Sum Rate:  2149.44 Mbps | Mean Rate: 35.8240 Mbps
+Iter  10 | Fitness:  48.2153 | Min Rate: 25.3782 Mbps | Sum Rate:  2243.18 Mbps | Mean Rate: 37.3863 Mbps
+Iter  20 | Fitness:  51.1414 | Min Rate: 25.8610 Mbps | Sum Rate:  2225.97 Mbps | Mean Rate: 37.0995 Mbps
+Iter  30 | Fitness:  51.1414 | Min Rate: 26.6007 Mbps | Sum Rate:  2237.27 Mbps | Mean Rate: 37.2878 Mbps
+Iter  40 | Fitness:  51.1414 | Min Rate: 26.3444 Mbps | Sum Rate:  2246.26 Mbps | Mean Rate: 37.4376 Mbps
+Iter  49 | Fitness:  51.3981 | Min Rate: 28.0890 Mbps | Sum Rate:  2245.47 Mbps | Mean Rate: 37.4245 Mbps
+
+================================================================================
+                                      优化完成                                      
+================================================================================
+
+📊 最终性能指标:
+   - 总速率 (Sum Rate):      2247.59 Mbps
+   - 最小速率 (Min Rate):    26.7376 Mbps
+   - 平均速率 (Mean Rate):   37.4598 Mbps
+   - 速率标准差 (Std):        6.6069 Mbps
+   - 最佳适应度 (Fitness):   51.3981
+
+📈 性能提升:
+   - 总速率提升:   +4.57%
+   - 最小速率提升: +23.17%
+
+⏱️  计算时间:
+   - 总优化时间: 233.30 秒
+   - 平均每代:   4.666 秒
+    Min Rate: 26.7376 Mbps
+    AP连接数: 3.00 ± 0.00 [3, 3]
+    时间: 233.4s
+
+  运行 NewSSA (Threshold)...
+================================================================================
+开始NewSSA优化（论文算法）...
+  • 改进1: OBL策略 + 折射原理（公式18）
+  • 改进2: 正弦-余弦搜索（公式20）
+  • 改进3: 自适应参数r1和w（公式21-22）
+  • 麻雀数量: 30
+  • 最大迭代: 50
+  • 生产者: 20%, 警戒者: 15%
+================================================================================
+
+[1/5] OBL策略 + 折射原理初始化...
+[2/5] 计算初始适应度...
+  ✓ 初始最优适应度: 22.4934 Mbps
+
+[3/5] 开始迭代优化（50次）...
+--------------------------------------------------------------------------------
+Iter  10/50: Sum=2115.62Mbps, Min=24.6611Mbps, Time=5.602s
+Iter  20/50: Sum=2115.62Mbps, Min=24.6611Mbps, Time=5.208s
+Iter  30/50: Sum=2115.62Mbps, Min=24.6611Mbps, Time=4.218s
+Iter  40/50: Sum=2106.54Mbps, Min=24.7565Mbps, Time=4.220s
+Iter  50/50: Sum=2106.54Mbps, Min=24.7565Mbps, Time=4.202s
+
+[4/5] 整理最终结果...
+
+[5/5] 优化完成!
+================================================================================
+🎉 NewSSA优化完成!
+📊 最终总速率: 2106.54 Mbps
+🎯 最终最小速率: 24.7565 Mbps
+📈 平均速率: 35.2784 Mbps
+⏱️  优化时间: 239.35 秒
+================================================================================
+
+❌ 实验失败: 'ThresholdBasedNewSSAOptimizer' object has no attribute 'compute_channel_model'

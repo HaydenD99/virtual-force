@@ -1,0 +1,119 @@
+
+=== Dynamic  K=20, L=6, G=9  (G+L)*M/K=3.00 ===
+  [ 1/30] seed=7  DLB: mr=61.8 jfi=0.883
+  [ 2/30] seed=4  DLB: mr=60.1 jfi=0.752
+  [ 3/30] seed=8  DLB: mr=63.1 jfi=0.739
+  [ 4/30] seed=3  DLB: mr=64.8 jfi=0.900
+  [ 5/30] seed=1  DLB: mr=55.8 jfi=0.647
+  [ 6/30] seed=5  DLB: mr=67.1 jfi=0.929
+  [ 7/30] seed=6  DLB: mr=59.1 jfi=0.794
+  [ 8/30] seed=2  DLB: mr=48.1 jfi=0.731
+  [ 9/30] seed=9  DLB: mr=50.5 jfi=0.803
+  [10/30] seed=11  DLB: mr=69.6 jfi=0.947
+  [11/30] seed=12  DLB: mr=70.6 jfi=0.698
+  [12/30] seed=10  DLB: mr=60.7 jfi=0.842
+  [13/30] seed=14  DLB: mr=52.8 jfi=0.786
+  [14/30] seed=13  DLB: mr=68.3 jfi=0.817
+  [15/30] seed=15  DLB: mr=66.8 jfi=0.923
+  [16/30] seed=16  DLB: mr=60.8 jfi=0.857
+  [17/30] seed=17  DLB: mr=58.9 jfi=0.964
+  [18/30] seed=19  DLB: mr=51.7 jfi=0.583
+  [19/30] seed=18  DLB: mr=66.8 jfi=0.973
+  [20/30] seed=20  DLB: mr=69.8 jfi=0.872
+  [21/30] seed=21  DLB: mr=65.0 jfi=0.916
+  [22/30] seed=22  DLB: mr=51.1 jfi=0.866
+  [23/30] seed=23  DLB: mr=54.3 jfi=0.913
+  [24/30] seed=24  DLB: mr=53.9 jfi=0.873
+  [25/30] seed=25  DLB: mr=67.8 jfi=0.753
+  [26/30] seed=27  DLB: mr=63.7 jfi=0.628
+  [27/30] seed=28  DLB: mr=52.6 jfi=0.527
+  [28/30] seed=26  DLB: mr=70.5 jfi=0.876
+  [29/30] seed=30  DLB: mr=65.0 jfi=0.785
+  [30/30] seed=29  DLB: mr=51.5 jfi=0.705
+
+  K=20 完成 (1541s)
+  Dynamic LB-BVF        : mr=60.76  jfi=0.8094  js=0.7817
+  GA-3D-LB              : mr=65.88  jfi=0.9135  js=0.7957
+  PSO-3D-LB             : mr=63.24  jfi=0.9122  js=0.7780
+  SSA-3D-LB             : mr=64.69  jfi=0.8569  js=0.7731
+  → result/multiconfig2/dynamic_K20.json
+
+=== Dynamic  K=30, L=6, G=9  (G+L)*M/K=2.00 ===
+  [ 1/30] seed=5  DLB: mr=59.4 jfi=0.903
+  [ 2/30] seed=8  DLB: mr=46.6 jfi=0.903
+  [ 3/30] seed=4  DLB: mr=46.8 jfi=0.822
+  [ 4/30] seed=6  DLB: mr=41.0 jfi=0.946
+  [ 5/30] seed=7  DLB: mr=44.6 jfi=0.855
+  [ 6/30] seed=3  DLB: mr=47.2 jfi=0.889
+  [ 7/30] seed=2  DLB: mr=47.3 jfi=0.866
+  [ 8/30] seed=1  DLB: mr=49.1 jfi=0.687
+  [ 9/30] seed=9  DLB: mr=43.9 jfi=0.807
+  [10/30] seed=10  DLB: mr=45.7 jfi=0.876
+  [11/30] seed=11  DLB: mr=44.9 jfi=0.914
+  [12/30] seed=13  DLB: mr=56.7 jfi=0.940
+  [13/30] seed=12  DLB: mr=49.1 jfi=0.665
+  [14/30] seed=14  DLB: mr=45.8 jfi=0.905
+  [15/30] seed=15  DLB: mr=45.6 jfi=0.934
+  [16/30] seed=16  DLB: mr=49.0 jfi=0.937
+  [17/30] seed=17  DLB: mr=48.3 jfi=0.878
+  [18/30] seed=18  DLB: mr=55.1 jfi=0.969
+  [19/30] seed=19  DLB: mr=41.0 jfi=0.654
+  [20/30] seed=21  DLB: mr=45.4 jfi=0.907
+  [21/30] seed=20  DLB: mr=46.4 jfi=0.858
+  [22/30] seed=22  DLB: mr=44.6 jfi=0.888
+  [23/30] seed=23  DLB: mr=44.7 jfi=0.956
+  [24/30] seed=24  DLB: mr=47.8 jfi=0.952
+  [25/30] seed=25  DLB: mr=44.6 jfi=0.930
+  [26/30] seed=26  DLB: mr=52.9 jfi=0.898
+  [27/30] seed=27  DLB: mr=46.4 jfi=0.878
+  [28/30] seed=29  DLB: mr=47.8 jfi=0.879
+  [29/30] seed=28  DLB: mr=45.2 jfi=0.733
+  [30/30] seed=30  DLB: mr=48.9 jfi=0.842
+
+  K=30 完成 (2378s)
+  Dynamic LB-BVF        : mr=47.40  jfi=0.8689  js=0.6777
+  GA-3D-LB              : mr=52.98  jfi=0.8720  js=0.6873
+  PSO-3D-LB             : mr=51.19  jfi=0.8651  js=0.6599
+  SSA-3D-LB             : mr=50.52  jfi=0.8099  js=0.6312
+  → result/multiconfig2/dynamic_K30.json
+
+=== Dynamic  K=40, L=6, G=9  (G+L)*M/K=1.50 ===
+  [ 1/30] seed=5  DLB: mr=44.1 jfi=0.903
+  [ 2/30] seed=2  DLB: mr=34.6 jfi=0.865
+  [ 3/30] seed=6  DLB: mr=28.1 jfi=0.933
+  [ 4/30] seed=4  DLB: mr=40.7 jfi=0.829
+  [ 5/30] seed=8  DLB: mr=44.0 jfi=0.915
+  [ 6/30] seed=1  DLB: mr=44.4 jfi=0.903
+  [ 7/30] seed=3  DLB: mr=44.5 jfi=0.946
+  [ 8/30] seed=7  DLB: mr=43.5 jfi=0.931
+  [ 9/30] seed=9  DLB: mr=37.0 jfi=0.915
+  [10/30] seed=10  DLB: mr=42.3 jfi=0.859
+  [11/30] seed=11  DLB: mr=39.8 jfi=0.911
+  [12/30] seed=12  DLB: mr=36.5 jfi=0.832
+  [13/30] seed=13  DLB: mr=42.3 jfi=0.899
+  [14/30] seed=15  DLB: mr=36.6 jfi=0.947
+  [15/30] seed=14  DLB: mr=35.3 jfi=0.918
+  [16/30] seed=16  DLB: mr=43.3 jfi=0.897
+  [17/30] seed=17  DLB: mr=37.0 jfi=0.930
+  [18/30] seed=18  DLB: mr=40.9 jfi=0.939
+  [19/30] seed=19  DLB: mr=35.7 jfi=0.873
+  [20/30] seed=20  DLB: mr=43.2 jfi=0.877
+  [21/30] seed=21  DLB: mr=41.1 jfi=0.964
+  [22/30] seed=23  DLB: mr=33.3 jfi=0.929
+  [23/30] seed=22  DLB: mr=37.1 jfi=0.906
+  [24/30] seed=24  DLB: mr=37.1 jfi=0.932
+  [25/30] seed=25  DLB: mr=44.7 jfi=0.946
+  [26/30] seed=26  DLB: mr=39.2 jfi=0.916
+  [27/30] seed=28  DLB: mr=41.6 jfi=0.958
+  [28/30] seed=27  DLB: mr=42.1 jfi=0.881
+  [29/30] seed=29  DLB: mr=38.5 jfi=0.859
+  [30/30] seed=30  DLB: mr=41.2 jfi=0.918
+
+  K=40 完成 (1969s)
+  Dynamic LB-BVF        : mr=39.67  jfi=0.9076  js=0.4928
+  GA-3D-LB              : mr=44.24  jfi=0.8790  js=0.5622
+  PSO-3D-LB             : mr=43.10  jfi=0.8862  js=0.5380
+  SSA-3D-LB             : mr=42.17  jfi=0.8415  js=0.5048
+  → result/multiconfig2/dynamic_K40.json
+
+全部动态配置完成

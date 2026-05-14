@@ -1,0 +1,599 @@
+================================================================================
+  V3 vs V5Pro vs V6 对比实验
+================================================================================
+
+============================================================
+配置: 6 UAV | Seed 56
+============================================================
+  Initial: Min=20.1852, Sum=2139.8
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2139.81Mbps, Min=20.1852Mbps, BestMin=20.1852Mbps (Iter0), Time=0.070s
+Iter 10: Sum=2073.59Mbps, Min=19.5662Mbps, BestMin=22.7204Mbps (Iter9), Time=0.070s
+Iter 20: Sum=2078.74Mbps, Min=21.1769Mbps, BestMin=22.7204Mbps (Iter9), Time=0.070s
+Iter 30: Sum=2074.52Mbps, Min=20.6622Mbps, BestMin=22.7204Mbps (Iter9), Time=0.071s
+
+🔄 智能重启 #1 (Iter 34)
+Iter 40: Sum=2069.74Mbps, Min=18.3486Mbps, BestMin=22.7204Mbps (Iter9), Time=0.074s
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 9 次迭代
+📊 历代最优总速率: 2106.48 Mbps
+🎯 历代最优最小速率: 22.7204 Mbps
+📈 速率标准差: 6.7027 Mbps
+⏱️  优化时间: 3.68 秒
+⚡ 平均每次迭代: 0.074 秒
+🔄 重启次数: 1
+  V3:      Min=22.7204, Sum=2106.5, Time=3.7s
+🚀 开始平衡虚拟力优化 V5-Pro (Comm-Aware + Memory Robustness)...
+Iter  0 | MinRate: 26.8872 | SumRate:  2767.2 | BestMin: 26.8872
+Iter 10 | MinRate: 22.7141 | SumRate:  2787.0 | BestMin: 28.0868
+Iter 20 | MinRate: 24.5393 | SumRate:  2740.7 | BestMin: 28.0868
+  🔄 触发智能重启 #1 (代 26) | 尝试跳出局部最优...
+Iter 30 | MinRate: 25.0475 | SumRate:  2666.7 | BestMin: 28.0868
+Iter 40 | MinRate: 25.6393 | SumRate:  2694.2 | BestMin: 28.0868
+  V5Pro:   Min=28.0868, Sum=2744.7, Time=3.8s
+🚀 开始平衡虚拟力优化 V6 (科学力场 + 通信感知 + 稳健性)...
+Iter  0 | Min: 26.8872 | Sum: 2767.2 | BestMin: 26.8872
+Iter 10 | Min: 25.2514 | Sum: 2638.5 | BestMin: 27.9160
+Iter 20 | Min: 26.9414 | Sum: 2714.6 | BestMin: 29.4576
+Iter 30 | Min: 26.5160 | Sum: 2790.2 | BestMin: 29.4576
+Iter 40 | Min: 25.3791 | Sum: 2669.0 | BestMin: 29.4576
+  V6:      Min=29.4576, Sum=2693.1, Time=3.7s
+  ✅ 保存: comp_6uav_seed56.json
+
+============================================================
+配置: 6 UAV | Seed 62
+============================================================
+  Initial: Min=17.6877, Sum=2045.2
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2045.17Mbps, Min=17.6877Mbps, BestMin=17.6877Mbps (Iter0), Time=0.072s
+Iter 10: Sum=2040.03Mbps, Min=24.1100Mbps, BestMin=25.7033Mbps (Iter8), Time=0.072s
+Iter 20: Sum=1996.93Mbps, Min=20.1464Mbps, BestMin=25.7033Mbps (Iter8), Time=0.076s
+Iter 30: Sum=2023.22Mbps, Min=23.0947Mbps, BestMin=25.7033Mbps (Iter8), Time=0.072s
+
+🔄 智能重启 #1 (Iter 33)
+Iter 40: Sum=2185.06Mbps, Min=24.6310Mbps, BestMin=25.8035Mbps (Iter39), Time=0.072s
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 39 次迭代
+📊 历代最优总速率: 2172.32 Mbps
+🎯 历代最优最小速率: 25.8035 Mbps
+📈 速率标准差: 5.8626 Mbps
+⏱️  优化时间: 3.70 秒
+⚡ 平均每次迭代: 0.074 秒
+🔄 重启次数: 1
+  V3:      Min=25.8035, Sum=2172.3, Time=3.7s
+🚀 开始平衡虚拟力优化 V5-Pro (Comm-Aware + Memory Robustness)...
+Iter  0 | MinRate: 23.9541 | SumRate:  2619.2 | BestMin: 23.9541
+Iter 10 | MinRate: 25.5171 | SumRate:  2612.3 | BestMin: 27.4411
+Iter 20 | MinRate: 26.5835 | SumRate:  2617.1 | BestMin: 27.4411
+  🔄 触发智能重启 #1 (代 28) | 尝试跳出局部最优...
+Iter 30 | MinRate: 25.7236 | SumRate:  2712.3 | BestMin: 27.4411
+Iter 40 | MinRate: 26.5678 | SumRate:  2749.8 | BestMin: 27.4411
+  V5Pro:   Min=27.4411, Sum=2665.3, Time=3.8s
+🚀 开始平衡虚拟力优化 V6 (科学力场 + 通信感知 + 稳健性)...
+Iter  0 | Min: 23.9541 | Sum: 2619.2 | BestMin: 23.9541
+Iter 10 | Min: 29.7593 | Sum: 2613.3 | BestMin: 29.9701
+Iter 20 | Min: 26.8689 | Sum: 2723.7 | BestMin: 29.9701
+Iter 30 | Min: 30.1877 | Sum: 2719.0 | BestMin: 30.1877
+Iter 40 | Min: 26.0987 | Sum: 2684.5 | BestMin: 30.4332
+  V6:      Min=30.4332, Sum=2743.7, Time=3.8s
+  ✅ 保存: comp_6uav_seed62.json
+
+============================================================
+配置: 6 UAV | Seed 67
+============================================================
+  Initial: Min=20.9206, Sum=2146.0
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2145.96Mbps, Min=20.9206Mbps, BestMin=20.9206Mbps (Iter0), Time=0.073s
+Iter 10: Sum=2088.38Mbps, Min=18.8157Mbps, BestMin=25.1238Mbps (Iter2), Time=0.078s
+Iter 20: Sum=2102.78Mbps, Min=21.3594Mbps, BestMin=25.1238Mbps (Iter2), Time=0.073s
+Iter 30: Sum=2068.06Mbps, Min=21.4292Mbps, BestMin=25.1238Mbps (Iter2), Time=0.073s
+
+🔄 智能重启 #1 (Iter 31)
+Iter 40: Sum=2073.71Mbps, Min=20.0530Mbps, BestMin=25.1238Mbps (Iter2), Time=0.072s
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 2 次迭代
+📊 历代最优总速率: 2106.96 Mbps
+🎯 历代最优最小速率: 25.1238 Mbps
+📈 速率标准差: 6.5688 Mbps
+⏱️  优化时间: 3.73 秒
+⚡ 平均每次迭代: 0.075 秒
+🔄 重启次数: 1
+  V3:      Min=25.1238, Sum=2107.0, Time=3.7s
+🚀 开始平衡虚拟力优化 V5-Pro (Comm-Aware + Memory Robustness)...
+Iter  0 | MinRate: 26.7971 | SumRate:  2775.2 | BestMin: 26.7971
+Iter 10 | MinRate: 27.0101 | SumRate:  2737.7 | BestMin: 28.0281
+Iter 20 | MinRate: 21.9039 | SumRate:  2715.1 | BestMin: 28.0281
+Iter 30 | MinRate: 27.0433 | SumRate:  2804.2 | BestMin: 28.0281
+  🔄 触发智能重启 #1 (代 34) | 尝试跳出局部最优...
+Iter 40 | MinRate: 27.5331 | SumRate:  2744.9 | BestMin: 28.5044
+  V5Pro:   Min=28.5044, Sum=2745.4, Time=3.9s
+🚀 开始平衡虚拟力优化 V6 (科学力场 + 通信感知 + 稳健性)...
+Iter  0 | Min: 26.7971 | Sum: 2775.2 | BestMin: 26.7971
+Iter 10 | Min: 31.5880 | Sum: 2757.7 | BestMin: 32.5635
+Iter 20 | Min: 27.9426 | Sum: 2824.4 | BestMin: 32.5635
+Iter 30 | Min: 29.6227 | Sum: 2785.2 | BestMin: 33.9564
+Iter 40 | Min: 30.0447 | Sum: 2759.1 | BestMin: 33.9564
+  V6:      Min=33.9564, Sum=2819.8, Time=3.7s
+  ✅ 保存: comp_6uav_seed67.json
+
+============================================================
+配置: 6 UAV | Seed 75
+============================================================
+  Initial: Min=20.7841, Sum=2063.2
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2063.18Mbps, Min=20.7841Mbps, BestMin=20.7841Mbps (Iter0), Time=0.071s
+Iter 10: Sum=2127.56Mbps, Min=23.9230Mbps, BestMin=23.9230Mbps (Iter10), Time=0.070s
+Iter 20: Sum=2121.31Mbps, Min=26.6571Mbps, BestMin=26.6571Mbps (Iter20), Time=0.071s
+Iter 30: Sum=2118.97Mbps, Min=26.0588Mbps, BestMin=28.2392Mbps (Iter27), Time=0.070s
+Iter 40: Sum=2140.45Mbps, Min=27.4299Mbps, BestMin=28.2683Mbps (Iter35), Time=0.071s
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 35 次迭代
+📊 历代最优总速率: 2127.13 Mbps
+🎯 历代最优最小速率: 28.2683 Mbps
+📈 速率标准差: 4.5191 Mbps
+⏱️  优化时间: 3.77 秒
+⚡ 平均每次迭代: 0.075 秒
+🔄 重启次数: 0
+  V3:      Min=28.2683, Sum=2127.1, Time=3.8s
+🚀 开始平衡虚拟力优化 V5-Pro (Comm-Aware + Memory Robustness)...
+Iter  0 | MinRate: 27.2661 | SumRate:  2632.0 | BestMin: 27.2661
+Iter 10 | MinRate: 24.1831 | SumRate:  2694.9 | BestMin: 27.2826
+Iter 20 | MinRate: 26.1446 | SumRate:  2727.2 | BestMin: 27.7088
+Iter 30 | MinRate: 28.1071 | SumRate:  2740.7 | BestMin: 28.1071
+Iter 40 | MinRate: 27.4781 | SumRate:  2747.0 | BestMin: 28.2346
+  V5Pro:   Min=28.2346, Sum=2732.3, Time=3.7s
+🚀 开始平衡虚拟力优化 V6 (科学力场 + 通信感知 + 稳健性)...
+Iter  0 | Min: 27.2661 | Sum: 2632.0 | BestMin: 27.2661
+Iter 10 | Min: 25.6643 | Sum: 2633.9 | BestMin: 30.5681
+Iter 20 | Min: 29.9272 | Sum: 2695.3 | BestMin: 31.8207
+Iter 30 | Min: 26.8504 | Sum: 2676.1 | BestMin: 31.8207
+Iter 40 | Min: 30.3235 | Sum: 2705.2 | BestMin: 31.8207
+  V6:      Min=31.8207, Sum=2745.3, Time=3.7s
+  ✅ 保存: comp_6uav_seed75.json
+
+============================================================
+配置: 6 UAV | Seed 76
+============================================================
+  Initial: Min=17.9723, Sum=2153.7
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2153.70Mbps, Min=17.9723Mbps, BestMin=17.9723Mbps (Iter0), Time=0.072s
+Iter 10: Sum=2127.42Mbps, Min=22.9404Mbps, BestMin=23.0011Mbps (Iter7), Time=0.071s
+Iter 20: Sum=2163.01Mbps, Min=23.0373Mbps, BestMin=23.8480Mbps (Iter18), Time=0.070s
+Iter 30: Sum=2180.33Mbps, Min=24.6439Mbps, BestMin=24.6439Mbps (Iter30), Time=0.071s
+Iter 40: Sum=2128.41Mbps, Min=25.6697Mbps, BestMin=25.6697Mbps (Iter40), Time=0.071s
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 43 次迭代
+📊 历代最优总速率: 2177.11 Mbps
+🎯 历代最优最小速率: 26.8579 Mbps
+📈 速率标准差: 6.3730 Mbps
+⏱️  优化时间: 3.70 秒
+⚡ 平均每次迭代: 0.074 秒
+🔄 重启次数: 0
+  V3:      Min=26.8579, Sum=2177.1, Time=3.7s
+🚀 开始平衡虚拟力优化 V5-Pro (Comm-Aware + Memory Robustness)...
+Iter  0 | MinRate: 22.9760 | SumRate:  2791.2 | BestMin: 22.9760
+Iter 10 | MinRate: 21.7222 | SumRate:  2729.7 | BestMin: 24.9263
+Iter 20 | MinRate: 22.3438 | SumRate:  2799.6 | BestMin: 24.9263
+  🔄 触发智能重启 #1 (代 26) | 尝试跳出局部最优...
+Iter 30 | MinRate: 22.6053 | SumRate:  2740.9 | BestMin: 24.9263
+Iter 40 | MinRate: 21.7941 | SumRate:  2758.0 | BestMin: 24.9263
+  V5Pro:   Min=24.9263, Sum=2795.2, Time=3.6s
+🚀 开始平衡虚拟力优化 V6 (科学力场 + 通信感知 + 稳健性)...
+Iter  0 | Min: 22.9760 | Sum: 2791.2 | BestMin: 22.9760
+Iter 10 | Min: 24.6002 | Sum: 2716.3 | BestMin: 24.6002
+Iter 20 | Min: 24.2508 | Sum: 2932.0 | BestMin: 26.7710
+Iter 30 | Min: 26.8747 | Sum: 2809.9 | BestMin: 30.3901
+Iter 40 | Min: 27.1075 | Sum: 2739.2 | BestMin: 30.3901
+  V6:      Min=30.3901, Sum=2846.0, Time=3.7s
+  ✅ 保存: comp_6uav_seed76.json
+
+============================================================
+配置: 9 UAV | Seed 56
+============================================================
+  Initial: Min=31.3841, Sum=2547.9
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2547.87Mbps, Min=31.3841Mbps, BestMin=31.3841Mbps (Iter0), Time=0.092s
+Iter 10: Sum=2593.34Mbps, Min=31.2788Mbps, BestMin=34.6478Mbps (Iter6), Time=0.091s
+Iter 20: Sum=2591.42Mbps, Min=31.1185Mbps, BestMin=34.6478Mbps (Iter6), Time=0.091s
+Iter 30: Sum=2576.76Mbps, Min=31.6331Mbps, BestMin=35.6496Mbps (Iter23), Time=0.092s
+Iter 40: Sum=2591.63Mbps, Min=28.5573Mbps, BestMin=35.7776Mbps (Iter31), Time=0.090s
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 49 次迭代
+📊 历代最优总速率: 2610.04 Mbps
+🎯 历代最优最小速率: 37.0480 Mbps
+📈 速率标准差: 4.6203 Mbps
+⏱️  优化时间: 4.65 秒
+⚡ 平均每次迭代: 0.093 秒
+🔄 重启次数: 0
+  V3:      Min=37.0480, Sum=2610.0, Time=4.6s
+🚀 开始平衡虚拟力优化 V5-Pro (Comm-Aware + Memory Robustness)...
+Iter  0 | MinRate: 39.8876 | SumRate:  3248.6 | BestMin: 39.8876
+Iter 10 | MinRate: 35.7358 | SumRate:  3243.0 | BestMin: 42.2877
+Iter 20 | MinRate: 38.9932 | SumRate:  3240.2 | BestMin: 42.2877
+  🔄 触发智能重启 #1 (代 28) | 尝试跳出局部最优...
+Iter 30 | MinRate: 32.1230 | SumRate:  3091.1 | BestMin: 42.2877
+Iter 40 | MinRate: 32.5329 | SumRate:  3138.7 | BestMin: 42.2877
+  V5Pro:   Min=42.2877, Sum=3242.4, Time=4.7s
+🚀 开始平衡虚拟力优化 V6 (科学力场 + 通信感知 + 稳健性)...
+Iter  0 | Min: 39.8876 | Sum: 3248.6 | BestMin: 39.8876
+Iter 10 | Min: 39.0161 | Sum: 3254.3 | BestMin: 43.4902
+Iter 20 | Min: 40.4800 | Sum: 3378.8 | BestMin: 43.4902
+Iter 30 | Min: 37.7948 | Sum: 3253.1 | BestMin: 43.4902
+  🔄 智能重启 #1 (Iter 34)
+Iter 40 | Min: 36.4672 | Sum: 3264.7 | BestMin: 43.4902
+  V6:      Min=43.4902, Sum=3435.8, Time=4.7s
+  ✅ 保存: comp_9uav_seed56.json
+
+============================================================
+配置: 9 UAV | Seed 62
+============================================================
+  Initial: Min=27.0605, Sum=2542.7
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2542.74Mbps, Min=27.0605Mbps, BestMin=27.0605Mbps (Iter0), Time=0.090s
+Iter 10: Sum=2576.25Mbps, Min=33.8669Mbps, BestMin=35.6786Mbps (Iter5), Time=0.091s
+Iter 20: Sum=2550.96Mbps, Min=33.7226Mbps, BestMin=35.6786Mbps (Iter5), Time=0.103s
+Iter 30: Sum=2620.61Mbps, Min=34.4013Mbps, BestMin=36.2850Mbps (Iter21), Time=0.089s
+Iter 40: Sum=2603.39Mbps, Min=33.4726Mbps, BestMin=36.2850Mbps (Iter21), Time=0.089s
+
+🔄 智能重启 #1 (Iter 46)
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 21 次迭代
+📊 历代最优总速率: 2557.75 Mbps
+🎯 历代最优最小速率: 36.2850 Mbps
+📈 速率标准差: 4.2785 Mbps
+⏱️  优化时间: 4.63 秒
+⚡ 平均每次迭代: 0.093 秒
+🔄 重启次数: 1
+  V3:      Min=36.2850, Sum=2557.7, Time=4.6s
+🚀 开始平衡虚拟力优化 V5-Pro (Comm-Aware + Memory Robustness)...
+Iter  0 | MinRate: 31.3102 | SumRate:  3220.6 | BestMin: 31.3102
+Iter 10 | MinRate: 29.7217 | SumRate:  3196.5 | BestMin: 37.5628
+Iter 20 | MinRate: 34.0134 | SumRate:  3311.5 | BestMin: 37.5628
+Iter 30 | MinRate: 34.5755 | SumRate:  3249.1 | BestMin: 37.5628
+  🔄 触发智能重启 #1 (代 33) | 尝试跳出局部最优...
+Iter 40 | MinRate: 24.4150 | SumRate:  3163.2 | BestMin: 37.5628
+  V5Pro:   Min=37.5628, Sum=3181.5, Time=4.6s
+🚀 开始平衡虚拟力优化 V6 (科学力场 + 通信感知 + 稳健性)...
+Iter  0 | Min: 31.3102 | Sum: 3220.6 | BestMin: 31.3102
+Iter 10 | Min: 34.8023 | Sum: 3258.8 | BestMin: 41.1288
+Iter 20 | Min: 41.1942 | Sum: 3369.7 | BestMin: 41.1942
+Iter 30 | Min: 37.3864 | Sum: 3354.4 | BestMin: 42.8348
+Iter 40 | Min: 39.0222 | Sum: 3308.4 | BestMin: 43.9877
+  V6:      Min=43.9877, Sum=3396.4, Time=4.7s
+  ✅ 保存: comp_9uav_seed62.json
+
+============================================================
+配置: 9 UAV | Seed 67
+============================================================
+  Initial: Min=28.8568, Sum=2598.1
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2598.06Mbps, Min=28.8568Mbps, BestMin=28.8568Mbps (Iter0), Time=0.091s
+Iter 10: Sum=2585.29Mbps, Min=33.2766Mbps, BestMin=36.0176Mbps (Iter6), Time=0.089s
+Iter 20: Sum=2565.05Mbps, Min=34.0117Mbps, BestMin=36.0176Mbps (Iter6), Time=0.089s
+Iter 30: Sum=2542.39Mbps, Min=35.2884Mbps, BestMin=36.0176Mbps (Iter6), Time=0.090s
+
+🔄 智能重启 #1 (Iter 31)
+Iter 40: Sum=2589.32Mbps, Min=35.1261Mbps, BestMin=36.0176Mbps (Iter6), Time=0.091s
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 6 次迭代
+📊 历代最优总速率: 2596.16 Mbps
+🎯 历代最优最小速率: 36.0176 Mbps
+📈 速率标准差: 4.7118 Mbps
+⏱️  优化时间: 4.56 秒
+⚡ 平均每次迭代: 0.091 秒
+🔄 重启次数: 1
+  V3:      Min=36.0176, Sum=2596.2, Time=4.6s
+🚀 开始平衡虚拟力优化 V5-Pro (Comm-Aware + Memory Robustness)...
+Iter  0 | MinRate: 38.2504 | SumRate:  3343.4 | BestMin: 38.2504
+Iter 10 | MinRate: 32.6263 | SumRate:  3372.4 | BestMin: 41.0901
+Iter 20 | MinRate: 32.0516 | SumRate:  3363.0 | BestMin: 41.0901
+Iter 30 | MinRate: 37.5932 | SumRate:  3323.7 | BestMin: 41.0901
+  🔄 触发智能重启 #1 (代 31) | 尝试跳出局部最优...
+Iter 40 | MinRate: 42.4456 | SumRate:  3339.9 | BestMin: 42.4456
+  V5Pro:   Min=43.1005, Sum=3278.5, Time=4.6s
+🚀 开始平衡虚拟力优化 V6 (科学力场 + 通信感知 + 稳健性)...
+Iter  0 | Min: 38.2504 | Sum: 3343.4 | BestMin: 38.2504
+Iter 10 | Min: 39.7472 | Sum: 3399.3 | BestMin: 43.9744
+Iter 20 | Min: 42.3674 | Sum: 3434.1 | BestMin: 43.9744
+Iter 30 | Min: 31.9872 | Sum: 3263.5 | BestMin: 43.9744
+  🔄 智能重启 #1 (Iter 34)
+Iter 40 | Min: 38.5332 | Sum: 3224.0 | BestMin: 43.9744
+  V6:      Min=43.9744, Sum=3394.5, Time=4.7s
+  ✅ 保存: comp_9uav_seed67.json
+
+============================================================
+配置: 9 UAV | Seed 75
+============================================================
+  Initial: Min=32.2480, Sum=2558.1
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2558.06Mbps, Min=32.2480Mbps, BestMin=32.2480Mbps (Iter0), Time=0.090s
+Iter 10: Sum=2611.04Mbps, Min=36.2700Mbps, BestMin=36.5044Mbps (Iter5), Time=0.091s
+Iter 20: Sum=2529.00Mbps, Min=35.1910Mbps, BestMin=36.5044Mbps (Iter5), Time=0.090s
+Iter 30: Sum=2529.44Mbps, Min=34.8172Mbps, BestMin=36.5044Mbps (Iter5), Time=0.090s
+
+🔄 智能重启 #1 (Iter 31)
+Iter 40: Sum=2505.42Mbps, Min=33.2358Mbps, BestMin=36.5044Mbps (Iter5), Time=0.091s
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 5 次迭代
+📊 历代最优总速率: 2591.23 Mbps
+🎯 历代最优最小速率: 36.5044 Mbps
+📈 速率标准差: 5.0290 Mbps
+⏱️  优化时间: 4.59 秒
+⚡ 平均每次迭代: 0.092 秒
+🔄 重启次数: 1
+  V3:      Min=36.5044, Sum=2591.2, Time=4.6s
+🚀 开始平衡虚拟力优化 V5-Pro (Comm-Aware + Memory Robustness)...
+Iter  0 | MinRate: 41.5404 | SumRate:  3300.9 | BestMin: 41.5404
+Iter 10 | MinRate: 40.1522 | SumRate:  3257.1 | BestMin: 42.3440
+Iter 20 | MinRate: 33.6526 | SumRate:  3271.2 | BestMin: 42.4746
+Iter 30 | MinRate: 31.0892 | SumRate:  3170.8 | BestMin: 42.4746
+Iter 40 | MinRate: 33.1461 | SumRate:  3229.6 | BestMin: 42.4746
+  V5Pro:   Min=42.4746, Sum=3291.2, Time=4.6s
+🚀 开始平衡虚拟力优化 V6 (科学力场 + 通信感知 + 稳健性)...
+Iter  0 | Min: 41.5404 | Sum: 3300.9 | BestMin: 41.5404
+Iter 10 | Min: 35.9539 | Sum: 3266.2 | BestMin: 41.5404
+Iter 20 | Min: 34.9932 | Sum: 3164.6 | BestMin: 41.5404
+  🔄 智能重启 #1 (Iter 25)
+Iter 30 | Min: 35.5897 | Sum: 3161.5 | BestMin: 41.5404
+Iter 40 | Min: 32.5237 | Sum: 3125.7 | BestMin: 41.5404
+  V6:      Min=41.5404, Sum=3300.9, Time=4.7s
+  ✅ 保存: comp_9uav_seed75.json
+
+============================================================
+配置: 9 UAV | Seed 76
+============================================================
+  Initial: Min=27.6520, Sum=2638.8
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2638.80Mbps, Min=27.6520Mbps, BestMin=27.6520Mbps (Iter0), Time=0.089s
+Iter 10: Sum=2667.10Mbps, Min=35.1666Mbps, BestMin=35.1666Mbps (Iter10), Time=0.090s
+Iter 20: Sum=2716.55Mbps, Min=33.7026Mbps, BestMin=35.7972Mbps (Iter14), Time=0.090s
+Iter 30: Sum=2693.19Mbps, Min=31.2814Mbps, BestMin=36.9607Mbps (Iter29), Time=0.090s
+Iter 40: Sum=2686.25Mbps, Min=36.2438Mbps, BestMin=36.9607Mbps (Iter29), Time=0.090s
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 29 次迭代
+📊 历代最优总速率: 2704.44 Mbps
+🎯 历代最优最小速率: 36.9607 Mbps
+📈 速率标准差: 5.0644 Mbps
+⏱️  优化时间: 4.58 秒
+⚡ 平均每次迭代: 0.092 秒
+🔄 重启次数: 0
+  V3:      Min=36.9607, Sum=2704.4, Time=4.6s
+🚀 开始平衡虚拟力优化 V5-Pro (Comm-Aware + Memory Robustness)...
+Iter  0 | MinRate: 35.8600 | SumRate:  3406.4 | BestMin: 35.8600
+Iter 10 | MinRate: 39.7427 | SumRate:  3395.4 | BestMin: 40.0506
+Iter 20 | MinRate: 37.0426 | SumRate:  3392.4 | BestMin: 40.0506
+Iter 30 | MinRate: 29.1956 | SumRate:  3285.1 | BestMin: 40.0506
+  🔄 触发智能重启 #1 (代 34) | 尝试跳出局部最优...
+Iter 40 | MinRate: 30.3051 | SumRate:  3143.7 | BestMin: 40.0506
+  V5Pro:   Min=40.0506, Sum=3454.2, Time=4.7s
+🚀 开始平衡虚拟力优化 V6 (科学力场 + 通信感知 + 稳健性)...
+Iter  0 | Min: 35.8600 | Sum: 3406.4 | BestMin: 35.8600
+Iter 10 | Min: 36.2110 | Sum: 3276.0 | BestMin: 41.7259
+Iter 20 | Min: 31.6055 | Sum: 3283.6 | BestMin: 41.7259
+Iter 30 | Min: 32.4331 | Sum: 3304.1 | BestMin: 41.7725
+Iter 40 | Min: 32.1240 | Sum: 3222.9 | BestMin: 41.7725
+  V6:      Min=41.7725, Sum=3325.2, Time=4.7s
+  ✅ 保存: comp_9uav_seed76.json
+
+============================================================
+配置: 12 UAV | Seed 56
+============================================================
+  Initial: Min=33.2570, Sum=2898.0
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2898.04Mbps, Min=33.2570Mbps, BestMin=33.2570Mbps (Iter0), Time=0.108s
+Iter 10: Sum=2949.55Mbps, Min=39.5352Mbps, BestMin=41.5251Mbps (Iter8), Time=0.110s
+Iter 20: Sum=2887.43Mbps, Min=40.0188Mbps, BestMin=41.5251Mbps (Iter8), Time=0.107s
+Iter 30: Sum=2966.50Mbps, Min=38.3356Mbps, BestMin=41.5251Mbps (Iter8), Time=0.106s
+
+🔄 智能重启 #1 (Iter 33)
+Iter 40: Sum=2954.16Mbps, Min=41.4480Mbps, BestMin=41.5251Mbps (Iter8), Time=0.106s
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 8 次迭代
+📊 历代最优总速率: 2959.88 Mbps
+🎯 历代最优最小速率: 41.5251 Mbps
+📈 速率标准差: 5.0787 Mbps
+⏱️  优化时间: 5.49 秒
+⚡ 平均每次迭代: 0.110 秒
+🔄 重启次数: 1
+  V3:      Min=41.5251, Sum=2959.9, Time=5.5s
+🚀 开始平衡虚拟力优化 V5-Pro (Comm-Aware + Memory Robustness)...
+Iter  0 | MinRate: 43.4798 | SumRate:  3595.5 | BestMin: 43.4798
+Iter 10 | MinRate: 42.1565 | SumRate:  3617.0 | BestMin: 46.0608
+Iter 20 | MinRate: 44.2894 | SumRate:  3563.1 | BestMin: 46.0608
+  🔄 触发智能重启 #1 (代 26) | 尝试跳出局部最优...
+Iter 30 | MinRate: 40.4154 | SumRate:  3808.5 | BestMin: 46.0608
+Iter 40 | MinRate: 42.1185 | SumRate:  3723.8 | BestMin: 46.0608
+  V5Pro:   Min=46.0608, Sum=3666.8, Time=5.7s
+🚀 开始平衡虚拟力优化 V6 (科学力场 + 通信感知 + 稳健性)...
+Iter  0 | Min: 43.4798 | Sum: 3595.5 | BestMin: 43.4798
+Iter 10 | Min: 42.8257 | Sum: 3554.7 | BestMin: 46.1429
+Iter 20 | Min: 43.4183 | Sum: 3592.7 | BestMin: 50.4186
+Iter 30 | Min: 39.3067 | Sum: 3607.9 | BestMin: 50.4186
+Iter 40 | Min: 39.9898 | Sum: 3548.7 | BestMin: 50.4186
+  V6:      Min=50.4186, Sum=3749.1, Time=5.7s
+  ✅ 保存: comp_12uav_seed56.json
+
+============================================================
+配置: 12 UAV | Seed 62
+============================================================
+  Initial: Min=29.3545, Sum=2884.5
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2884.51Mbps, Min=29.3545Mbps, BestMin=29.3545Mbps (Iter0), Time=0.108s
+Iter 10: Sum=2986.59Mbps, Min=39.5483Mbps, BestMin=40.1742Mbps (Iter9), Time=0.108s
+Iter 20: Sum=2965.82Mbps, Min=39.9585Mbps, BestMin=41.8728Mbps (Iter16), Time=0.107s
+Iter 30: Sum=3011.28Mbps, Min=39.5762Mbps, BestMin=41.8728Mbps (Iter16), Time=0.110s
+Iter 40: Sum=2997.35Mbps, Min=40.0575Mbps, BestMin=43.1037Mbps (Iter38), Time=0.109s
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 38 次迭代
+📊 历代最优总速率: 3006.13 Mbps
+🎯 历代最优最小速率: 43.1037 Mbps
+📈 速率标准差: 4.1343 Mbps
+⏱️  优化时间: 5.58 秒
+⚡ 平均每次迭代: 0.112 秒
+🔄 重启次数: 0
+  V3:      Min=43.1037, Sum=3006.1, Time=5.6s
+🚀 开始平衡虚拟力优化 V5-Pro (Comm-Aware + Memory Robustness)...
+Iter  0 | MinRate: 37.2133 | SumRate:  3589.1 | BestMin: 37.2133
+Iter 10 | MinRate: 37.6419 | SumRate:  3660.6 | BestMin: 41.7008
+Iter 20 | MinRate: 40.4473 | SumRate:  3636.5 | BestMin: 45.0639
+Iter 30 | MinRate: 40.8536 | SumRate:  3709.5 | BestMin: 45.0639
+  🔄 触发智能重启 #1 (代 38) | 尝试跳出局部最优...
+Iter 40 | MinRate: 35.4619 | SumRate:  3518.7 | BestMin: 45.0639
+  V5Pro:   Min=45.0639, Sum=3708.4, Time=5.7s
+🚀 开始平衡虚拟力优化 V6 (科学力场 + 通信感知 + 稳健性)...
+Iter  0 | Min: 37.2133 | Sum: 3589.1 | BestMin: 37.2133
+Iter 10 | Min: 42.7029 | Sum: 3677.2 | BestMin: 43.7684
+Iter 20 | Min: 39.6152 | Sum: 3586.3 | BestMin: 46.2004
+Iter 30 | Min: 44.6589 | Sum: 3638.0 | BestMin: 49.4619
+Iter 40 | Min: 40.9939 | Sum: 3648.4 | BestMin: 49.4619
+  V6:      Min=49.4619, Sum=3742.3, Time=5.7s
+  ✅ 保存: comp_12uav_seed62.json
+
+============================================================
+配置: 12 UAV | Seed 67
+============================================================
+  Initial: Min=33.6914, Sum=2910.0
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2909.97Mbps, Min=33.6914Mbps, BestMin=33.6914Mbps (Iter0), Time=0.108s
+Iter 10: Sum=2943.22Mbps, Min=38.2001Mbps, BestMin=40.6386Mbps (Iter4), Time=0.108s
+Iter 20: Sum=2975.23Mbps, Min=38.1713Mbps, BestMin=40.6386Mbps (Iter4), Time=0.108s
+Iter 30: Sum=2923.04Mbps, Min=34.8983Mbps, BestMin=40.6386Mbps (Iter4), Time=0.108s
+
+🔄 智能重启 #1 (Iter 31)
+Iter 40: Sum=3019.33Mbps, Min=36.8586Mbps, BestMin=40.6386Mbps (Iter4), Time=0.109s
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 43 次迭代
+📊 历代最优总速率: 2995.93 Mbps
+🎯 历代最优最小速率: 40.8344 Mbps
+📈 速率标准差: 4.9449 Mbps
+⏱️  优化时间: 5.53 秒
+⚡ 平均每次迭代: 0.111 秒
+🔄 重启次数: 1
+  V3:      Min=40.8344, Sum=2995.9, Time=5.5s
+🚀 开始平衡虚拟力优化 V5-Pro (Comm-Aware + Memory Robustness)...
+Iter  0 | MinRate: 42.5721 | SumRate:  3652.0 | BestMin: 42.5721
+Iter 10 | MinRate: 43.6183 | SumRate:  3660.6 | BestMin: 44.0492
+Iter 20 | MinRate: 41.0294 | SumRate:  3675.4 | BestMin: 44.4785
+Iter 30 | MinRate: 40.8280 | SumRate:  3662.5 | BestMin: 44.4785
+Iter 40 | MinRate: 41.5830 | SumRate:  3664.5 | BestMin: 44.4785
+  V5Pro:   Min=45.3369, Sum=3652.6, Time=5.7s
+🚀 开始平衡虚拟力优化 V6 (科学力场 + 通信感知 + 稳健性)...
+Iter  0 | Min: 42.5721 | Sum: 3652.0 | BestMin: 42.5721
+Iter 10 | Min: 47.1742 | Sum: 3870.1 | BestMin: 47.1742
+Iter 20 | Min: 42.0202 | Sum: 3699.7 | BestMin: 47.1742
+Iter 30 | Min: 43.0625 | Sum: 3639.7 | BestMin: 47.1742
+  🔄 智能重启 #1 (Iter 35)
+Iter 40 | Min: 39.1813 | Sum: 3685.9 | BestMin: 47.1742
+  V6:      Min=47.1742, Sum=3870.1, Time=5.7s
+  ✅ 保存: comp_12uav_seed67.json
+
+============================================================
+配置: 12 UAV | Seed 75
+============================================================
+  Initial: Min=35.4971, Sum=2871.7
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2871.70Mbps, Min=35.4971Mbps, BestMin=35.4971Mbps (Iter0), Time=0.109s
+Iter 10: Sum=2913.09Mbps, Min=40.0958Mbps, BestMin=40.0958Mbps (Iter10), Time=0.108s
+Iter 20: Sum=2907.41Mbps, Min=37.7891Mbps, BestMin=41.5180Mbps (Iter13), Time=0.110s
+Iter 30: Sum=2869.43Mbps, Min=40.3444Mbps, BestMin=41.5180Mbps (Iter13), Time=0.108s
+
+🔄 智能重启 #1 (Iter 38)
+Iter 40: Sum=2861.04Mbps, Min=35.1512Mbps, BestMin=41.5180Mbps (Iter13), Time=0.107s
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 13 次迭代
+📊 历代最优总速率: 2943.69 Mbps
+🎯 历代最优最小速率: 41.5180 Mbps
+📈 速率标准差: 4.4792 Mbps
+⏱️  优化时间: 5.53 秒
+⚡ 平均每次迭代: 0.111 秒
+🔄 重启次数: 1
+  V3:      Min=41.5180, Sum=2943.7, Time=5.5s
+🚀 开始平衡虚拟力优化 V5-Pro (Comm-Aware + Memory Robustness)...
+Iter  0 | MinRate: 42.6833 | SumRate:  3585.9 | BestMin: 42.6833
+Iter 10 | MinRate: 37.7173 | SumRate:  3600.1 | BestMin: 42.6833
+Iter 20 | MinRate: 41.2412 | SumRate:  3614.0 | BestMin: 42.6833
+  🔄 触发智能重启 #1 (代 25) | 尝试跳出局部最优...
+Iter 30 | MinRate: 36.5073 | SumRate:  3424.3 | BestMin: 42.6833
+Iter 40 | MinRate: 37.1929 | SumRate:  3401.2 | BestMin: 42.6833
+  V5Pro:   Min=42.6833, Sum=3585.9, Time=5.6s
+🚀 开始平衡虚拟力优化 V6 (科学力场 + 通信感知 + 稳健性)...
+Iter  0 | Min: 42.6833 | Sum: 3585.9 | BestMin: 42.6833
+Iter 10 | Min: 39.1268 | Sum: 3483.4 | BestMin: 42.6833
+Iter 20 | Min: 40.4427 | Sum: 3454.2 | BestMin: 42.6833
+Iter 30 | Min: 42.1918 | Sum: 3543.1 | BestMin: 43.4074
+Iter 40 | Min: 43.7554 | Sum: 3588.2 | BestMin: 44.2355
+  V6:      Min=44.2355, Sum=3568.4, Time=5.7s
+  ✅ 保存: comp_12uav_seed75.json
+
+============================================================
+配置: 12 UAV | Seed 76
+============================================================
+  Initial: Min=30.5839, Sum=2907.7
+开始平衡虚拟力优化（V3正确优化版）...
+Iter 0: Sum=2907.75Mbps, Min=30.5839Mbps, BestMin=30.5839Mbps (Iter0), Time=0.109s
+Iter 10: Sum=3040.91Mbps, Min=39.6221Mbps, BestMin=39.6221Mbps (Iter10), Time=0.108s
+Iter 20: Sum=3011.01Mbps, Min=37.5839Mbps, BestMin=42.3839Mbps (Iter15), Time=0.108s
+Iter 30: Sum=3108.92Mbps, Min=39.8974Mbps, BestMin=42.3839Mbps (Iter15), Time=0.107s
+
+🔄 智能重启 #1 (Iter 40)
+
+🎉 平衡虚拟力优化完成（V3版 - 历代最优记忆）!
+✨ 最佳性能出现在第 15 次迭代
+📊 历代最优总速率: 3072.47 Mbps
+🎯 历代最优最小速率: 42.3839 Mbps
+📈 速率标准差: 5.4853 Mbps
+⏱️  优化时间: 5.57 秒
+⚡ 平均每次迭代: 0.111 秒
+🔄 重启次数: 1
+  V3:      Min=42.3839, Sum=3072.5, Time=5.6s
+🚀 开始平衡虚拟力优化 V5-Pro (Comm-Aware + Memory Robustness)...
+Iter  0 | MinRate: 37.4749 | SumRate:  3655.8 | BestMin: 37.4749
+Iter 10 | MinRate: 35.6640 | SumRate:  3666.8 | BestMin: 42.0159
+Iter 20 | MinRate: 36.0160 | SumRate:  3654.1 | BestMin: 43.3065
+Iter 30 | MinRate: 37.0041 | SumRate:  3594.8 | BestMin: 43.3065
+Iter 40 | MinRate: 39.7983 | SumRate:  3630.8 | BestMin: 43.3065
+  V5Pro:   Min=43.3065, Sum=3733.7, Time=5.7s
+🚀 开始平衡虚拟力优化 V6 (科学力场 + 通信感知 + 稳健性)...
+Iter  0 | Min: 37.4749 | Sum: 3655.8 | BestMin: 37.4749
+Iter 10 | Min: 41.3154 | Sum: 3658.3 | BestMin: 45.5168
+Iter 20 | Min: 42.0483 | Sum: 3687.8 | BestMin: 45.7603
+Iter 30 | Min: 46.3668 | Sum: 3784.0 | BestMin: 46.3668
+Iter 40 | Min: 42.1236 | Sum: 3742.2 | BestMin: 46.3668
+  V6:      Min=46.9687, Sum=3800.6, Time=5.7s
+  ✅ 保存: comp_12uav_seed76.json
+
+================================================================================
+  汇总对比
+================================================================================
+Config             Initial    V3         V5Pro      V6         |    Best   
+--------------------------------------------------------------------------------
+6uav_seed56        20.19      22.72      28.09      29.46      |     V6    
+6uav_seed62        17.69      25.80      27.44      30.43      |     V6    
+6uav_seed67        20.92      25.12      28.50      33.96      |     V6    
+6uav_seed75        20.78      28.27      28.23      31.82      |     V6    
+6uav_seed76        17.97      26.86      24.93      30.39      |     V6    
+9uav_seed56        31.38      37.05      42.29      43.49      |     V6    
+9uav_seed62        27.06      36.29      37.56      43.99      |     V6    
+9uav_seed67        28.86      36.02      43.10      43.97      |     V6    
+9uav_seed75        32.25      36.50      42.47      41.54      |   V5Pro   
+9uav_seed76        27.65      36.96      40.05      41.77      |     V6    
+12uav_seed56       33.26      41.53      46.06      50.42      |     V6    
+12uav_seed62       29.35      43.10      45.06      49.46      |     V6    
+12uav_seed67       33.69      40.83      45.34      47.17      |     V6    
+12uav_seed75       35.50      41.52      42.68      44.24      |     V6    
+12uav_seed76       30.58      42.38      43.31      46.97      |     V6    
+--------------------------------------------------------------------------------

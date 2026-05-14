@@ -1,0 +1,317 @@
+{
+  "baseline": {
+    "min_rate_mean": 48.676069798517815,
+    "min_rate_std": 3.2767885969560315,
+    "jfi_mean": 0.8772950472273864,
+    "joint_score_mean": 0.7028998260212636,
+    "energy_cum_kj_mean": 943.8845091208377
+  },
+  "results": [
+    {
+      "params": {
+        "worst_q": 0.25,
+        "k_mr_force": 24000.0,
+        "refine_step_sizes": [
+          8.0,
+          5.0,
+          3.0
+        ]
+      },
+      "min_rate_mean": 48.67661571574057,
+      "min_rate_std": 2.3017209366639557,
+      "jfi_mean": 0.86171071107876,
+      "joint_score_mean": 0.6903302454269996,
+      "energy_cum_kj_mean": 957.4609416510575,
+      "delta_min_rate_vs_base": 0.0005459172227517683
+    },
+    {
+      "params": {
+        "worst_q": 0.15,
+        "k_mr_force": 22000.0,
+        "refine_step_sizes": [
+          9.0,
+          6.0,
+          3.5
+        ]
+      },
+      "min_rate_mean": 48.457067647382054,
+      "min_rate_std": 3.2103702885484044,
+      "jfi_mean": 0.8748337832842579,
+      "joint_score_mean": 0.6935073834493365,
+      "energy_cum_kj_mean": 1001.415824927919,
+      "delta_min_rate_vs_base": -0.21900215113576138
+    },
+    {
+      "params": {
+        "worst_q": 0.25,
+        "k_mr_force": 24000.0,
+        "refine_step_sizes": [
+          9.0,
+          6.0,
+          3.5
+        ]
+      },
+      "min_rate_mean": 48.436757121724916,
+      "min_rate_std": 2.857334534993511,
+      "jfi_mean": 0.8573130512473139,
+      "joint_score_mean": 0.681068608381182,
+      "energy_cum_kj_mean": 961.0483971578185,
+      "delta_min_rate_vs_base": -0.23931267679289903
+    },
+    {
+      "params": {
+        "worst_q": 0.2,
+        "k_mr_force": 22000.0,
+        "refine_step_sizes": [
+          9.0,
+          6.0,
+          3.5
+        ]
+      },
+      "min_rate_mean": 48.36439942651242,
+      "min_rate_std": 3.7046649470195434,
+      "jfi_mean": 0.8787870158409854,
+      "joint_score_mean": 0.7012486183074262,
+      "energy_cum_kj_mean": 964.7119489727179,
+      "delta_min_rate_vs_base": -0.3116703720053948
+    },
+    {
+      "params": {
+        "worst_q": 0.15,
+        "k_mr_force": 24000.0,
+        "refine_step_sizes": [
+          8.0,
+          5.0,
+          3.0
+        ]
+      },
+      "min_rate_mean": 48.2908629524492,
+      "min_rate_std": 2.9425588516353924,
+      "jfi_mean": 0.8810886350856222,
+      "joint_score_mean": 0.6997011094211375,
+      "energy_cum_kj_mean": 990.719619742076,
+      "delta_min_rate_vs_base": -0.38520684606861266
+    },
+    {
+      "params": {
+        "worst_q": 0.15,
+        "k_mr_force": 22000.0,
+        "refine_step_sizes": [
+          8.0,
+          5.0,
+          3.0
+        ]
+      },
+      "min_rate_mean": 48.2891558203318,
+      "min_rate_std": 3.0379973746336884,
+      "jfi_mean": 0.8774253740994022,
+      "joint_score_mean": 0.6945119068990613,
+      "energy_cum_kj_mean": 997.0204509842172,
+      "delta_min_rate_vs_base": -0.3869139781860156
+    },
+    {
+      "params": {
+        "worst_q": 0.2,
+        "k_mr_force": 22000.0,
+        "refine_step_sizes": [
+          8.0,
+          5.0,
+          3.0
+        ]
+      },
+      "min_rate_mean": 47.988495255918,
+      "min_rate_std": 3.45310277363573,
+      "jfi_mean": 0.87851607065724,
+      "joint_score_mean": 0.698271266905528,
+      "energy_cum_kj_mean": 969.442566305326,
+      "delta_min_rate_vs_base": -0.687574542599819
+    },
+    {
+      "params": {
+        "worst_q": 0.15,
+        "k_mr_force": 20000.0,
+        "refine_step_sizes": [
+          9.0,
+          6.0,
+          3.5
+        ]
+      },
+      "min_rate_mean": 47.94744364739145,
+      "min_rate_std": 3.3032326847628566,
+      "jfi_mean": 0.8703192199967169,
+      "joint_score_mean": 0.6832274470411848,
+      "energy_cum_kj_mean": 966.7024819253022,
+      "delta_min_rate_vs_base": -0.7286261511263632
+    },
+    {
+      "params": {
+        "worst_q": 0.25,
+        "k_mr_force": 20000.0,
+        "refine_step_sizes": [
+          8.0,
+          5.0,
+          3.0
+        ]
+      },
+      "min_rate_mean": 47.919469474598756,
+      "min_rate_std": 3.241719636624315,
+      "jfi_mean": 0.8718279023518907,
+      "joint_score_mean": 0.69025467591978,
+      "energy_cum_kj_mean": 938.2579360774073,
+      "delta_min_rate_vs_base": -0.7566003239190593
+    },
+    {
+      "params": {
+        "worst_q": 0.2,
+        "k_mr_force": 20000.0,
+        "refine_step_sizes": [
+          9.0,
+          6.0,
+          3.5
+        ]
+      },
+      "min_rate_mean": 47.87121860868683,
+      "min_rate_std": 3.5498230138701516,
+      "jfi_mean": 0.875719406296139,
+      "joint_score_mean": 0.6730086094105989,
+      "energy_cum_kj_mean": 982.7234318980286,
+      "delta_min_rate_vs_base": -0.804851189830984
+    },
+    {
+      "params": {
+        "worst_q": 0.15,
+        "k_mr_force": 24000.0,
+        "refine_step_sizes": [
+          9.0,
+          6.0,
+          3.5
+        ]
+      },
+      "min_rate_mean": 47.79869894710902,
+      "min_rate_std": 3.432113296145626,
+      "jfi_mean": 0.8735673817467287,
+      "joint_score_mean": 0.6836829465148281,
+      "energy_cum_kj_mean": 975.4017293172801,
+      "delta_min_rate_vs_base": -0.8773708514087986
+    },
+    {
+      "params": {
+        "worst_q": 0.25,
+        "k_mr_force": 22000.0,
+        "refine_step_sizes": [
+          8.0,
+          5.0,
+          3.0
+        ]
+      },
+      "min_rate_mean": 47.70396072368425,
+      "min_rate_std": 2.906442045846239,
+      "jfi_mean": 0.8775999862713076,
+      "joint_score_mean": 0.6808535998656999,
+      "energy_cum_kj_mean": 991.2744914126763,
+      "delta_min_rate_vs_base": -0.9721090748335683
+    },
+    {
+      "params": {
+        "worst_q": 0.25,
+        "k_mr_force": 20000.0,
+        "refine_step_sizes": [
+          9.0,
+          6.0,
+          3.5
+        ]
+      },
+      "min_rate_mean": 47.69623101037784,
+      "min_rate_std": 2.9747724449346094,
+      "jfi_mean": 0.8712424064919416,
+      "joint_score_mean": 0.6890446839428204,
+      "energy_cum_kj_mean": 936.7236774049934,
+      "delta_min_rate_vs_base": -0.9798387881399719
+    },
+    {
+      "params": {
+        "worst_q": 0.2,
+        "k_mr_force": 20000.0,
+        "refine_step_sizes": [
+          8.0,
+          5.0,
+          3.0
+        ]
+      },
+      "min_rate_mean": 47.598805094468204,
+      "min_rate_std": 3.4411453500922957,
+      "jfi_mean": 0.8734378118601794,
+      "joint_score_mean": 0.6779313740685107,
+      "energy_cum_kj_mean": 959.5503020567759,
+      "delta_min_rate_vs_base": -1.077264704049611
+    },
+    {
+      "params": {
+        "worst_q": 0.25,
+        "k_mr_force": 22000.0,
+        "refine_step_sizes": [
+          9.0,
+          6.0,
+          3.5
+        ]
+      },
+      "min_rate_mean": 47.58448869841108,
+      "min_rate_std": 2.7853735005058815,
+      "jfi_mean": 0.8778767443272593,
+      "joint_score_mean": 0.6780323803732755,
+      "energy_cum_kj_mean": 1003.7145578921964,
+      "delta_min_rate_vs_base": -1.0915811001067368
+    },
+    {
+      "params": {
+        "worst_q": 0.15,
+        "k_mr_force": 20000.0,
+        "refine_step_sizes": [
+          8.0,
+          5.0,
+          3.0
+        ]
+      },
+      "min_rate_mean": 47.5077267903732,
+      "min_rate_std": 2.0691321345927114,
+      "jfi_mean": 0.8742021410374421,
+      "joint_score_mean": 0.6892488841772859,
+      "energy_cum_kj_mean": 969.58508791555,
+      "delta_min_rate_vs_base": -1.1683430081446176
+    },
+    {
+      "params": {
+        "worst_q": 0.2,
+        "k_mr_force": 24000.0,
+        "refine_step_sizes": [
+          8.0,
+          5.0,
+          3.0
+        ]
+      },
+      "min_rate_mean": 47.193865379372085,
+      "min_rate_std": 3.447387847645431,
+      "jfi_mean": 0.874814283761786,
+      "joint_score_mean": 0.6747933986200625,
+      "energy_cum_kj_mean": 958.7352709447732,
+      "delta_min_rate_vs_base": -1.4822044191457309
+    },
+    {
+      "params": {
+        "worst_q": 0.2,
+        "k_mr_force": 24000.0,
+        "refine_step_sizes": [
+          9.0,
+          6.0,
+          3.5
+        ]
+      },
+      "min_rate_mean": 47.14509308074518,
+      "min_rate_std": 3.053549372422476,
+      "jfi_mean": 0.8745399801894791,
+      "joint_score_mean": 0.6767074660879557,
+      "energy_cum_kj_mean": 954.1014885039015,
+      "delta_min_rate_vs_base": -1.5309767177726386
+    }
+  ]
+}
